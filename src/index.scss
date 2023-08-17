@@ -1,0 +1,49 @@
+@font-face {
+  font-family: 'Hanson-Bold';
+  src: url('/public/Hanson-Bold.ttf');
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: 'Hanson-Bold', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #111111;
+  overflow-x: hidden;
+}
+
+.grid-layout {
+  max-width: 90%;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.animation {
+  display: block;
+  position: sticky;
+  z-index: 99999;
+}
+
+::selection {
+  background-color: #ffffff;
+  color: #ffffff;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ffffff;
+  border-radius: 10px;
+}

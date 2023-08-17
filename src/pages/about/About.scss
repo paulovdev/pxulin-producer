@@ -1,0 +1,78 @@
+#about {
+    background: #ffffff;
+    display: flex;
+
+    padding: 0 25px;
+    min-height: 70vh;
+
+    @media (max-width:992px) {
+        padding: 50px 10px;
+
+    }
+}
+
+#about .text-content {
+    display: flex;
+
+    @media (max-width:992px) {
+        flex-direction: column;
+    }
+}
+
+
+#about .pxulin-about-1 {
+    width: 100%;
+    height: 70vh;
+    height: auto;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+
+    @media (max-width: 992px) {
+        width: 100%;
+    }
+
+    h1 {
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        font-size: 4rem;
+        font-weight: 900;
+        color: #1e1e1e;
+        letter-spacing: 5px;
+    }
+
+    p {
+        font-size: 0.9rem;
+        line-height: 180%;
+        letter-spacing: 0.24px;
+        margin-bottom: 1rem;
+        color: #363636;
+
+        @media (max-width:1250px) {
+            max-width: 100%;
+        }
+    }
+
+
+}
+
+.pxulin-about-2 {
+    background: #1e1e1e url('/public/card.webp')no-repeat center;
+    background-size: cover;
+    color: #ffffff;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.background-text-about {
+    position: absolute;
+    padding: 50px;
+
+}

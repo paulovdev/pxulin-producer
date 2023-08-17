@@ -1,0 +1,115 @@
+#home {
+    background: #111111 url('/public/background.webp');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 25px;
+    min-height: 100vh;
+
+    @media (max-width:992px) {
+        padding: 0 10px;
+    }
+
+    .home-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        color: #ffffff;
+
+        @media (max-width: 992px) {}
+
+        h1 {
+            font-size: 5rem;
+            font-weight: 900;
+            color: #ffffff;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+
+        }
+
+        p {
+            font-size: 0.9rem;
+            line-height: 180%;
+            letter-spacing: 0.24px;
+            margin-bottom: 1rem;
+            color: #ffffff;
+
+            @media (max-width:1250px) {
+                max-width: 100%;
+            }
+        }
+
+        .button-container {
+            width: 210px;
+            height: 40px;
+            padding: 1rem;
+            background-color: #ffffff;
+            border-radius: 5rem;
+            margin: 1rem 0;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            cursor: pointer;
+            transition: all 0.5s;
+
+            span {
+                color: #111111;
+                font-size: 14px;
+                font-weight: 600;
+                letter-spacing: 1px;
+                transition: all 0.5s;
+            }
+
+            svg {
+                transition: all 0.5s;
+                color: #111111;
+            }
+        }
+
+        .button-container:hover {
+            background-color: #ff5500;
+
+            svg {
+                transform: translate(5px);
+                color: #ffffff;
+            }
+
+            span {
+                color: #ffffff;
+            }
+
+        }
+    }
+
+    .pxulin-home-2 {
+        color: #ffffff;
+        flex: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @media (max-width: 992px) {
+            display: none;
+        }
+    }
+
+    .arrow {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.5s;
+        transform: translateY(50px);
+
+        &:hover {
+            svg {
+                transform: scale(1.2);
+            }
+
+            transform: translateY(60px);
+        }
+    }
+}

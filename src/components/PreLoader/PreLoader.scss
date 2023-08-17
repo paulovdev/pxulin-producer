@@ -1,0 +1,31 @@
+.preloader {
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+    width: 100%;
+    margin: 0 auto;
+    background: #111111;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 50;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    color: #fff;
+    overflow: hidden !important;
+    z-index: 999999;
+
+    .preloader-content {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        gap: 1rem;
+    }
+}
+
+span {
+    font-size: 32px;
+}
