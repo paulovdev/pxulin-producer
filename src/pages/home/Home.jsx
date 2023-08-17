@@ -1,5 +1,6 @@
 import React from 'react'
 import './Home.scss'
+import LogoSlide from '../../components/LogoSlide/LogoSlide'
 import { BsFillArrowRightCircleFill } from 'react-icons/bs'
 import { MdKeyboardArrowDown } from 'react-icons/md'
 import { Fade } from 'react-awesome-reveal';
@@ -35,6 +36,8 @@ const Home = () => {
             </Fade>
 
           </div>
+
+          <LogoSlide />
 
           <Fade cascade direction='down' duration={400} delay={1800} triggerOnce>
             <div className="arrow">
