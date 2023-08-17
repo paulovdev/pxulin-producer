@@ -9,28 +9,20 @@ const Music = () => {
 
         <div id='music'>
             <div className="grid-layout">
-                <div className="pxulin-music-1">
+                <div className="music-content">
                     <Fade className='animation' cascade direction='down' duration={400} triggerOnce>
                         <h1>MUSIC</h1>
                         <p>
-                            Pxulin's music spans across different genres and styles, including hip-hop, trap, and electronic music.
+                            SOON
                         </p>
                     </Fade>
                 </div>
                 <div className="slider">
-                    <div>
-                        <h3>1</h3>
-                    </div>
-                    <div>
-                        <h3>2</h3>
-                    </div>
-                    <div>
-                        <h3>3</h3>
-                    </div>
+                    <h1>SOON SOON SOON SOON SOON SOON</h1>
+                    <h1>SOON SOON SOON SOON SOON SOON</h1>
                 </div>
             </div>
-        </div >
-
+        </div>
     );
 };
 

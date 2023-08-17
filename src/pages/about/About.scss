@@ -41,6 +41,11 @@
         font-weight: 900;
         color: #1e1e1e;
         letter-spacing: 5px;
+        text-transform: uppercase;
+
+        @media (max-width: 768px) {
+            font-size: 3rem;
+        }
     }
 
     p {
