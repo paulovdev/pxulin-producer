@@ -5,6 +5,9 @@ const LogoSlide = () => {
      return (
           <section id="gang">
                <Fade className='animation' direction='down' duration={800} triggerOnce>
+                    <div className="pxulin-music-1">
+                         <h1>GANG</h1>
+                    </div>
                     <div className="carousel-container">
 
                          <section>

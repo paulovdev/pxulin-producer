@@ -14,7 +14,6 @@ const PreLoader = () => {
             <h1 style={{ opacity: '0.4' }} >L</h1>
             <h1 style={{ opacity: '0.5' }} >I</h1>
             <h1 style={{ opacity: '0.6' }} >N</h1>
-            <h1 style={{ opacity: '0.7' }} >™</h1>
           </Fade>
         </div>
 
