@@ -33,8 +33,9 @@ const Home = () => {
 
           </div>
 
-          <Fade cascade direction='down' duration={400} delay={1200} triggerOnce>
+          <Fade cascade direction='down' duration={500} delay={1200} triggerOnce>
             <div className="bottom-content">
+
               <div className="arrow-text">
                 <p>© 2023 pxulin</p>
                 <a href="#gang">
@@ -44,6 +45,7 @@ const Home = () => {
 
               <span>Pxulin's music can be streamed for free on SoundCloud, both on desktop and mobile devices. The artist's profile on the platform allows users to discover followers and stream tracks, albums, and playlists
               </span>
+
             </div>
           </Fade>
 
