@@ -21,25 +21,31 @@
         color: #ffffff;
 
         h1 {
-            font-size: 5rem;
+            font-size: 4rem;
             font-weight: 900;
             color: #ffffff;
-            letter-spacing: 5px;
+            letter-spacing: 2px;
             text-transform: uppercase;
+            margin-bottom: 1rem;
+
+            @media (max-width: 1300px) {
+                font-size: 3rem;
+            }
 
             @media (max-width: 992px) {
-                font-size: 4rem;
+                font-size: 2.5rem;
             }
 
             @media (max-width: 768px) {
-                font-size: 3rem;
+                font-size: 1.5rem;
             }
         }
 
         p {
-            font-size: 0.9rem;
+            font-size: 1rem;
             line-height: 180%;
             letter-spacing: 0.24px;
+            font-weight: 600;
             margin-bottom: 1rem;
             color: #ffffff;
 
@@ -49,7 +55,7 @@
         }
 
         .button-container {
-            width: 210px;
+            width: 220px;
             height: 40px;
             padding: 1rem;
             background-color: #ffffff;
@@ -65,7 +71,7 @@
                 color: #111111;
                 font-size: 14px;
                 font-weight: 600;
-                letter-spacing: 1px;
+                letter-spacing: 2px;
                 transition: all 0.5s;
             }
 
@@ -102,19 +108,55 @@
         }
     }
 
-    .arrow {
+    .bottom-content {
+        position: relative;
+        top: 100px;
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
-        transition: all 0.5s;
-        transform: translateY(50px);
 
-        &:hover {
-            svg {
-                transform: scale(1.2);
+
+        span {
+            max-width: 50%;
+            color: #ffffff;
+            text-transform: uppercase;
+            font-size: 10px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            transition: all 0.5s;
+
+            @media (max-width: 768px) {
+                font-size: 0.6rem;
+                max-width: 60%;
+            }
+        }
+
+        .arrow-text {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+
+            @media (max-width:768px) {
+                flex-direction: column;
             }
 
-            transform: translateY(60px);
+            a {
+                border: 2px solid #ffffff;
+                padding: 2rem;
+                border-radius: 50%;
+            }
+
+            p {
+                color: #ffffff;
+                text-transform: uppercase;
+                font-size: 1rem;
+                font-weight: 600;
+                letter-spacing: 2px;
+                transition: all 0.5s;
+            }
+
         }
     }
+
+
 }

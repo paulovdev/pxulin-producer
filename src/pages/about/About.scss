@@ -1,5 +1,6 @@
 #about {
-    background: #ffffff;
+    background: #ffffff url('/public/background-white.webp');
+    background-size: cover;
     display: flex;
 
     padding: 0 25px;
@@ -49,9 +50,10 @@
     }
 
     p {
-        font-size: 0.9rem;
+        font-size: 1rem;
         line-height: 180%;
         letter-spacing: 0.24px;
+        font-weight: 600;
         margin-bottom: 1rem;
         color: #363636;
 
@@ -64,7 +66,7 @@
 }
 
 .pxulin-about-2 {
-    background: #1e1e1e url('/public/card.webp')no-repeat center;
+    background: #1e1e1e url('/public/post.jpg')no-repeat center;
     background-size: cover;
     color: #ffffff;
     width: 100%;

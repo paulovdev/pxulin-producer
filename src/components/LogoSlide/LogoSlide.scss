@@ -1,10 +1,12 @@
 #gang {
     padding: 50px 0;
-    background: #000000;
+    background: #111111 url('/public/background.webp');
+    background-size: cover;
 }
 
 .carousel-container {
-    
+    backdrop-filter: blur(10px);
+    background: #61616114;
     border-bottom: 1px solid #616161;
     border-top: 1px solid #616161;
 

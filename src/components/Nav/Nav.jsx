@@ -20,13 +20,13 @@ const Nav = () => {
 
                 <div className="logo">
                     <Fade className='animation' cascade direction='down' duration={800} delay={300} >
-                        <img src="/logo.webp" width={80} alt="" />
+                        <img src="/logo.webp" width={100} alt="" />
                     </Fade>
                 </div>
 
                 <div className="bars" >
                     <Fade direction='down' duration={800} delay={1200} className='animation' triggerOnce>
-                        <p>MENU</p>
+                        <h3 onClick={() => setOpen(!isOpen)} style={{ color: !isOpen ? '#fff' : '#000' }}>MENU</h3>
                         <Hamburger
                             color={!isOpen ? '#fff' : '#000'}
                             size={30}

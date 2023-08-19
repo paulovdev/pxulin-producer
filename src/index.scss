@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swap');
+
 @font-face {
   font-family: 'Hanson-Bold';
   src: url('/public/Hanson-Bold.ttf');
@@ -10,6 +12,10 @@
   text-decoration: none;
   list-style: none;
   font-family: 'Hanson-Bold', sans-serif;
+}
+
+p {
+  font-family: 'Montserrat', sans-serif;
 }
 
 html {
