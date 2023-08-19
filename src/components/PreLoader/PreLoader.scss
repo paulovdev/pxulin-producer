@@ -8,7 +8,7 @@
     bottom: 0;
     left: 0;
     right: 0;
-    z-index: 50;
+    z-index: 999999;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -16,7 +16,6 @@
     gap: 1rem;
     color: #fff;
     overflow: hidden !important;
-    z-index: 999999;
 
     .preloader-content {
         display: flex;

@@ -97,19 +97,7 @@
         }
     }
 
-    .pxulin-home-2 {
-        color: #ffffff;
-        flex: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        @media (max-width: 992px) {
-            display: none;
-        }
-    }
-
-    .bottom-content {
+    .botton-content {
         position: relative;
         top: 100px;
         display: flex;
@@ -167,7 +155,4 @@
 
         }
     }
-
-
-
 }
