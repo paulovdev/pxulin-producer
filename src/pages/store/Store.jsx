@@ -3,12 +3,13 @@ import './Store.scss'
 import { Fade } from 'react-awesome-reveal';
 const Store = () => {
     const products = [
-        { product: 'SWEATSHIRT', image: '/loja/moleton.webp ' },
-        { product: 'SHIRT', image: '/loja/camisa.webp ' },
-        { product: 'CAP', image: '/loja/bone.webp ' },
-        { product: 'SWEATSHIRT', image: '/loja/moleton.webp ' },
-        { product: 'SHIRT', image: '/loja/camisa.webp ' },
-        { product: 'CAP', image: '/loja/bone.webp ' },
+        { product: 'SWEATSHIRT ANGELS', image: '/loja/angels.webp', price: '£50.00' },
+        { product: 'COAT KILLER', image: '/loja/killer.webp ', price: '£35.00' },
+        { product: 'SHIRT SKULL', image: '/loja/skull.webp ', price: '£25.00' },
+        { product: 'SWEATSHIRT PXULIN', image: '/loja/px-mol.webp ', price: '£50.00' },
+        { product: 'SHIRT PXULIN', image: '/loja/px-sh.webp ', price: '£25.00' },
+        { product: 'SHIRT PXULIN PEACE', image: '/loja/px.webp ', price: '£25.00' },
+
     ]
 
     const [searchTerm, setSearchTerm] = useState('')
@@ -20,7 +21,7 @@ const Store = () => {
     return (
         <>
             <div className="background-text-store">
-              
+
             </div>
             <div id='store'>
                 <div className="grid-layout">
@@ -45,6 +46,8 @@ const Store = () => {
                                         <div key={item.product} className="card" >
                                             <img src={item.image} alt="" />
                                             <p>{item.product}</p>
+                                            <br />
+                                            <p>{item.price}</p>
                                         </div>
                                     </Fade>
                                 ))}

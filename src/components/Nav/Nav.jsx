@@ -21,6 +21,12 @@ const Nav = () => {
                 <div className="logo">
                     <Fade className='animation' cascade direction='down' duration={800} delay={300} >
                         <img src="/logo.webp" width={100} alt="" />
+
+                    </Fade>
+                </div>
+                <div className="logo">
+                    <Fade direction='down' duration={800} delay={1000} className='animation' triggerOnce>
+                        <img src="/globe.gif" width={50} alt="" />
                     </Fade>
                 </div>
 
@@ -33,6 +39,7 @@ const Nav = () => {
                             toggled={isOpen}
                             toggle={() => setOpen(!isOpen)}
                         />
+
                     </Fade>
 
                     <ul
