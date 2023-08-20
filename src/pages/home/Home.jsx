@@ -37,9 +37,17 @@ const Home = () => {
           </div>
         </Fade>
 
-        <a href="#gang" className="arrow">
-          <MdKeyboardArrowDown color="#fff" size={42} />
-        </a>
+        <Fade
+          cascade
+          direction="down"
+          duration={500}
+          delay={1600}
+          triggerOnce
+        >
+          <a href="#gang" className="arrow">
+            <MdKeyboardArrowDown color="#fff" size={42} />
+          </a>
+        </Fade>
       </main>
 
       <ReactTooltip
@@ -47,7 +55,7 @@ const Home = () => {
         place="bottom"
         content="LISTEN TO THIS?"
       />
-    </section>
+    </section >
   );
 };
 
