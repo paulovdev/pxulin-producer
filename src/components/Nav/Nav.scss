@@ -1,4 +1,3 @@
-/* Header */
 header {
     position: fixed;
     width: 100%;
@@ -11,12 +10,12 @@ header {
     }
 }
 
-/* Remove blend mode when menu is open */
+
 .removeBlend {
     mix-blend-mode: normal;
 }
 
-/* Navigation */
+
 nav {
     max-width: 90%;
     width: 100%;
@@ -26,32 +25,32 @@ nav {
     align-items: center;
     justify-content: space-between;
 
-    /* Logo */
+
     .logo {
         z-index: 9999;
         mix-blend-mode: exclusion;
     }
 
-    /* Bars (hamburger menu) */
+
     .bars {
         display: flex;
         align-items: center;
         user-select: none;
     }
 
-    /* Menu title */
+
     h3 {
         cursor: pointer;
         letter-spacing: 2px;
     }
 }
 
-/* Hamburger icon */
+
 .hamburger-react {
     z-index: 99999;
 }
 
-/* Navigation Menu */
+
 ul {
     position: fixed;
     top: 0;
@@ -64,7 +63,7 @@ ul {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 4rem;
+    gap: 3rem;
 
     overflow: hidden;
     z-index: 9998;
@@ -76,7 +75,6 @@ ul {
         }
     }
 
-    /* Navigation items */
     li {
         text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         font-size: 3rem;
@@ -85,19 +83,18 @@ ul {
         letter-spacing: 5px;
         text-transform: uppercase;
 
-        /* Links */
+
         a {
             color: #1e1e1e;
             transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
         }
 
-        /* Position number */
+
         span {
             color: #1e1e1e;
             font-size: 1rem;
         }
 
-        /* Hover effect */
         &:hover {
             a {
                 font-size: 3.5rem;

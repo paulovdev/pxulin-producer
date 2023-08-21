@@ -18,27 +18,31 @@ const Music = () => {
             <h1>RELEASES</h1>
           </Fade>
         </div>
-        <div className="slider">
-          <div className="photo-music">
-            {releases.map((release, index) => (
-              <Fade
-                key={index}
-                className="animation"
-                cascade
-                direction="down"
-                duration={400}
-                triggerOnce
-                delay={index * 100}
-              >
 
+        <div className="slider">
+
+          {releases.map((release, index) => (
+            <Fade
+              key={index}
+              className="animation"
+              cascade
+              direction="down"
+              duration={400}
+              triggerOnce
+              delay={index * 100}
+            >
+              <div className="photo-music">
                 <img src={release.image} alt="" />
                 <h1>{release.title}</h1>
-              </Fade>
-            ))}
-          </div>
+              </div>
+            </Fade>
+          ))}
+
         </div>
+
+
       </main>
-    </section>
+    </section >
   );
 };
 

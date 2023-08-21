@@ -14,6 +14,7 @@ const Home = () => {
             cascade
             direction="down"
             duration={400}
+            delay={600}
             triggerOnce>
             <h1>
               Pxulin is a music artist who has uploaded songs, albums, and
@@ -27,7 +28,7 @@ const Home = () => {
           cascade
           direction="down"
           duration={500}
-          delay={1200}
+          delay={800}
           triggerOnce
         >
           <div className="home-bottom-content">
@@ -41,12 +42,14 @@ const Home = () => {
           cascade
           direction="down"
           duration={500}
-          delay={1600}
+          delay={1000}
           triggerOnce
         >
-          <a href="#gang" className="arrow">
+
+          <a href="#about" className="arrow">
             <MdKeyboardArrowDown color="#fff" size={42} />
           </a>
+
         </Fade>
       </main>
 

@@ -4,12 +4,12 @@ import { Sling as Hamburger } from "hamburger-react";
 import { Fade } from "react-awesome-reveal";
 
 const Nav = () => {
-    const [isOpen, setOpen] = useState(false);
+    const [isOpen, setOpen] = useState(true);
 
     const navigation = [
         { position: "1.", title: "home", href: "#home" },
         { position: "2.", title: "about", href: "#about" },
-        { position: "3.", title: "music", href: "#music" },
+        { position: "3.", title: "releases", href: "#music" },
         { position: "4.", title: "store", href: "#store" },
     ];
 
@@ -22,11 +22,10 @@ const Nav = () => {
             <nav className="nav">
                 <div className="logo">
                     <Fade
-                        className="animation"
                         cascade
                         direction="down"
-                        duration={800}
-                        delay={300}
+                        duration={400}
+                        triggerOnce={true}
                     >
                         <img src="/logo.webp" width={100} alt="" />
                     </Fade>
@@ -34,10 +33,9 @@ const Nav = () => {
                 <div className="logo">
                     <Fade
                         direction="down"
-                        duration={800}
-                        delay={1000}
-                        className="animation"
-                        triggerOnce
+                        duration={400}
+                        delay={200}
+                        triggerOnce={true}
                     >
                         <img src="/globe.gif" width={50} alt="" />
                     </Fade>
@@ -45,10 +43,10 @@ const Nav = () => {
                 <div className="bars">
                     <Fade
                         direction="down"
-                        duration={800}
-                        delay={1200}
+                        duration={400}
+                        delay={400}
                         className="animation"
-                        triggerOnce
+                        triggerOnce={true}
                     >
                         <h3
                             onClick={toggleMenu}
@@ -63,14 +61,16 @@ const Nav = () => {
                             toggle={toggleMenu}
                         />
                     </Fade>
+
+
                     <ul className={`menu ${isOpen ? "open" : ""}`}>
                         {navigation.map((nav, index) => (
                             <Fade
                                 key={nav.position}
-                                cascade
                                 direction="down"
-                                duration={500}
-                                delay={index * 300}
+                                duration={400}
+
+                                delay={index * 100}
                                 triggerOnce={!isOpen}
                             >
                                 <li>
@@ -81,6 +81,7 @@ const Nav = () => {
                                 </li>
                             </Fade>
                         ))}
+
                     </ul>
                 </div>
             </nav>

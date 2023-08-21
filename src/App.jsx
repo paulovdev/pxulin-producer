@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import PreLoader from './components/PreLoader/PreLoader'
 import Nav from './components/Nav/Nav'
 import Home from './pages/home/Home'
-import LogoSlide from './components/LogoSlide/LogoSlide'
 import About from './pages/about/About'
 import Music from './pages/music/Music'
 import Store from './pages/store/Store'
@@ -27,7 +26,6 @@ const App = () => {
 
       <Nav />
       <Home />
-      <LogoSlide />
       <About />
       <Music />
       <Store />
