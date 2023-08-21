@@ -4,7 +4,7 @@ import { Sling as Hamburger } from "hamburger-react";
 import { Fade } from "react-awesome-reveal";
 
 const Nav = () => {
-    const [isOpen, setOpen] = useState(true);
+    const [isOpen, setOpen] = useState(false);
 
     const navigation = [
         { position: "1.", title: "home", href: "#home" },
