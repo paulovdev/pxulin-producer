@@ -15,30 +15,30 @@ const Music = () => {
       <main className="grid-layout">
         <div className="music-content">
           <Fade className="animation" cascade direction="down" duration={400} triggerOnce>
-            <h1>RELEASES</h1>
+            <h1>MUSIC</h1>
           </Fade>
         </div>
 
-        <div className="slider">
+        <ul className="slider">
 
           {releases.map((release, index) => (
-            <Fade
-              key={index}
-              className="animation"
-              cascade
-              direction="down"
-              duration={400}
-              triggerOnce
-              delay={index * 100}
-            >
-              <div className="photo-music">
-                <img src={release.image} alt="" />
-                <h1>{release.title}</h1>
-              </div>
-            </Fade>
+            /*             <Fade
+                          key={index}
+            
+                          cascade
+                          direction="down"
+                          duration={400}
+                          triggerOnce
+                          delay={index * 100}
+                        > */
+            <li className="photo-music">
+              <img src={release.image} alt="" />
+
+            </li>
+            /*   </Fade> */
           ))}
 
-        </div>
+        </ul>
 
 
       </main>

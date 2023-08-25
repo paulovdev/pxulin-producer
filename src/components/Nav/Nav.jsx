@@ -9,7 +9,7 @@ const Nav = () => {
     const navigation = [
         { position: "1.", title: "home", href: "#home" },
         { position: "2.", title: "about", href: "#about" },
-        { position: "3.", title: "releases", href: "#music" },
+        { position: "3.", title: "music", href: "#music" },
         { position: "4.", title: "store", href: "#store" },
     ];
 

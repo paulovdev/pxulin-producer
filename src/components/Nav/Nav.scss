@@ -11,9 +11,6 @@ header {
 }
 
 
-.removeBlend {
-    mix-blend-mode: normal;
-}
 
 
 nav {
@@ -25,23 +22,72 @@ nav {
     align-items: center;
     justify-content: space-between;
 
-
-    .logo {
-        z-index: 9999;
-        mix-blend-mode: exclusion;
-    }
-
-
-    .bars {
-        display: flex;
-        align-items: center;
-        user-select: none;
-    }
-
-
     h3 {
         cursor: pointer;
         letter-spacing: 2px;
+    }
+
+    ul {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 0;
+        height: 100vh;
+        background: #ffffff url('/public/background-white.webp');
+        background-size: cover;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+
+        overflow: hidden;
+        z-index: 9998;
+        transition: width 0.1s;
+
+        @media (max-width: 1300px) {
+            a {
+                font-size: 3rem;
+            }
+        }
+
+        li {
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            font-size: 3rem;
+            font-weight: 900;
+            color: #1e1e1e;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+
+
+            a {
+                color: #1e1e1e;
+                transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            }
+
+
+            span {
+                color: #1e1e1e;
+                font-size: 1rem;
+            }
+
+            &:hover {
+                a {
+                    font-size: 3.5rem;
+                    background: #111111 url('/public/grain-background.webp');
+                    background-size: cover;
+                }
+
+                a,
+                span {
+                    background: #111111 url('/public/grain-background.webp');
+                    background-size: cover;
+                    color: #ffffff;
+                    padding: 1rem;
+                    border-radius: 5rem;
+                }
+            }
+        }
     }
 }
 
@@ -50,69 +96,22 @@ nav {
     z-index: 99999;
 }
 
+.logo {
+    z-index: 9999;
+    mix-blend-mode: exclusion;
+}
 
-ul {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 0;
-    height: 100vh;
-    background: #ffffff url('/public/background-white.webp');
-    background-size: cover;
 
+.bars {
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 3rem;
-
-    overflow: hidden;
-    z-index: 9998;
-    transition: width 0.1s;
-
-    @media (max-width: 1300px) {
-        a {
-            font-size: 3rem;
-        }
-    }
-
-    li {
-        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        font-size: 3rem;
-        font-weight: 900;
-        color: #1e1e1e;
-        letter-spacing: 5px;
-        text-transform: uppercase;
-
-
-        a {
-            color: #1e1e1e;
-            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-        }
-
-
-        span {
-            color: #1e1e1e;
-            font-size: 1rem;
-        }
-
-        &:hover {
-            a {
-                font-size: 3.5rem;
-                background: #111111 url('/public/grain-background.webp');
-                background-size: cover;
-            }
-
-            a,
-            span {
-                background: #111111 url('/public/grain-background.webp');
-                background-size: cover;
-                color: #ffffff;
-                padding: 1rem;
-                border-radius: 5rem;
-            }
-        }
-    }
+    user-select: none;
 }
+
+.removeBlend {
+    mix-blend-mode: normal;
+}
+
 
 .open {
     @media (max-width: 1200px) {
