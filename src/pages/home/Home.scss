@@ -5,7 +5,6 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    text-align: center;
     padding: 0 25px;
     min-height: 100vh;
 
@@ -25,14 +24,12 @@
 }
 
 .home-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
     flex-direction: column;
     color: #ffffff;
 
     h1 {
-        font-size: 3.5rem;
+        font-size: 10rem;
         color: #ffffff;
         letter-spacing: 2px;
         text-transform: uppercase;
@@ -44,6 +41,14 @@
         color: #ffffff;
         letter-spacing: 2px;
         text-transform: uppercase;
+        margin-bottom: 1rem;
+        font-family: 'Hanson-Bold', sans-serif;
+    }
+
+    .border-bottom {
+        height: 5px;
+        width: 80px;
+        background-color: #e0e0e0;
         margin-bottom: 1rem;
     }
 
@@ -69,8 +74,9 @@
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     top: 160px;
+    gap: 1rem;
 
     @media (max-width: 1450px) {
         justify-content: center;
@@ -79,7 +85,7 @@
     ul {
         padding: 1rem;
 
-        background-color: #11111166;
+        background-color: #1111116d;
         border: 1px solid #757575;
         border-radius: 5rem;
 
@@ -87,17 +93,22 @@
         gap: 2rem;
 
         a {
-            padding: 0.6rem 1.5rem;
+            padding: 0 1.5rem;
             border-radius: 5rem;
             font-size: 0.8rem;
             color: #ffffff;
             letter-spacing: 2px;
             text-transform: uppercase;
+            transition: all 0.5s;
+
+            &:hover {
+                text-shadow: 2px 2px 2px #ffffff90;
+            }
         }
 
         @media (max-width: 1650px) {
             a {
-                padding: 0.6rem 0.5rem;
+                padding: 0 0.5rem;
             }
         }
 
@@ -111,7 +122,7 @@
         align-items: center;
         justify-content: center;
 
-        background-color: #11111166;
+        background-color: #1111116d;
         border: 1px solid #ffffff;
         border-radius: 100%;
 
@@ -122,33 +133,4 @@
             padding: 3.5rem;
         }
     }
-}
-
-.check-out {
-    padding: 1rem;
-
-    background-color: #11111166;
-    border: 1px solid #757575;
-    border-radius: 5rem;
-
-    @media (max-width: 992px) {
-        display: none;
-    }
-
-    a {
-        padding: 0.6rem 1.5rem;
-        border-radius: 5rem;
-        font-size: 0.8rem;
-        color: #ffffff;
-        letter-spacing: 2px;
-        text-transform: uppercase;
-
-        @media (max-width: 1650px) {
-            padding: 0.6rem 0.5rem;
-        }
-
-
-    }
-
-
 }

@@ -20,6 +20,7 @@ nav {
     align-items: center;
     justify-content: space-between;
 
+
     h3 {
         cursor: pointer;
         letter-spacing: 2px;
@@ -97,6 +98,7 @@ nav {
 .logo {
     z-index: 9999;
     mix-blend-mode: exclusion;
+    background-color: #1111116d;
 }
 
 
@@ -104,6 +106,7 @@ nav {
     display: flex;
     align-items: center;
     user-select: none;
+    background-color: #1111116d;
 }
 
 .removeBlend {

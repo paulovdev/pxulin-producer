@@ -28,9 +28,6 @@ const Store = () => {
   return (
     <section id="store">
       <main className="grid-layout">
-        <div className="background">
-          <h1>MERCH</h1>
-        </div>
         <div className="store-content">
           <Fade
             className="animation"

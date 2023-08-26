@@ -5,6 +5,7 @@ import Home from './pages/home/Home'
 import About from './pages/about/About'
 import Music from './pages/music/Music'
 import Store from './pages/store/Store'
+import Footer from './components/Footer/Footer';
 
 const App = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -28,6 +29,7 @@ const App = () => {
       <About />
       <Music />
       <Store />
+      <Footer />
     </div>)
 }
 

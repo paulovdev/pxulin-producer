@@ -1,0 +1,27 @@
+footer {
+    background: #111111 url('/public/background.webp');
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+
+    p {
+        font-size: 1rem;
+        color: #ffffff;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        font-family: 'Hanson-Bold', sans-serif;
+    }
+
+    svg {
+        height: 50px;
+        width: 50px;
+        background-color: #1e1e1e89;
+        border: 1px solid #ffffff97;
+        border-radius: 1rem;
+        padding: 1rem;
+        cursor: pointer;
+    }
+
+}
