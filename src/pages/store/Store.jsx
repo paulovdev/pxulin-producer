@@ -36,7 +36,7 @@ const Store = () => {
             duration={800}
             triggerOnce
           >
-            <h1>MERCH</h1>
+            <h1>MERCH 店鋪</h1>
             <input
               type="text"
               placeholder="Search"

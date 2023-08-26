@@ -6,6 +6,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    text-align: center;
     padding: 0 25px;
     min-height: 100vh;
     border-bottom: 1px solid #ffffff4a;
@@ -13,11 +14,6 @@
     @media (max-width:992px) {
         padding: 0 10px;
     }
-
-    @media (max-width:768px) {
-        text-align: center;
-    }
-
 }
 
 .home-content {
@@ -29,64 +25,66 @@
 
     h1 {
         font-size: 3.5rem;
-        font-weight: 900;
         color: #ffffff;
         letter-spacing: 2px;
         text-transform: uppercase;
         margin-bottom: 1rem;
-
-        @media (max-width: 1300px) {
-            font-size: 2.5rem;
-        }
-
-        @media (max-width: 992px) {
-            font-size: 2.5rem;
-        }
-
-        @media (max-width: 768px) {
-            font-size: 2rem;
-        }
     }
 
     p {
-        font-size: 1rem;
-        line-height: 180%;
-        letter-spacing: 0.24px;
-        font-weight: 600;
-        margin-bottom: 1rem;
+        font-size: 2.5rem;
         color: #ffffff;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+    }
 
-        @media (max-width:1250px) {
-            max-width: 100%;
+    @media (max-width: 1250px) {
+
+        h1,
+        p {
+            font-size: 2.5rem;
         }
     }
 
+    @media (max-width: 768px) {
+
+        h1,
+        p {
+            font-size: 1.5rem;
+        }
+    }
 }
 
 .home-bottom-content {
-    h1 {
-        font-size: 1rem;
-        font-weight: 900;
-        color: #ffffff;
-        letter-spacing: 2px;
-        text-transform: uppercase;
-        margin-bottom: 1rem;
-    }
-
-    a {
-        font-size: 1rem;
-        font-weight: 900;
-        color: #ffffff;
-        letter-spacing: 2px;
-        text-transform: uppercase;
-        margin-bottom: 1rem;
-    }
-}
-
-.arrow {
     position: relative;
-    top: 150px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+    top: 160px;
+
+    a {
+        padding: 0.6rem 1rem;
+        border-radius: 5rem;
+        font-size: 1rem;
+        font-weight: 900;
+        color: #ffffff;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+
+    .arrow {
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        svg {
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            padding: 2rem;
+            border: 1px solid #ffffff;
+        }
+    }
 }

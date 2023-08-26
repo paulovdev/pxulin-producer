@@ -15,10 +15,6 @@
   font-family: 'Hanson-Bold', sans-serif;
 }
 
-p {
-  font-family: 'Montserrat', sans-serif;
-}
-
 html {
   scroll-behavior: smooth;
 }
@@ -42,15 +38,14 @@ body {
 
 ::selection {
   background-color: #ffffff;
-  color: #ffffff;
+  color: #000000;
 }
 
 ::-webkit-scrollbar {
   width: 5px;
-
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #ffffff;
+  background-color: #757575;
   border-radius: 10px;
 }

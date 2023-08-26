@@ -5,10 +5,10 @@ import { Fade } from 'react-awesome-reveal';
 const About = () => {
     return (
         <section id='about'>
-            <main className="text-content">
-                <div className="text-content-wrapper">
+            <main className="grid-layout">
+                <div className="text-content">
                     <Fade cascade direction='down' duration={400} triggerOnce>
-                        <h1>ABOUT</h1>
+                        <h1>ABOUT 關於</h1>
                         <p>
                             Pxulin is a music artist who has released a variety of tracks, albums, and playlists on SoundCloud. They have collaborated with other artists such as Lvcifer, Marty Menning, and Grvnnek, and have produced drum kits such as the "Infernal Drum Kit" and the "Invocation Drum Kit Vol. 1".
                         </p>
@@ -19,8 +19,6 @@ const About = () => {
                             Pxulin's music can be streamed for free on SoundCloud, both on desktop and mobile devices. They are a talented artist who is constantly creating new and exciting music, and I highly recommend checking them out.
                         </p>
                     </Fade>
-                </div>
-                <div className="about-photo-content ">
                 </div>
             </main>
         </section>

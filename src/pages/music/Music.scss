@@ -8,7 +8,6 @@
 
     @media (max-width:992px) {
         padding: 50px 10px;
-
     }
 }
 
@@ -46,43 +45,69 @@
     }
 }
 
+
+
 .slider {
+    position: relative;
+    display: inline-block;
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
     gap: 1rem;
 
-    .photo-music {
+    .photo-music-after {
         width: 100%;
         display: flex;
-        flex-wrap: wrap;
         justify-content: center;
         align-items: center;
 
         img {
             max-width: 400px;
+            border-radius: 1rem;
+            transition: opacity 0.3s ease-in-out;
         }
-    }
 
-    @media (max-width: 768px) {
-        display: flex;
-        overflow-x: scroll;
-        scroll-snap-type: x mandatory;
-        width: 100%;
-        flex-wrap: nowrap;
+        .logo-overlay {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
 
-        .photo-music {
-            flex: 0 0 auto;
-            width: 100%;
-            white-space: nowrap;
+            svg {
+                background-color: #1e1e1e;
+                padding: 0.5rem;
+                border-radius: 50%;
+                cursor: pointer;
+                transition: 0.5s;
 
+                &:hover {
+                    transform: scale(1.2);
+                }
+            }
+        }
+
+        &:hover {
             img {
-                max-width: 900px;
-                height: auto;
-                object-fit: cover;
-                vertical-align: top;
+                opacity: 0.5;
+            }
 
-                @media (max-width: 768px) {
+            .logo-overlay {
+                opacity: 1;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .photo-music-after {
+                flex: 0 0 auto;
+                width: 100%;
+                white-space: nowrap;
+
+                img {
+                    scroll-snap-align: center;
                     width: 100%;
                 }
             }

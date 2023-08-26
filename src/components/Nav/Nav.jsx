@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Nav.scss";
-import { Sling as Hamburger } from "hamburger-react";
+import { Cross as Hamburger } from 'hamburger-react'
 import { Fade } from "react-awesome-reveal";
 
 const Nav = () => {
@@ -10,7 +10,7 @@ const Nav = () => {
         { position: "1.", title: "home", href: "#home" },
         { position: "2.", title: "about", href: "#about" },
         { position: "3.", title: "music", href: "#music" },
-        { position: "4.", title: "store", href: "#store" },
+        { position: "4.", title: "merch", href: "#store" },
     ];
 
     const toggleMenu = () => {
@@ -57,6 +57,7 @@ const Nav = () => {
                         <Hamburger
                             color={isOpen ? "#000" : "#fff"}
                             size={30}
+                            duration={0.5}
                             toggled={isOpen}
                             toggle={toggleMenu}
                         />
