@@ -15,8 +15,11 @@ const Music = () => {
   return (
     <section id="music">
       <main className="grid-layout">
+        <div className="music">
+          <h1>MUSIC</h1>
+        </div>
         <div className="music-content">
-          <Fade className="animation" cascade direction="down" duration={400} triggerOnce>
+          <Fade className="animation" cascade direction="down" duration={800} triggerOnce>
             <h1>MUSIC 音樂</h1>
           </Fade>
         </div>
@@ -29,7 +32,7 @@ const Music = () => {
 
               cascade
               direction="down"
-              duration={400}
+              duration={800}
               triggerOnce
               delay={index * 100}
             >

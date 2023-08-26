@@ -23,7 +23,6 @@ const App = () => {
     (<PreLoader />)
     :
     (<div>
-
       <Nav />
       <Home />
       <About />

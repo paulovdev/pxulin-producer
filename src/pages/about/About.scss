@@ -23,6 +23,8 @@
 
 }
 
+
+
 .text-content {
     width: 100%;
     padding: 1rem;
@@ -31,6 +33,7 @@
     justify-content: center;
     flex-direction: column;
     text-align: center;
+
 
     @media (max-width: 992px) {
         width: 100%;

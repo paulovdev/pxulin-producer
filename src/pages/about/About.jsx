@@ -6,8 +6,11 @@ const About = () => {
     return (
         <section id='about'>
             <main className="grid-layout">
+                <div className="background">
+                    <h1>ABOUT</h1>
+                </div>
                 <div className="text-content">
-                    <Fade cascade direction='down' duration={400} triggerOnce>
+                    <Fade cascade direction='down' duration={800} triggerOnce>
                         <h1>ABOUT 關於</h1>
                         <p>
                             Pxulin is a music artist who has released a variety of tracks, albums, and playlists on SoundCloud. They have collaborated with other artists such as Lvcifer, Marty Menning, and Grvnnek, and have produced drum kits such as the "Infernal Drum Kit" and the "Invocation Drum Kit Vol. 1".
