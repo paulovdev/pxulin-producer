@@ -78,15 +78,15 @@
             transition: opacity 0.3s ease-in-out;
 
             svg {
-                background-color: #1e1e1e;
                 padding: 0.5rem;
                 border-radius: 50%;
                 cursor: pointer;
                 transition: 0.5s;
+                font-size: 3.5rem;
+                background: url('/public/grain-background.webp');
+                background-size: contain;
+                transform: scale(1.2);
 
-                &:hover {
-                    transform: scale(1.2);
-                }
             }
         }
 

@@ -8,7 +8,9 @@ const Home = () => {
   return (
     <section id="home">
       <main className="grid-layout">
-        <div className="home-background"></div>
+
+        <div class="home-background"></div>
+
         <div className="home-content">
           <Fade
             cascade
@@ -16,7 +18,7 @@ const Home = () => {
             duration={800}
             delay={600}
             triggerOnce>
-            <h1>
+            <h1 id="pxulin">
               男人 pxulin 人男
             </h1>
             <p>

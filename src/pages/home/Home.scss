@@ -8,7 +8,6 @@
     text-align: center;
     padding: 0 25px;
     min-height: 100vh;
-    border-bottom: 1px solid #ffffff4a;
 
     @media (max-width:992px) {
         padding: 0 10px;
@@ -17,7 +16,7 @@
     .home-background {
         position: absolute;
         inset: 0;
-        background: url('/public/grid.webp')no-repeat center;
+        background: url('/public/grid.png')no-repeat center;
         background-size: contain;
         opacity: 0.2;
         z-index: 0;
