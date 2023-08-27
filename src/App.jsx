@@ -3,7 +3,7 @@ import PreLoader from './components/PreLoader/PreLoader'
 import Nav from './components/Nav/Nav'
 import Home from './pages/home/Home'
 import About from './pages/about/About'
-import Music from './pages/music/Music'
+import Projects from './pages/projects/Projects'
 import Store from './pages/store/Store'
 import Footer from './components/Footer/Footer';
 
@@ -27,7 +27,7 @@ const App = () => {
       <Nav />
       <Home />
       <About />
-      <Music />
+      <Projects />
       <Store />
       <Footer />
     </div>)

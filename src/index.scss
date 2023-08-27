@@ -15,10 +15,6 @@
   font-family: 'Hanson-Bold', sans-serif;
 }
 
-p {
-  font-family: 'Montserrat', sans-serif;
-}
-
 html {
   scroll-behavior: smooth;
 }
@@ -28,10 +24,20 @@ body {
   overflow-x: hidden;
 }
 
+button {
+  background-color: none;
+  outline: none;
+  border: none;
+}
+
 .grid-layout {
-  max-width: 90%;
+  max-width: 70%;
   width: 100%;
   margin: 0 auto;
+
+  @media (max-width:768px) {
+    max-width: 90%;
+  }
 }
 
 .animation {

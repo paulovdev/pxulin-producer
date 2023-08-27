@@ -1,10 +1,11 @@
 footer {
-    background: #111111 url('/public/background.webp');
+    background: #121212;
     background-size: cover;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem;
+
+    padding: 15px 25px;
 
     p {
         font-size: 1rem;
@@ -17,9 +18,9 @@ footer {
     svg {
         height: 50px;
         width: 50px;
-        background-color: #1e1e1e89;
-        border: 1px solid #ffffff97;
-        border-radius: 1rem;
+        border: 1px solid #757575;
+        background-color: #2e2e2e25;
+        border-radius: 5rem;
         padding: 1rem;
         cursor: pointer;
     }

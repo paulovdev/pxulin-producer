@@ -1,7 +1,7 @@
 header {
     position: fixed;
     width: 100%;
-    padding: 30px 30px;
+    top: 0;
     mix-blend-mode: exclusion;
     z-index: 999999;
 
@@ -12,14 +12,17 @@ header {
 
 
 nav {
-    max-width: 90%;
-    width: 100%;
+    max-width: 70%;
     margin: 0 auto;
-    top: 0;
+
+    padding: 10px 25px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 
+    @media (max-width:768px) {
+        max-width: 100%;
+    }
 
     h3 {
         cursor: pointer;
@@ -32,8 +35,9 @@ nav {
         right: 0;
         width: 0;
         height: 100vh;
-        background: #ffffff url('/public/background-white.webp');
-        background-size: cover;
+
+        background: rgb(255, 255, 255);
+        background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(251, 251, 251, 1) 40%, rgba(235, 235, 235, 1) 59%, rgba(228, 228, 228, 1) 74%, rgba(232, 232, 232, 1) 100%);
 
         display: flex;
         align-items: center;
@@ -73,14 +77,12 @@ nav {
             &:hover {
                 a {
                     font-size: 3.5rem;
-                    background: #111111 url('/public/grain-background.webp');
-                    background-size: cover;
+                    background: #1e1e1e;
                 }
 
                 a,
                 span {
-                    background: #111111 url('/public/grain-background.webp');
-                    background-size: cover;
+                    background: #1e1e1e;
                     color: #ffffff;
                     padding: 1rem;
                     border-radius: 5rem;
@@ -98,7 +100,6 @@ nav {
 .logo {
     z-index: 9999;
     mix-blend-mode: exclusion;
-    background-color: #1111116d;
 }
 
 
@@ -106,7 +107,6 @@ nav {
     display: flex;
     align-items: center;
     user-select: none;
-    background-color: #1111116d;
 }
 
 .removeBlend {

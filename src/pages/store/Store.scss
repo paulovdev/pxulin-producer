@@ -1,6 +1,7 @@
 #store {
-    background: #ffffff url('/public/background-white.webp');
-    background-size: cover;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(251,251,251,1) 40%, rgba(235,235,235,1) 59%, rgba(228,228,228,1) 74%, rgba(232,232,232,1) 100%);
+    
     display: flex;
     justify-content: center;
     align-items: center;
