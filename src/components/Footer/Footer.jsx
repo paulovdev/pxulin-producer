@@ -4,8 +4,10 @@ import { AiOutlineArrowUp } from 'react-icons/ai'
 const Footer = () => {
     return (
         <footer>
-            <p>© 2023 PXULIN</p>
-            <AiOutlineArrowUp size={42} onClick={() => scrollTo({ top: 0 })} />
+            <section id='footer'>
+                <p>© 2023 PXULIN</p>
+                <AiOutlineArrowUp size={42} onClick={() => scrollTo({ top: 0 })} />
+            </section>
         </footer>
     )
 }

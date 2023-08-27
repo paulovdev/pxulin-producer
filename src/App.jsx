@@ -23,7 +23,7 @@ const App = () => {
     ?
     (<PreLoader />)
     :
-    (<div>
+    (<div className='container'>
       <Nav />
       <Home />
       <About />

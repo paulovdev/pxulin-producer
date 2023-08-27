@@ -1,0 +1,42 @@
+.arrows-content {
+    position: relative;
+    top: 35px;
+    mix-blend-mode: exclusion;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 1rem;
+
+    .arrow {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+
+        border: 1px solid #757575;
+        border-radius: 100%;
+        backdrop-filter: blur(150px);
+
+
+        svg {
+            border-radius: 100%;
+            height: 150px;
+            width: 150px;
+            padding: 3.5rem;
+            transition: transform 0.3s;
+        }
+    }
+
+    p {
+        max-width: 300px;
+        font-size: 0.8rem;
+        letter-spacing: 1px;
+        line-height: 150%;
+        color: #ffffff;
+        text-transform: uppercase;
+        transition: all 0.3s;
+
+        @media (max-width:1250px) {
+            max-width: 100%;
+        }
+    }
+}

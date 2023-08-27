@@ -1,6 +1,7 @@
 import React from "react";
 import "./Projects.scss";
 import { Fade } from "react-awesome-reveal";
+import { BsArrowDownShort, BsArrowUpShort } from "react-icons/bs";
 
 const releases = [
   { image: "/music/ph1.png", title: "CONVULSION" },
@@ -13,7 +14,6 @@ const Projects = () => {
   return (
     <section id="projects">
       <main className="grid-layout">
-
         <div className="projects-content">
           <Fade className="animation" cascade direction="down" duration={800} triggerOnce>
             <h1>Projects</h1>
@@ -45,6 +45,24 @@ const Projects = () => {
         ))}
 
       </ul>
+      <main className="grid-layout">
+        <div className="arrows-content">
+
+          <div className="arrow">
+
+            <a href="#about">
+              <BsArrowUpShort size={32} />
+            </a>
+          </div>
+
+          <div className="arrow">
+
+            <a href="#store">
+              <BsArrowDownShort size={32} />
+            </a>
+          </div>
+        </div>
+      </main>
     </section >
   );
 };

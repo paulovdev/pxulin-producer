@@ -1,22 +1,12 @@
 import React, { useState } from "react";
 import "./Store.scss";
 import { Fade } from "react-awesome-reveal";
+import { BsArrowDownShort, BsArrowUpShort } from "react-icons/bs";
+
 const Store = () => {
   const products = [
-    {
-      product: "SWEATSHIRT ANGELS",
-      image: "/loja/angels.webp",
-      price: "£50.00",
-    },
     { product: "COAT KILLER", image: "/loja/killer.webp ", price: "£35.00" },
     { product: "SHIRT SKULL", image: "/loja/skull.webp ", price: "£25.00" },
-    {
-      product: "SWEATSHIRT PXULIN",
-      image: "/loja/px-mol.webp ",
-      price: "£50.00",
-    },
-    { product: "SHIRT PXULIN", image: "/loja/px-sh.webp ", price: "£25.00" },
-    { product: "SHIRT PXULIN PEACE", image: "/loja/px.webp ", price: "£25.00" },
   ];
 
   const [searchTerm, setSearchTerm] = useState("");
@@ -36,7 +26,7 @@ const Store = () => {
             duration={800}
             triggerOnce
           >
-            <h1>MERCH 店鋪</h1>
+            <h1>MERCH</h1>
             <input
               type="text"
               placeholder="Search"
@@ -70,6 +60,21 @@ const Store = () => {
                 </Fade>
               ))
             )}
+          </div>
+        </div>
+        <div className="arrows-content">
+          <div className="arrow">
+
+            <a href="#home">
+              <BsArrowUpShort size={32} />
+            </a>
+          </div>
+
+          <div className="arrow">
+
+            <a href="#projects">
+              < BsArrowDownShort size={32} />
+            </a>
           </div>
         </div>
       </main>

@@ -20,16 +20,7 @@ const Nav = () => {
     return (
         <header className={`header ${isOpen ? "removeBlend" : ""}`}>
             <nav className="nav">
-                <div className="logo">
-                    <Fade
-                        cascade
-                        direction="down"
-                        duration={400}
-                        triggerOnce={true}
-                    >
-                        <h1>PAULO V.</h1>
-                    </Fade>
-                </div>
+
                 <div className="logo">
                     <Fade
                         direction="down"
@@ -40,6 +31,7 @@ const Nav = () => {
                         <img src="/globe.gif" width={50} alt="" />
                     </Fade>
                 </div>
+                
                 <div className="bars">
                     <Fade
                         direction="down"

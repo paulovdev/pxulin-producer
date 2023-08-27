@@ -1,12 +1,12 @@
 #store {
-    background: rgb(255,255,255);
-    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(251,251,251,1) 40%, rgba(235,235,235,1) 59%, rgba(228,228,228,1) 74%, rgba(232,232,232,1) 100%);
-    
+    background: rgb(255, 255, 255);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(251, 251, 251, 1) 40%, rgba(235, 235, 235, 1) 59%, rgba(228, 228, 228, 1) 74%, rgba(232, 232, 232, 1) 100%);
+
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 50px 25px;
-    min-height: auto;
+    min-height: 100vh;
 
     @media (max-width:992px) {
         padding: 50px 10px;
