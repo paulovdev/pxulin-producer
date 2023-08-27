@@ -69,13 +69,6 @@ const Store = () => {
               <BsArrowUpShort size={32} />
             </a>
           </div>
-
-          <div className="arrow">
-
-            <a href="#projects">
-              < BsArrowDownShort size={32} />
-            </a>
-          </div>
         </div>
       </main>
     </section>
