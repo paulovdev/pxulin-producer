@@ -31,8 +31,8 @@ const Nav = () => {
                         <img src="/globe.gif" width={50} alt="" />
                     </Fade>
                 </div>
-                
-                <div className="bars">
+
+                <div className="bars" onClick={toggleMenu}>
                     <Fade
                         direction="down"
                         duration={400}
@@ -40,15 +40,9 @@ const Nav = () => {
                         className="animation"
                         triggerOnce={true}
                     >
-                        <h3
-                            onClick={toggleMenu}
-                            style={{ color: isOpen ? "#000" : "#fff" }}
-                        >
-                            MENU
-                        </h3>
                         <Hamburger
                             color={isOpen ? "#000" : "#fff"}
-                            size={30}
+                            size={38}
                             duration={0.5}
                             toggled={isOpen}
                             toggle={toggleMenu}

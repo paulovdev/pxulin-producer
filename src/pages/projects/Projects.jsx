@@ -17,7 +17,7 @@ const Projects = () => {
         <div className="projects-content">
           <Fade className="animation" cascade direction="down" duration={800} triggerOnce>
             <h1>Projects</h1>
-            <p>select works</p>
+            <h3>select works.</h3>
           </Fade>
         </div>
         <ul className="slider">
