@@ -7,7 +7,7 @@
     align-items: center;
     flex-direction: column;
     padding: 0 25px;
-    min-height: 100vh;
+    min-height: 70vh;
 
     @media (max-width:992px) {
         padding: 0 10px;
@@ -58,9 +58,10 @@
         align-items: center;
 
         img {
-            max-width: 500px;
+            max-width: 370px;
             height: 300px;
             border-radius: 1rem;
+
             transition: opacity 0.3s ease-in-out;
         }
 

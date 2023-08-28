@@ -8,8 +8,6 @@ const Home = () => {
   return (
     <section id="home">
       <main className="grid-layout">
-        <div className="home-background">
-        </div>
         <div className="home-content">
           <Fade
             cascade
@@ -17,19 +15,7 @@ const Home = () => {
             duration={800}
             delay={600}
             triggerOnce>
-            <div className="text-wrapper">
-              <h1 style={{
-                color: "transparent",
-                WebkitTextStroke: " 1px #fff",
-                fontSize: "3rem"
-              }}>pxulin pxulin </h1>
-              <h1 style={{
-                color: "transparent",
-                WebkitTextStroke: " 1px #fff",
-                fontSize: "3rem"
-              }}>pxulin pxulin </h1>
-            </div>
-            <h1>pxulin.</h1>
+            <h1>paulo vitor.</h1>
             <p>front-end developer and UI designer</p>
             <div className='border-bottom'></div>
           </Fade>
@@ -44,8 +30,9 @@ const Home = () => {
           delay={1200}
           triggerOnce
         >
-          <div className="arrows-content">
 
+          <div className="arrows-content">
+            <p>scroll down</p>
             <div className="arrow">
               <a href="#about">
                 <BsArrowDownShort size={32} />
@@ -68,6 +55,7 @@ const Home = () => {
               </ul>
             </Fade>
           </div>
+
         </Fade>
 
       </main>

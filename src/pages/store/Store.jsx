@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./Store.scss";
 import { Fade } from "react-awesome-reveal";
-import { BsArrowDownShort, BsArrowUpShort } from "react-icons/bs";
 
 const Store = () => {
   const products = [
@@ -60,14 +59,6 @@ const Store = () => {
                 </Fade>
               ))
             )}
-          </div>
-        </div>
-        <div className="arrows-content">
-          <div className="arrow">
-
-            <a href="#home">
-              <BsArrowUpShort size={32} />
-            </a>
           </div>
         </div>
       </main>

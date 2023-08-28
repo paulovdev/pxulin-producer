@@ -1,11 +1,16 @@
 .arrows-content {
     position: relative;
-    top: 35px;
     mix-blend-mode: exclusion;
     display: flex;
     align-items: center;
     justify-content: end;
     gap: 1rem;
+
+    &:hover {
+        svg {
+            transform: translateY(10px);
+        }
+    }
 
     .arrow {
         display: inline-flex;
@@ -19,9 +24,9 @@
 
         svg {
             border-radius: 100%;
-            height: 150px;
-            width: 150px;
-            padding: 3.5rem;
+            height: 120px;
+            width: 120px;
+            padding: 2.5rem;
             transition: transform 0.3s;
         }
     }
