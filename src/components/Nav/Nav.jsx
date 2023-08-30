@@ -7,10 +7,9 @@ const Nav = () => {
     const [isOpen, setOpen] = useState(false);
 
     const navigation = [
-        { position: "1.", title: "home", href: "#home" },
-        { position: "2.", title: "about", href: "#about" },
-        { position: "3.", title: "projects", href: "#projects" },
-        { position: "4.", title: "merch", href: "#store" },
+        { position: "1.", title: "Home", href: "#home" },
+        { position: "2.", title: "About", href: "#about" },
+        { position: "3.", title: "Projects", href: "#projects" },
     ];
 
     const toggleMenu = () => {
@@ -41,7 +40,6 @@ const Nav = () => {
                         triggerOnce={true}
                     >
                         <Hamburger
-                            color={isOpen ? "#000" : "#fff"}
                             size={38}
                             duration={0.5}
                             toggled={isOpen}
@@ -60,19 +58,21 @@ const Nav = () => {
                                 delay={index * 100}
                                 triggerOnce={!isOpen}
                             >
+
                                 <li>
                                     <span>{nav.position}</span>
                                     <a href={nav.href} onClick={toggleMenu}>
                                         {nav.title}
                                     </a>
                                 </li>
+
                             </Fade>
                         ))}
-
+                        <h1>a;slodk</h1>
                     </ul>
                 </div>
             </nav>
-        </header>
+        </header >
     );
 };
 

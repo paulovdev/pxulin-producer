@@ -4,7 +4,6 @@ import Nav from './components/Nav/Nav'
 import Home from './pages/home/Home'
 import About from './pages/about/About'
 import Projects from './pages/projects/Projects'
-import Store from './pages/store/Store'
 import Footer from './components/Footer/Footer';
 
 const App = () => {
@@ -28,7 +27,6 @@ const App = () => {
       <Home />
       <About />
       <Projects />
-      <Store />
       <Footer />
     </div>)
 }
