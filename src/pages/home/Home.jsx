@@ -18,8 +18,9 @@ const Home = () => {
             delay={600}
             triggerOnce
           >
-            <h1>FRONT-END <span>developer</span>  <span>and</span></h1>
-            <h1>UX/UI  <span>designer</span></h1>
+            <h1>FRONT-END <span>developer</span></h1>
+            <h1>UX/UI <span>designer</span></h1>
+            <p>© 2023 PXULIN</p>
           </Fade>
         </div>
 
@@ -36,6 +37,7 @@ const Home = () => {
               <a href="#about">
                 <BsArrowDown size={32} fill="#000" />
               </a>
+
             </div>
           </div>
 

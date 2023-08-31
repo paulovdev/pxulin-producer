@@ -9,16 +9,23 @@
     }
 
     .text-center {
-        padding: 150px 0;
+        padding: 50px 0;
         text-align: center;
 
         h1,
         span {
-
             font-size: 7rem;
             color: $primary-color;
             letter-spacing: 1px;
             transition: all 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+
+            @media (max-width: 1200px) {
+                font-size: 4rem;
+            }
+
+            @media (max-width: 768px) {
+                font-size: 3rem;
+            }
         }
 
         span {
@@ -47,6 +54,10 @@
             width: 70%;
             border-radius: 1rem;
             cursor: pointer;
+
+            @media (max-width: 768px) {
+                width: 100%;
+            }
         }
     }
 }

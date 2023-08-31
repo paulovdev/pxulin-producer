@@ -3,10 +3,9 @@ import './About.scss';
 import '../../styles/Globals.scss';
 import { Fade } from 'react-awesome-reveal';
 
-
 const About = () => {
     return (
-        <section id='about'>
+        <section id='about' name="about">
             <main className="grid-layout">
                 <div className="text-content">
                     <Fade
@@ -14,21 +13,18 @@ const About = () => {
                         direction='down'
                         duration={800}
                         triggerOnce>
-                        <h1>ABOUT</h1>
+                        <h1>About me:</h1>
                         <p>
-                            My name is Paulo Vitor, I have 20 years old.
-                            I am a Frontend developer who is passionate about developing beautiful and joyful digital experiences. Besides Programming, I love design, music and travelling.
+                            My name is Paulo Vitor, I'm 20 years old. I'm a front-end developer with a passion for creating beautiful and joyful digital experiences. In addition to programming, I love design, music and travel.
                         </p>
                         <div className="social-list">
                             <Fade
                                 cascade
                                 direction="right"
                                 duration={800}
-                                delay={1600}
                                 triggerOnce
                             >
                                 <ul>
-
                                     <li><a href="#projects">my projects</a></li>
                                     <li><a href="#home">go to home</a></li>
                                 </ul>

@@ -1,56 +1,40 @@
 @import '../../index.scss';
 
 #home {
-    padding: 0 25px;
     min-height: 100vh;
     background-color: #f1f1f1;
-}
 
-.home-header {
-    flex-direction: column;
+    .home-header {
+        flex-direction: column;
 
-    h1,
-    span {
-        font-size: 6rem;
-        color: $primary-color;
+        h1,
+        span {
+            font-size: 6rem;
+            color: $primary-color;
 
-        letter-spacing: 1px;
+            letter-spacing: 1px;
 
-        margin-bottom: 1rem;
-        transition: all 0.5s;
+            margin-bottom: 1rem;
+            transition: all 0.5s;
 
-        @media (max-width: 1450px) {
-            font-size: 5rem;
+            @media (max-width: 1450px) {
+                font-size: 5rem;
+            }
+
+            @media (max-width: 1200px) {
+                font-size: 4rem;
+            }
+
+            @media (max-width: 768px) {
+                font-size: 3rem;
+            }
         }
 
-        @media (max-width: 1200px) {
-            font-size: 4rem;
+        span {
+            font-weight: 400;
         }
 
-        @media (max-width: 768px) {
-            font-size: 3rem;
-        }
-    }
-
-    span {
-        font-weight: 400;
-    }
-}
-
-.social-list {
-    position: relative;
-    top: 50px;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1rem;
-
-    ul {
-        display: flex;
-        gap: 1rem;
-
-        a {
+        p {
             padding: 0 1rem;
             font-size: 0.8rem;
             font-weight: 900;
@@ -60,33 +44,50 @@
             text-transform: uppercase;
             transition: all 0.5s;
         }
-
-
     }
 
-    p {
-        padding: 0 1rem;
-        font-size: 0.8rem;
-        font-weight: 900;
-        color: $primary-color;
+    .social-list {
+        position: relative;
+        top: 50px;
 
-        letter-spacing: 1px;
-        text-transform: uppercase;
-        transition: all 0.5s;
-    }
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
 
-    @media (max-width: 1350px) {
-        flex-direction: column;
-        text-align: center;
+        ul {
+            display: flex;
+            gap: 1rem;
 
-        p {
-            max-width: 100%;
+            a {
+                padding: 0 1rem;
+                font-size: 0.8rem;
+                font-weight: 900;
+                color: $primary-color;
+
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                transition: all 0.5s;
+            }
+
+
         }
-    }
 
-    @media (max-width: 768px) {
-        flex-direction: column;
-        text-align: center;
-    }
 
+
+        @media (max-width: 1350px) {
+            flex-direction: column;
+            text-align: center;
+
+            p {
+                max-width: 100%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+            text-align: center;
+        }
+
+    }
 }
