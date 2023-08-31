@@ -19,12 +19,11 @@ section {
 }
 
 .grid-layout {
-    max-width: 85%;
-    width: 100%;
+    max-width: 70%;
     margin: 0 auto;
 
     @media (max-width:768px) {
-        max-width: 90%;
+        max-width: 100%;
     }
 }
 

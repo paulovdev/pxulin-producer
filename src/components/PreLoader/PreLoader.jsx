@@ -4,6 +4,7 @@ import { Fade } from 'react-awesome-reveal';
 
 const PreLoader = () => {
   const [visibleNumber, setVisibleNumber] = useState(0);
+  const [showWelcome, setShowWelcome] = useState(false);
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -11,17 +12,27 @@ const PreLoader = () => {
         setVisibleNumber(prevNumber => prevNumber + 1);
       } else {
         clearInterval(timer);
+        setTimeout(() => {
+          setShowWelcome(true);
+        }, 500); // 1 segundo de atraso
       }
     }, 20);
 
-    return () => clearInterval(timer);
+    return () => {
+      clearInterval(timer);
+      clearTimeout(); // Certifique-se de limpar o timeout ao desmontar o componente
+    };
   }, [visibleNumber]);
+
+  const transitionText = showWelcome ? 'Welcome' : `${visibleNumber}%`;
 
   return (
     <div className="preloader">
-        <div>
-          <h1 key={visibleNumber}>{visibleNumber}%</h1>
-        </div>
+      <div>
+        <Fade triggerOnce>
+          <h1>{transitionText}</h1>
+        </Fade>
+      </div>
     </div>
   );
 };

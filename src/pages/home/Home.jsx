@@ -2,7 +2,7 @@ import "./Home.scss";
 import '../../styles/Globals.scss';
 import '../../components/Arrows.scss';
 
-import { MdKeyboardArrowDown } from "react-icons/md";
+import { BsArrowDown } from "react-icons/bs";
 import { Fade } from "react-awesome-reveal";
 
 const Home = () => {
@@ -34,7 +34,7 @@ const Home = () => {
             <p>SCROLL DOWN</p>
             <div className="arrow">
               <a href="#about">
-                <MdKeyboardArrowDown size={32} fill="#000" />
+                <BsArrowDown size={32} fill="#000" />
               </a>
             </div>
           </div>
@@ -56,20 +56,6 @@ const Home = () => {
                 <li><a href="#">linkedin</a></li>
 
               </ul>
-            </Fade>
-
-            <Fade
-              cascade
-              direction="down"
-              className="animation"
-              duration={800}
-              delay={3300}
-              triggerOnce
-            >
-              <p>
-                I present to you my "external contents", dedicated spaces to share my music and games. Your presence is valued, so I cordially invite you to follow me on this journey. Here you'll have access to engaging melodies. For a unique experience, don't hesitate to explore the links below.
-              </p>
-
             </Fade>
           </div>
 

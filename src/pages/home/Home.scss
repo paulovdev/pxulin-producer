@@ -3,12 +3,7 @@
 #home {
     padding: 0 25px;
     min-height: 100vh;
-
-    border-bottom: 1px solid #d2d2d2;
-
-    @media (max-width: 768px) {
-        background-size: cover;
-    }
+    background-color: #f1f1f1;
 }
 
 .home-header {
@@ -16,7 +11,7 @@
 
     h1,
     span {
-        font-size: 7rem;
+        font-size: 6rem;
         color: $primary-color;
 
         letter-spacing: 1px;
@@ -48,14 +43,10 @@
 
     display: flex;
     align-items: center;
-    gap: 3rem;
+    justify-content: space-between;
+    gap: 1rem;
 
     ul {
-        padding: 0.5rem;
-
-        border: 1px solid $border-color;
-        border-radius: 5rem;
-
         display: flex;
         gap: 1rem;
 
@@ -68,24 +59,20 @@
             letter-spacing: 1px;
             text-transform: uppercase;
             transition: all 0.5s;
-
-            &:hover {
-                text-shadow: 2px 2px 2px$primary-color;
-            }
         }
 
 
     }
 
     p {
-        font-size: 1rem;
-        font-weight: 600;
-        max-width: 50%;
-        margin-bottom: 1rem;
-        letter-spacing: 1px;
-        line-height: 150%;
+        padding: 0 1rem;
+        font-size: 0.8rem;
+        font-weight: 900;
         color: $primary-color;
-        transition: all 0.3s;
+
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        transition: all 0.5s;
     }
 
     @media (max-width: 1350px) {
@@ -100,10 +87,6 @@
     @media (max-width: 768px) {
         flex-direction: column;
         text-align: center;
-
-        p {
-            display: none;
-        }
     }
 
 }

@@ -1,9 +1,11 @@
+@import '../../index.scss';
+
 .preloader {
     height: 100vh;
     height: calc(var(--vh, 1vh) * 100);
     width: 100%;
     margin: 0 auto;
-    background: #111111;
+    background-color: #f1f1f1;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -14,7 +16,6 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 1rem;
-    color: #fff;
     overflow: hidden !important;
 
     .preloader-content {
@@ -26,7 +27,7 @@
 
     h1 {
         font-size: 7rem;
-    
+        color: $primary-color;
         letter-spacing: 1px;
         text-transform: uppercase;
         margin-bottom: 1rem;

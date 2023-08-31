@@ -3,6 +3,7 @@ import PreLoader from './components/PreLoader/PreLoader'
 import Nav from './components/Nav/Nav'
 import Home from './pages/home/Home'
 import About from './pages/about/About'
+import AboutGfx from './pages/about/AboutGfx'
 import Projects from './pages/projects/Projects'
 import Footer from './components/Footer/Footer';
 
@@ -13,7 +14,7 @@ const App = () => {
     const fakeDataFetch = () => {
       setTimeout(() => {
         setIsLoading(false);
-      }, 3000);
+      }, 3500);
     };
 
     fakeDataFetch();
@@ -26,6 +27,7 @@ const App = () => {
       <Nav />
       <Home />
       <About />
+      <AboutGfx />
       <Projects />
       <Footer />
     </div>)
