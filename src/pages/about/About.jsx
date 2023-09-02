@@ -2,10 +2,12 @@ import React from 'react';
 import './About.scss';
 import '../../styles/Globals.scss';
 import { Fade } from 'react-awesome-reveal';
-
+import { FaHome } from 'react-icons/fa'
+import { BsArrowRightShort } from 'react-icons/bs'
+import { GoProject } from 'react-icons/go'
 const About = () => {
     return (
-        <section id='about' name="about">
+        <section id='about'>
             <main className="grid-layout">
                 <div className="text-content">
                     <Fade
@@ -13,23 +15,24 @@ const About = () => {
                         direction='down'
                         duration={800}
                         triggerOnce>
-                        <h1>About me:</h1>
+                        <h4>ABOUT</h4>
+                        <h1><span>a little </span>ABOUT ME</h1>
                         <p>
-                            My name is Paulo Vitor, I'm 20 years old. I'm a front-end developer with a passion for creating beautiful and joyful digital experiences. In addition to programming, I love design, music and travel.
+                            My name is <span>Paulo Vitor</span>, I'm 20 years old. I'm a <span>front-end developer</span> with a passion for creating beautiful and joyful digital experiences. In addition to programming, I love  <span> design</span>,  <span> games</span> and  <span> travel</span>.
                         </p>
-                        <div className="social-list">
+
+                        <p>changing the subject, I also really like <span> music</span> and making music so much that I have a <span>soundcloud</span> where I post them</p>
+                        <div className="go-home">
                             <Fade
                                 cascade
                                 direction="right"
                                 duration={800}
                                 triggerOnce
                             >
-                                <ul>
-                                    <li><a href="#projects">my projects</a></li>
-                                    <li><a href="#home">go to home</a></li>
-                                </ul>
+                                <a href="#home"><FaHome size={24} />go to home </a>
                             </Fade>
                         </div>
+
                     </Fade>
                 </div>
             </main>

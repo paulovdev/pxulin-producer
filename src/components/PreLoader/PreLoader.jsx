@@ -14,13 +14,13 @@ const PreLoader = () => {
         clearInterval(timer);
         setTimeout(() => {
           setShowWelcome(true);
-        }, 500); // 1 segundo de atraso
+        }, 500);
       }
     }, 20);
 
     return () => {
       clearInterval(timer);
-      clearTimeout(); // Certifique-se de limpar o timeout ao desmontar o componente
+      clearTimeout();
     };
   }, [visibleNumber]);
 

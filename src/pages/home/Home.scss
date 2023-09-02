@@ -3,9 +3,13 @@
 #home {
     min-height: 100vh;
     background-color: #f1f1f1;
+    padding: 0 25px;
+
+    @media (max-width:768px) {
+        padding: 0 30px;
+    }
 
     .home-header {
-        flex-direction: column;
 
         h1,
         span {
@@ -35,32 +39,52 @@
         }
 
         p {
-            padding: 0 1rem;
-            font-size: 0.8rem;
-            font-weight: 900;
+            font-size: 1rem;
+            font-weight: 500;
             color: $primary-color;
-
             letter-spacing: 1px;
-            text-transform: uppercase;
+
             transition: all 0.5s;
+        }
+    }
+
+    .middle-content {
+        position: relative;
+        mix-blend-mode: exclusion;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2rem;
+
+        .logos {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        @media (max-width:768px) {
+            flex-direction: column;
+
+            .logos {
+                order: 1;
+            }
+
         }
     }
 
     .social-list {
         position: relative;
         top: 50px;
-
         display: flex;
         align-items: center;
         justify-content: space-between;
-        gap: 1rem;
+        gap: 2rem;
 
         ul {
             display: flex;
-            gap: 1rem;
+            gap: 2rem;
 
             a {
-                padding: 0 1rem;
                 font-size: 0.8rem;
                 font-weight: 900;
                 color: $primary-color;
@@ -69,18 +93,21 @@
                 text-transform: uppercase;
                 transition: all 0.5s;
             }
-
-
         }
 
+        p {
+            max-width: 500px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            line-height: 180%;
+            color: $primary-color;
 
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            transition: all 0.5s;
 
-        @media (max-width: 1350px) {
-            flex-direction: column;
-            text-align: center;
-
-            p {
-                max-width: 100%;
+            @media (max-width:768px) {
+                display: none;
             }
         }
 

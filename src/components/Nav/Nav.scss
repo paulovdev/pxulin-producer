@@ -24,7 +24,7 @@ nav {
     justify-content: space-between;
 
     @media (max-width:768px) {
-        max-width: 100%;
+        max-width: 90%;
     }
 
     ul {
@@ -87,12 +87,6 @@ nav {
 .hamburger-react {
     z-index: 99999;
 }
-
-.logo {
-    z-index: 9999;
-    mix-blend-mode: exclusion;
-}
-
 
 .bars {
     display: flex;

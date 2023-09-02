@@ -20,15 +20,7 @@ const Nav = () => {
         <header className={`header ${isOpen ? "removeBlend" : ""}`}>
             <nav className="nav">
 
-                <div className="logo">
-                    <Fade
-                        direction="down"
-                        duration={400}
-                        delay={200}
-                        triggerOnce={true}
-                    >
-                        <img src="/globe.gif" width={50} alt="" />
-                    </Fade>
+                <div className="wrapper">
                 </div>
 
                 <div className="bars" onClick={toggleMenu}>

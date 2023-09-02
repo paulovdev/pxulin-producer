@@ -3,8 +3,14 @@ import './AboutGfx.scss';
 import '../../styles/Globals.scss';
 import { Fade } from 'react-awesome-reveal';
 
-
 const AboutGfx = () => {
+    const gfx = [
+        { title: "SICKER / 2022", image: "/gfx-1.png" },
+        { title: "AZ / 2023", image: "/gfx-2.png" },
+        { title: "BERZERK - HEARTLSS / 2023", image: "/gfx-3.jpg" },
+        { title: "AFTERMATH / 2020", image: "/gfx-4.jpg" },
+        { title: "NEVERMINE / 2022", image: "/gfx-5.png" },
+    ]
     return (
         <section id='aboutgfx'>
             <main className="grid-layout">
@@ -14,15 +20,22 @@ const AboutGfx = () => {
                         direction='down'
                         duration={800}
                         triggerOnce>
-                        <h1><span>I'm also a </span>GFX<span> designer</span> </h1>
+                        <h1><span>also a </span>GFX<span> designer</span> </h1>
 
                         <p>
                             I like to make gfx's for any kind of thing, mainly for singers, music producers etc.
                         </p>
+
                         <div className="group-text">
-                            <img src="/gfx-1.webp" alt="" />
-                            <img src="/gfx-2.webp" alt="" />
-                            <img src="/gfx-3.webp" alt="" />
+                            {gfx.map((item) => (
+                                <div className="gfx-content">
+
+                                    <h1>{item.title}</h1>
+
+
+                                    <img src={item.image} alt="" />
+                                </div>
+                            ))}
                         </div>
                     </Fade>
 
