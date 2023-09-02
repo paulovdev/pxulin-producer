@@ -25,8 +25,14 @@ const AboutGfx = () => {
                         <p>
                             I like to make gfx's for any kind of thing, mainly for singers, music producers etc.
                         </p>
+                    </Fade>
 
-                        <div className="group-text">
+                    <div className="group-text">
+                        <Fade
+                            cascade
+                            direction='left'
+                            duration={800}
+                            triggerOnce>
                             {gfx.map((item) => (
                                 <div className="gfx-content">
 
@@ -36,8 +42,9 @@ const AboutGfx = () => {
                                     <img src={item.image} alt="" />
                                 </div>
                             ))}
-                        </div>
-                    </Fade>
+                        </Fade>
+                    </div>
+
 
                 </div>
             </main>

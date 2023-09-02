@@ -69,7 +69,7 @@ const Home = () => {
 
               </ul>
 
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita accusantium atque ratione officiis veritatis fugiat doloremque culpa possimus. Qui, error eum mollitia quibusdam distinctio nobis repellat quia laudantium reiciendis quae.</p>
+              <p>All original content on the site, including texts, images, videos, graphics, music and any other creative work, is automatically copyrighted as soon as it is created and published on the site. Unauthorized use of this content may result in copyright infringement.</p>
             </Fade>
           </div>
 
