@@ -5,10 +5,10 @@ import { Fade } from 'react-awesome-reveal';
 
 const AboutGfx = () => {
     const gfx = [
-        { title: "SICKEE / 2022", image: "/gfx-1.png" },
-        { title: "AZ / 2023", image: "/gfx-2.png" },
-        { title: "BERZERK - HEARTLSS / 2023", image: "/gfx-3.jpg" },
-        { title: "NEVERMIND / 2022", image: "/gfx-4.png" },
+        { title: "SICKEE  ", year: "2022", image: "/gfx-1.png" },
+        { title: "AZ ", year: "2023", image: "/gfx-2.png" },
+        { title: "BERZERK - HEARTLSS ", year: "2019", image: "/gfx-3.jpg" },
+        { title: "NEVERMIND ", year: "2020", image: "/gfx-4.png" },
     ]
     return (
         <section id='aboutgfx'>
@@ -19,7 +19,7 @@ const AboutGfx = () => {
                         direction='down'
                         duration={800}
                         triggerOnce>
-                        <h1><span>also a </span>GFX<span> designer</span> </h1>
+                        <h1>ALSO A GFX DESIGNER</h1>
                         <p>
                             I like to make gfx's for any kind of thing, mainly for singers, music producers etc.
                         </p>
@@ -33,11 +33,13 @@ const AboutGfx = () => {
                             triggerOnce>
                             {gfx.map((item) => (
                                 <div className="gfx-content">
-
-                                    <h1>{item.title}</h1>
-
-
                                     <img src={item.image} alt="" />
+                                    <div className="gfx-text">
+                                        <a href="#">{item.title}</a>
+                                        <a href="#">{item.year}</a>
+                                        <a href="#">see full project</a>
+
+                                    </div>
                                 </div>
                             ))}
                         </Fade>

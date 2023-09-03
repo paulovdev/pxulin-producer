@@ -15,17 +15,10 @@ const Home = () => {
             duration={800}
             delay={600}
             triggerOnce
-          >
-            <div className="t-1">
-              <h1>WEB</h1>
-              <span>DEVELOPER</span>
-            </div>
-            <div className="t-2">
-              <h1>UX/UI  </h1>
-              <span>DESIGNER</span>
-            </div>
+          >  <p>© 2023 PXULIN</p>
+            <h1>WEB DEVELOPER</h1>
+            <span>UX/UI DESIGNER</span>
 
-            <p>© 2023 PXULIN</p>
           </Fade>
         </div>
 
@@ -36,25 +29,8 @@ const Home = () => {
           delay={1200}
           triggerOnce
         >
-          <div className="middle-content">
 
-            <div className="logos">
-              <img src="/awr.webp" width={50} alt="" />
-              <img src="/r.webp" width={50} alt="" />
-              <img src="/c.webp" width={50} alt="" />
-            </div>
-            <div className="arrow-container">
-              <p>SCROLL DOWN</p>
-              <div className="arrow">
-                <a href="#about">
-                  <BsArrowDown size={32} fill="#ffffff" />
-                </a>
-
-              </div>
-            </div>
-
-          </div>
-          <div className="social-list">
+          <div className="bottom-content">
             <Fade
               cascade
               direction="right"
@@ -62,16 +38,15 @@ const Home = () => {
               delay={1600}
               triggerOnce
             >
-              <ul>
+              <div className="arrow-container">
+                <div className="arrow">
+                  <a href="#about">
+                    <BsArrowDown size={32} fill="#ffffff" />
+                  </a>
 
-                <li><a href="#">instagram</a></li>
-                <li><a href="#">facebook</a></li>
-                <li><a href="#">twitter</a></li>
-                <li><a href="#">linkedin</a></li>
-
-              </ul>
-
-              <p>All original content on the site, including <span> texts, images, videos, graphics, music</span> and any other <span>creative work</span> , is automatically <span>copyrighted</span> as soon as it is created and published on the site. <span>Unauthorized</span> use of this content may result in <span>copyright infringement</span>.</p>
+                </div>
+              </div>
+              <p>All original content on the site, including  texts, images, videos, graphics, music and any other creative work , is automatically copyrighted as soon as it is created and published on the site. Unauthorized use of this content may result in copyright infringement.</p>
             </Fade>
           </div>
         </Fade>

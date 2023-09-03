@@ -33,7 +33,7 @@ const Nav = () => {
                     <div className="bars" onClick={toggleMenu}>
                         <Hamburger
                             size={34}
-                            color='#000'
+                            color='#000000'
                             duration={0.5}
                             toggled={isOpen}
                             toggle={toggleMenu}
