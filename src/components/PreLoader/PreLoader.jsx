@@ -37,12 +37,13 @@ const PreLoader = () => {
           delay={2000}
           className="animation" triggerOnce>
           <div className="better-experience">
-            <h1>better experience using</h1>
             <div className="logos">
               <FaChrome fill="#000" size={70} />
               <FaFirefox fill="#000" size={70} />
               <FaEdge fill="#000" size={70} />
-            </div></div>
+            </div>
+            <h1>recomended to better experience</h1>
+          </div>
         </Fade>
       </div>
     </div>

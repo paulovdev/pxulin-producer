@@ -28,13 +28,20 @@
     }
 
     h1 {
-        font-size: 7rem;
+        font-size: 10rem;
         color: $primary-color;
-        font-family: 'milker', sans-serif;
         letter-spacing: 5px;
         text-transform: uppercase;
         margin-bottom: 1rem;
         transition: all 0.5s;
+
+        @media (max-width: 1450px) {
+            font-size: 8rem;
+        }
+
+        @media (max-width: 768px) {
+            font-size: 5rem;
+        }
     }
 
     .better-experience {
@@ -42,14 +49,23 @@
         align-items: center;
         justify-content: center;
         flex-direction: column;
+        gap: 1rem;
 
         h1 {
             font-size: 3rem;
             color: $primary-color;
-
             text-transform: uppercase;
+            font-weight: 900;
             margin-bottom: 1rem;
             transition: all 0.5s;
+        }
+
+        @media (max-width: 1450px) {
+            font-size: 3rem;
+        }
+
+        @media (max-width: 768px) {
+            font-size: 2rem;
         }
 
         .logos {
