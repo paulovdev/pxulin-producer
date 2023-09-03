@@ -23,14 +23,14 @@ const Nav = () => {
                 <div>
                 </div>
 
-                <div className="bars" onClick={toggleMenu}>
-                    <Fade
-                        direction="down"
-                        duration={400}
-                        delay={400}
-                        className="animation"
-                        triggerOnce={true}
-                    >
+                <Fade
+                    direction="down"
+                    duration={400}
+                    delay={400}
+                    className="animation"
+                    triggerOnce={true}
+                >
+                    <div className="bars" onClick={toggleMenu}>
                         <Hamburger
                             size={34}
                             color='#000'
@@ -38,29 +38,29 @@ const Nav = () => {
                             toggled={isOpen}
                             toggle={toggleMenu}
                         />
-                    </Fade>
+                    </div>
+                </Fade>
+                <ul className={`menu ${isOpen ? "open" : ""}`}>
+                    {navigation.map((nav, index) => (
+                        <Fade
+                            key={nav.position}
+                            direction="down"
+                            duration={400}
 
-                    <ul className={`menu ${isOpen ? "open" : ""}`}>
-                        {navigation.map((nav, index) => (
-                            <Fade
-                                key={nav.position}
-                                direction="down"
-                                duration={400}
+                            delay={index * 100}
+                            triggerOnce={!isOpen}
+                        >
 
-                                delay={index * 100}
-                                triggerOnce={!isOpen}
-                            >
+                            <li>
+                                <span>{nav.position}</span>
+                                <a href={nav.href} onClick={toggleMenu}>
+                                    {nav.title}
+                                </a>
+                            </li>
+                        </Fade>
+                    ))}
+                </ul>
 
-                                <li>
-                                    <span>{nav.position}</span>
-                                    <a href={nav.href} onClick={toggleMenu}>
-                                        {nav.title}
-                                    </a>
-                                </li>
-                            </Fade>
-                        ))}
-                    </ul>
-                </div>
             </nav>
         </header >
     );
