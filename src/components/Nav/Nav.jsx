@@ -20,7 +20,7 @@ const Nav = () => {
         <header className={`header ${isOpen ? "removeBlend" : ""}`}>
             <nav className="nav">
 
-                <div className="wrapper">
+                <div>
                 </div>
 
                 <div className="bars" onClick={toggleMenu}>
@@ -32,13 +32,13 @@ const Nav = () => {
                         triggerOnce={true}
                     >
                         <Hamburger
-                            size={38}
+                            size={34}
+                            color='#000'
                             duration={0.5}
                             toggled={isOpen}
                             toggle={toggleMenu}
                         />
                     </Fade>
-
 
                     <ul className={`menu ${isOpen ? "open" : ""}`}>
                         {navigation.map((nav, index) => (
@@ -57,10 +57,8 @@ const Nav = () => {
                                         {nav.title}
                                     </a>
                                 </li>
-
                             </Fade>
                         ))}
-                        <h1>a;slodk</h1>
                     </ul>
                 </div>
             </nav>

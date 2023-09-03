@@ -14,7 +14,7 @@ const App = () => {
     const fakeDataFetch = () => {
       setTimeout(() => {
         setIsLoading(false);
-      }, 100);
+      }, 3500);
     };
 
     fakeDataFetch();
@@ -23,7 +23,7 @@ const App = () => {
     ?
     (<PreLoader />)
     :
-    (<div className='container'>
+    (<div className='noise'>
       <Nav />
       <Home />
       <About />

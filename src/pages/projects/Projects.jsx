@@ -15,34 +15,15 @@ const Projects = () => {
     <section id="projects">
       <main className="grid-layout">
         <div className="projects-content">
-          <Fade className="animation" cascade direction="down" duration={800} triggerOnce>
-            <h1>Projects</h1>
-            <h3>select works.</h3>
+          <Fade
+            cascade
+            direction='down'
+            duration={800}
+            triggerOnce>
+            <h4>PROJECTS</h4>
+            <h1><span>selected </span>WORKS</h1>
           </Fade>
         </div>
-        <ul className="slider">
-
-          {releases.map((release, index) => (
-            <Fade
-              key={index}
-
-              cascade
-              direction="down"
-              duration={800}
-              triggerOnce
-              delay={index * 100}
-            >
-              <li className="photo-projects-after">
-                <img src={release.image} alt="" />
-                <div class="logo-overlay">
-                  <button>See</button>
-                  <button>GitHub</button>
-                </div>
-              </li>
-            </Fade>
-          ))}
-
-        </ul>
       </main>
 
 

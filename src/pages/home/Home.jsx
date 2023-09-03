@@ -1,8 +1,6 @@
 import "./Home.scss";
 import '../../styles/Globals.scss';
 import '../../components/Arrows.scss';
-
-import { SiNike, SiAdidas, SiBmw, SiAudi } from 'react-icons/si'
 import { BsArrowDown } from "react-icons/bs";
 import { Fade } from "react-awesome-reveal";
 
@@ -10,7 +8,6 @@ const Home = () => {
   return (
     <section id="home">
       <main className="grid-layout">
-
         <div className="home-header">
           <Fade
             cascade
@@ -19,8 +16,15 @@ const Home = () => {
             delay={600}
             triggerOnce
           >
-            <h1>FRONT-END <span>developer and</span></h1>
-            <h1>UX/UI <span>designer.</span></h1>
+            <div className="t-1">
+              <h1>WEB</h1>
+              <span>DEVELOPER</span>
+            </div>
+            <div className="t-2">
+              <h1>UX/UI  </h1>
+              <span>DESIGNER</span>
+            </div>
+
             <p>© 2023 PXULIN</p>
           </Fade>
         </div>
@@ -33,19 +37,17 @@ const Home = () => {
           triggerOnce
         >
           <div className="middle-content">
+
             <div className="logos">
-              <SiNike fill="#000000" size={84} />
-              <SiAdidas fill="#000000" size={84} />
-              <SiBmw fill="#000000" size={84} />
-              <SiAudi fill="#000000" size={84} />
-
-
+              <img src="/awr.webp" width={50} alt="" />
+              <img src="/r.webp" width={50} alt="" />
+              <img src="/c.webp" width={50} alt="" />
             </div>
             <div className="arrow-container">
               <p>SCROLL DOWN</p>
               <div className="arrow">
                 <a href="#about">
-                  <BsArrowDown size={32} fill="#000000" />
+                  <BsArrowDown size={32} fill="#ffffff" />
                 </a>
 
               </div>
@@ -69,14 +71,13 @@ const Home = () => {
 
               </ul>
 
-              <p>All original content on the site, including texts, images, videos, graphics, music and any other creative work, is automatically copyrighted as soon as it is created and published on the site. Unauthorized use of this content may result in copyright infringement.</p>
+              <p>All original content on the site, including <span> texts, images, videos, graphics, music</span> and any other <span>creative work</span> , is automatically <span>copyrighted</span> as soon as it is created and published on the site. <span>Unauthorized</span> use of this content may result in <span>copyright infringement</span>.</p>
             </Fade>
           </div>
-
         </Fade>
 
-      </main>
-    </section>
+      </main >
+    </section >
   );
 };
 

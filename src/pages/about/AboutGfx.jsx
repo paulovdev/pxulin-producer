@@ -5,11 +5,10 @@ import { Fade } from 'react-awesome-reveal';
 
 const AboutGfx = () => {
     const gfx = [
-        { title: "SICKER / 2022", image: "/gfx-1.png" },
+        { title: "SICKEE / 2022", image: "/gfx-1.png" },
         { title: "AZ / 2023", image: "/gfx-2.png" },
         { title: "BERZERK - HEARTLSS / 2023", image: "/gfx-3.jpg" },
-        { title: "AFTERMATH / 2020", image: "/gfx-4.jpg" },
-        { title: "NEVERMINE / 2022", image: "/gfx-5.png" },
+        { title: "NEVERMIND / 2022", image: "/gfx-4.png" },
     ]
     return (
         <section id='aboutgfx'>
@@ -21,7 +20,6 @@ const AboutGfx = () => {
                         duration={800}
                         triggerOnce>
                         <h1><span>also a </span>GFX<span> designer</span> </h1>
-
                         <p>
                             I like to make gfx's for any kind of thing, mainly for singers, music producers etc.
                         </p>

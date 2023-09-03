@@ -1,11 +1,19 @@
+@import '../../index.scss';
+
+
 footer {
-    background: #121212;
-    background-size: cover;
+    background-color: $primary-color;
     display: flex;
     align-items: center;
     justify-content: space-between;
 
-    padding: 15px 25px;
+    padding: 15px 55px;
+
+    .wrapper {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
 
     p {
         font-size: 1rem;
@@ -19,7 +27,6 @@ footer {
         height: 50px;
         width: 50px;
         border: 1px solid #757575;
-        background-color: #2e2e2e25;
         border-radius: 5rem;
         padding: 1rem;
         cursor: pointer;

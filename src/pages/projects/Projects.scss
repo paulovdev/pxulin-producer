@@ -1,113 +1,59 @@
+@import '../../index.scss';
+
 #projects {
-    background: linear-gradient(to right, rgb(0, 0, 0), rgba(0, 0, 0, 0.500)), url(https://grainy-gradients.vercel.app/noise.svg);
-    min-height: 70vh;
+    padding: 0 25px;
+    background-color: $primary-color;
+
+    @media (max-width:768px) {
+        padding: 0 30px;
+    }
+
+    border-bottom: 1px solid $border-color;
 }
 
 .projects-content {
-    h1 {
-        font-size: 3rem;
-        color: #ffffff;
+    padding: 50px 0;
+
+    h1,
+    span {
+        padding: 2rem 0 !important;
+
+        font-size: 6rem;
+        color: $secondary-color;
+
         letter-spacing: 1px;
-        text-transform: uppercase;
-        margin: 1rem 0;
-    }
 
-    h3 {
+        transition: all 0.5s;
 
-        margin-bottom: 1rem;
-        font-size: 5rem;
-        font-weight: 900;
-        color: #ffffff;
-        letter-spacing: 1px;
-        text-transform: uppercase;
+        span {
+            font-weight: 400;
+        }
 
-        @media (max-width:1250px) {
-            max-width: 100%;
+        @media (max-width: 1450px) {
+            font-size: 5rem;
+        }
+
+        @media (max-width: 1200px) {
+            font-size: 4rem;
+        }
+
+        @media (max-width: 768px) {
+            font-size: 3rem;
         }
     }
 
     p {
-        max-width: 60%;
-        margin-bottom: 1rem;
-        font-size: 1rem;
-
-        color: #ffffff;
+        font-size: 2rem;
+        font-weight: 400;
+        color: $secondary-color;
+        margin-bottom: 1rem !important;
         letter-spacing: 1px;
-        text-transform: uppercase;
+        line-height: 150%;
+        transition: all 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
 
-        @media (max-width:1250px) {
-            max-width: 100%;
-        }
-    }
-}
-
-
-
-.slider {
-    position: relative;
-    width: 100%;
-    display: flex;
-    overflow-x: scroll;
-    scroll-snap-type: x mandatory;
-    gap: 2rem;
-
-    .photo-projects-after {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        img {
-            max-width: 600px;
-            border-radius: 1rem;
-
-            transition: opacity 0.3s ease-in-out;
-        }
-
-        .logo-overlay {
-            position: absolute;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 2rem;
-            opacity: 0;
-            transition: opacity 0.3s ease-in-out;
-
-            button {
-                width: 100%;
-                border: 1px solid #757575;
-                background-color: #2e2e2e25;
-                border-radius: 5rem;
-                padding: 0.5rem;
-                font-size: 0.9rem;
-
-                transform: scale(1.2);
-                transition: 0.5s;
-                cursor: pointer;
-            }
-        }
-
-        &:hover {
-            img {
-                opacity: 0.5;
-
-            }
-
-            .logo-overlay {
-                opacity: 1;
-            }
-        }
-
-        @media (max-width: 768px) {
-            .photo-projects-after {
-                flex: 0 0 auto;
-                width: 100%;
-                white-space: nowrap;
-
-                img {
-                    scroll-snap-align: center;
-                    width: 100%;
-                }
-            }
+        span {
+            font-size: 2rem;
+            font-weight: 900;
         }
     }
 }

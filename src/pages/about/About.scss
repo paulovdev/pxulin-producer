@@ -2,25 +2,27 @@
 
 #about {
     padding: 0 25px;
-    background-color: #000000;
+    background-color: #f1f1f1;
 
     @media (max-width:768px) {
         padding: 0 30px;
     }
 
+    border:1px solid $border-color;
+
     .text-content {
         padding: 50px 0;
 
+        h4 {
+            color: $primary-color;
+        }
+
         h1,
         span {
-            padding: 2rem 0 !important;
-
             font-size: 6rem;
-            color: $secondary-color;
-
-            letter-spacing: 1px;
-
-            transition: all 0.5s;
+            color: $primary-color;
+            font-weight: 900;
+            transition: all 0.5s ease-in;
 
             span {
                 font-weight: 400;
@@ -39,18 +41,20 @@
             }
         }
 
-        p {
-            font-size: 2rem;
-            font-weight: 400;
-            color: $secondary-color;
-            margin-bottom: 1rem !important;
-            letter-spacing: 1px;
-            line-height: 150%;
-            transition: all 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-
-            span {
+        .sub-text-content {
+            p {
                 font-size: 2rem;
-                font-weight: 900;
+                font-weight: 400;
+                color: $primary-color;
+                margin-bottom: 2rem !important;
+
+                line-height: 150%;
+                transition: all 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+
+                span {
+                    font-size: 2rem;
+                    font-weight: 900;
+                }
             }
         }
 
@@ -62,12 +66,13 @@
             gap: 1rem;
 
             a {
+                margin-bottom: 1rem !important;
                 display: flex;
                 align-items: center;
                 gap: 1rem;
                 font-size: 0.8rem;
                 font-weight: 900;
-                color: $secondary-color;
+                color: $primary-color;
 
                 letter-spacing: 1px;
                 text-transform: uppercase;

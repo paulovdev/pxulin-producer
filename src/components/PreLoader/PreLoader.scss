@@ -12,15 +12,17 @@
     right: 0;
     z-index: 999999;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
+    text-align: center;
     gap: 1rem;
     overflow: hidden !important;
 
     .preloader-content {
         display: flex;
         align-items: center;
+        justify-content: center;
         flex-direction: row;
         gap: 1rem;
     }
@@ -28,9 +30,33 @@
     h1 {
         font-size: 7rem;
         color: $primary-color;
-        letter-spacing: 1px;
+        font-family: 'milker', sans-serif;
+        letter-spacing: 5px;
         text-transform: uppercase;
         margin-bottom: 1rem;
         transition: all 0.5s;
+    }
+
+    .better-experience {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        h1 {
+            font-size: 3rem;
+            color: $primary-color;
+
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+            transition: all 0.5s;
+        }
+
+        .logos {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 3rem;
+        }
     }
 }
