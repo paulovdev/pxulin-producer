@@ -32,7 +32,7 @@ const Nav = () => {
                 >
                     <div className="bars" onClick={toggleMenu}>
                         <Hamburger
-                            size={34}
+                            size={22}
                             color='#000000'
                             duration={0.5}
                             toggled={isOpen}
@@ -41,23 +41,15 @@ const Nav = () => {
                     </div>
                 </Fade>
                 <ul className={`menu ${isOpen ? "open" : ""}`}>
-                    {navigation.map((nav, index) => (
-                        <Fade
-                            key={nav.position}
-                            direction="down"
-                            duration={400}
+                    {navigation.map((nav) => (
 
-                            delay={index * 100}
-                            triggerOnce={!isOpen}
-                        >
+                        <li>
+                            <span>{nav.position}</span>
+                            <a href={nav.href} onClick={toggleMenu}>
+                                {nav.title}
+                            </a>
+                        </li>
 
-                            <li>
-                                <span>{nav.position}</span>
-                                <a href={nav.href} onClick={toggleMenu}>
-                                    {nav.title}
-                                </a>
-                            </li>
-                        </Fade>
                     ))}
                 </ul>
 

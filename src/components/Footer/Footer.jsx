@@ -6,6 +6,7 @@ import { AiOutlineArrowUp } from 'react-icons/ai'
 const Footer = () => {
     return (
         <footer>
+
             <div className="wrapper">
                 <SiNike size={62} color='fff' />
                 <SiAdidas size={62} color='fff' />
@@ -13,6 +14,7 @@ const Footer = () => {
                 <SiAudi size={62} color='fff' />
             </div>
             <AiOutlineArrowUp size={62} onClick={() => scrollTo({ top: 0 })} />
+
         </footer>
     )
 }

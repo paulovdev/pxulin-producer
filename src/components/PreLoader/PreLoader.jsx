@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./PreLoader.scss";
 import { Fade } from 'react-awesome-reveal';
-import { FaChrome, FaFirefox, FaEdge } from 'react-icons/fa'
+
 const PreLoader = () => {
   const [visibleNumber, setVisibleNumber] = useState(0);
   const [showWelcome, setShowWelcome] = useState(false);
@@ -38,9 +38,9 @@ const PreLoader = () => {
           className="animation" triggerOnce>
           <div className="better-experience">
             <div className="logos">
-              <FaChrome fill="#000" size={70} />
-              <FaFirefox fill="#000" size={70} />
-              <FaEdge fill="#000" size={70} />
+              <img src="/icons/chrome.png" width={50} alt="" />
+              <img src="/icons/edge.png" width={50} alt="" />
+              <img src="/icons/opera.png" width={50} alt="" />
             </div>
             <h1>recomended to better experience</h1>
           </div>

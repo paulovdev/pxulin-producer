@@ -1,68 +1,62 @@
 @import '../../index.scss';
 
 #about {
-    background-color: #f1f1f1;
-
-    border: 1px solid $border-color;
-
-    .t-1 {
-        display: inline-flex;
-        align-items: center;
-        gap: 3rem;
-
-        @media (max-width:992px) {
-            display: inline-flex;
-            align-items: start;
-            gap: 0rem;
-            flex-direction: column;
-        }
-    }
+    background-color: $primary-color;
+    border-bottom: 1px solid $border-color;
 
     .text-content {
-        padding: 50px 0;
-
-        h4 {
-            color: $primary-color;
-        }
+        padding: 50px 0 !important;
 
         h1 {
-            font-size: 8rem;
-            color: $primary-color;
+            font-size: 5rem;
+            color: $secondary-color;
             font-weight: 900;
-            transition: all 0.5s ease-in;
+            transition: all 0.3s ease-in;
 
             @media (max-width: 1450px) {
                 font-size: 5rem;
             }
 
-            @media (max-width: 1200px) {
-                font-size: 4rem;
-            }
-
             @media (max-width: 768px) {
-                font-size: 3rem;
+                font-size: 3.5rem;
+                text-align: center;
             }
         }
 
         .sub-text-content {
-            text-transform: uppercase;
+            display: flex;
+            align-items: end;
+            justify-content: end;
+            flex-direction: column;
 
             p {
+                padding: 50px 0 !important;
+                max-width: 50%;
                 font-size: 2rem;
                 font-weight: 400;
-                color: $primary-color;
+                color: $secondary-color;
                 margin-bottom: 2rem !important;
-
                 line-height: 150%;
                 transition: all 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
 
                 span {
-                    color: $primary-color;
+                    color: $secondary-color;
                     font-size: 2rem;
                     font-weight: 900;
                 }
             }
+
+            @media (max-width: 768px) {
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+
+                p {
+                    max-width: 100%;
+                }
+            }
         }
+
 
         .go-home {
             position: relative;
@@ -73,7 +67,6 @@
             gap: 1rem;
 
             a {
-
                 border: 1px solid $border-color;
                 padding: 1rem 2rem;
                 border-radius: 2rem;
@@ -81,14 +74,17 @@
                 align-items: center;
                 gap: 1rem;
                 font-size: 1rem;
-
                 font-weight: 600;
-                color: $primary-color;
-                text-transform: uppercase;
+                color: $secondary-color;
                 letter-spacing: 1px;
-
                 transition: all 0.5s;
             }
+
+            @media (max-width: 768px) {
+                flex-wrap: wrap;
+            }
         }
+
+
     }
 }

@@ -2,54 +2,41 @@
 
 #home {
     min-height: 100vh;
-
-    background-color: $primary-color;
+    background: $secondary-color;
 
     .home-header {
-        width: 100vw;
-
         @media (max-width: 992px) {
-            text-align: center;
+
             width: 100%;
         }
 
-        h1,
-        span {
-            font-size: 8rem;
-            color: $secondary-color;
+        h1 {
+            font-size: 5rem;
+            color: $primary-color;
             font-weight: 900;
             transition: all 0.3s ease-in;
-
-
-            @media (max-width: 1450px) {
-                font-size: 5rem;
-            }
 
             @media (max-width: 768px) {
                 font-size: 3.5rem;
             }
         }
 
-        span {
-            color: transparent;
-            -webkit-text-stroke: 1px #ffffff;
-
-            &:hover {
-                color: $secondary-color;
-            }
+        h2 {
+            color: $primary-color;
+            font-size: 2rem;
+            font-weight: 900;
+            letter-spacing: 1px;
+            transition: all 0.5s;
         }
 
-        h1 {
-            &:hover {
-                color: transparent;
-                -webkit-text-stroke: 1px #ffffff;
-            }
-        }
-
-        p {
+        button {
+            border: 1px solid $border-color;
+            background-color: $primary-color;
+            border-radius: 100%;
+            padding: 1rem;
+            border-radius: 2rem;
             font-size: 1rem;
             font-weight: 900;
-            line-height: 180%;
             color: $secondary-color;
 
             text-transform: uppercase;
@@ -60,45 +47,37 @@
     .bottom-content {
         position: relative;
         top: 50px;
+
         display: flex;
         align-items: center;
         justify-content: space-between;
-        gap: 2rem;
 
         ul {
             display: flex;
-            gap: 2rem;
+            align-items: center;
+            gap: 1rem;
 
             a {
                 font-size: 0.8rem;
                 font-weight: 900;
-                color: $secondary-color;
+                color: #000;
                 letter-spacing: 1px;
 
                 text-transform: uppercase;
+                text-decoration: underline;
                 transition: all 0.5s;
             }
         }
 
-        p {
-            max-width: 500px;
-            font-size: 0.9rem;
-            font-weight: 400;
-            line-height: 180%;
-            color: $secondary-color;
+        @media (max-width: 768px) {
+            flex-direction: column;
+            align-items: start;
+            gap: 3rem;
 
-            text-transform: uppercase;
-            transition: all 0.5s;
+            ul {
+                order: 1;
 
-            span {
-                font-weight: 900;
             }
         }
-
-        @media (max-width: 992px) {
-            flex-direction: column;
-            text-align: center;
-        }
-
     }
 }

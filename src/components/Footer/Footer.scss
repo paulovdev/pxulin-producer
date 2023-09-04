@@ -1,13 +1,10 @@
 @import '../../index.scss';
 
-
 footer {
     background-color: $primary-color;
     display: flex;
     align-items: center;
     justify-content: space-between;
-
-    padding: 15px 55px;
 
     .wrapper {
         display: flex;
@@ -20,7 +17,6 @@ footer {
         color: #ffffff;
         letter-spacing: 2px;
         text-transform: uppercase;
-        font-family: 'Hanson-Bold', sans-serif;
     }
 
     svg {

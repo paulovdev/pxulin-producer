@@ -20,9 +20,6 @@ const AboutGfx = () => {
                         duration={800}
                         triggerOnce>
                         <h1>ALSO A GFX DESIGNER</h1>
-                        <p>
-                            I like to make gfx's for any kind of thing, mainly for singers, music producers etc.
-                        </p>
                     </Fade>
 
                     <div className="group-text">
@@ -37,7 +34,8 @@ const AboutGfx = () => {
                                     <div className="gfx-text">
                                         <a href="#">{item.title}</a>
                                         <a href="#">{item.year}</a>
-                                        <a href="#">see full project</a>
+                                        <a href="#">alternate</a>
+                                        <a href="#">see project</a>
 
                                     </div>
                                 </div>

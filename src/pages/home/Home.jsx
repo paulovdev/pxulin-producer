@@ -1,6 +1,7 @@
 import "./Home.scss";
 import '../../styles/Globals.scss';
 import '../../components/Arrows.scss';
+import { AiOutlineInstagram, AiOutlineBehance, AiOutlineGithub } from 'react-icons/ai'
 import { BsArrowDown } from "react-icons/bs";
 import { Fade } from "react-awesome-reveal";
 
@@ -15,10 +16,10 @@ const Home = () => {
             duration={800}
             delay={600}
             triggerOnce
-          >  <p>© 2023 PXULIN</p>
-            <h1>WEB DEVELOPER</h1>
-            <span>UX/UI DESIGNER</span>
-
+          >
+            <h2>PXULIN</h2>
+            <h1>IS A WEB DEVELOPER AND UX/UI DESIGNER</h1>
+            <button><a href="#projects">SEE MY WORKS</a></button>
           </Fade>
         </div>
 
@@ -38,15 +39,23 @@ const Home = () => {
               delay={1600}
               triggerOnce
             >
+              <ul>
+                <li><img src="/icons/insta.png" width={42} alt="" /></li>
+                <li><img src="/icons/behance.png" width={42} alt="" /></li>
+                <li><img src="/icons/figma.png" width={42} alt="" /></li>
+              </ul>
+
               <div className="arrow-container">
+                <p>SCROLL DOWN</p>
                 <div className="arrow">
                   <a href="#about">
-                    <BsArrowDown size={32} fill="#ffffff" />
+                    <BsArrowDown size={32} fill="#fff" />
                   </a>
-
                 </div>
+
+
               </div>
-              <p>All original content on the site, including  texts, images, videos, graphics, music and any other creative work , is automatically copyrighted as soon as it is created and published on the site. Unauthorized use of this content may result in copyright infringement.</p>
+
             </Fade>
           </div>
         </Fade>

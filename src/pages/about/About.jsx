@@ -13,16 +13,15 @@ const About = () => {
                         direction='down'
                         duration={800}
                         triggerOnce>
-                        <h4>ABOUT</h4>
-                        <h1>ABOUT ME</h1>
-
+                        <h1>A BIT ABOUT ME</h1>
                         <div className="sub-text-content">
                             <p>
                                 My name is <span>Paulo Vitor</span>, I'm 20 years old. I'm a <span>front-end developer</span> with a passion for creating beautiful and joyful digital experiences. In addition to programming, I love  <span> design</span>,  <span> games</span> and  <span> travel</span>.
                             </p>
-                            <p>changing the subject, I also really like <span> music</span> and making music so much that I have a <span>soundcloud</span> where I post them</p>
                         </div>
-                        <div className="go-home">
+
+
+                          <div className="go-home">
                             <Fade
                                 cascade
                                 direction="right"
@@ -34,7 +33,7 @@ const About = () => {
                                 <a href="#">Digital experiences</a>
                                 <a href="#"> UI/UX</a>
                             </Fade>
-                        </div>
+                        </div> 
 
                     </Fade>
                 </div>

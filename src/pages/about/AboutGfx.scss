@@ -1,13 +1,7 @@
 @import '../../index.scss';
 
 #aboutgfx {
-    padding: 0 25px;
     background-color: $primary-color;
-
-
-    @media (max-width:768px) {
-        padding: 0 30px;
-    }
 
     .text-center {
         padding: 50px 0;
@@ -26,18 +20,6 @@
             @media (max-width: 768px) {
                 font-size: 3rem;
             }
-        }
-
-
-        p {
-            font-size: 1rem;
-            font-weight: 400;
-            text-transform: uppercase;
-            color: $secondary-color;
-
-            margin-bottom: 1rem !important;
-            line-height: 150%;
-            transition: all 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
         }
     }
 
@@ -82,9 +64,9 @@
                 a {
                     margin-bottom: 1rem !important;
                     border: 1px solid $border-color;
-                    padding: 1rem;
+                    padding: 0.7rem 1rem;
                     border-radius: 2rem;
-                    font-size: 0.8rem;
+                    font-size: 1rem;
                     font-weight: 900;
                     color: $secondary-color;
 
