@@ -1,8 +1,7 @@
 import "./Home.scss";
 import '../../styles/Globals.scss';
 import '../../components/Arrows.scss';
-import { AiOutlineInstagram, AiOutlineBehance, AiOutlineGithub } from 'react-icons/ai'
-import { BsArrowDown } from "react-icons/bs";
+import { BsArrowDown, BsFillArrowRightCircleFill } from "react-icons/bs";
 import { Fade } from "react-awesome-reveal";
 
 const Home = () => {
@@ -19,7 +18,7 @@ const Home = () => {
           >
             <h2>PXULIN</h2>
             <h1>IS A WEB DEVELOPER AND UX/UI DESIGNER</h1>
-            <button><a href="#projects">SEE MY WORKS</a></button>
+            <button><a href="#projects">SEE MY WORKS</a><BsFillArrowRightCircleFill size={26} /></button>
           </Fade>
         </div>
 
@@ -41,8 +40,8 @@ const Home = () => {
             >
               <ul>
                 <li><img src="/icons/insta.png" width={42} alt="" /></li>
-                <li><img src="/icons/behance.png" width={42} alt="" /></li>
                 <li><img src="/icons/figma.png" width={42} alt="" /></li>
+                <li><img src="/icons/behance.png" width={42} alt="" /></li>
               </ul>
 
               <div className="arrow-container">
