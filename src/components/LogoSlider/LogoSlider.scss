@@ -1,0 +1,59 @@
+@import '../../index.scss';
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.logos {
+  background-color: $primary-color;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+}
+
+.logos:before,
+.logos:after {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+
+.logos:before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.099));
+}
+
+.logos:after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.099));
+}
+
+.logos:hover .logos-slide {
+  animation-play-state: paused;
+}
+
+.logos-slide {
+  display: inline-block;
+  animation: 50s slide infinite linear;
+}
+
+
+.icons {
+  border-bottom: 1px solid $border-color;
+  border-top: 1px solid $border-color;
+  padding: 2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+}

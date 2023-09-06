@@ -2,11 +2,7 @@
 
 #projects {
     padding: 0 25px;
-    background-color: $primary-color;
-
-    @media (max-width:768px) {
-        padding: 0 30px;
-    }
+    background: $secondary-color;
 
     border-bottom: 1px solid $border-color;
 }
@@ -17,28 +13,13 @@
     h1,
     span {
         padding: 2rem 0 !important;
-
-        font-size: 6rem;
-        color: $secondary-color;
-
-        letter-spacing: 1px;
-
-        transition: all 0.5s;
-
-        span {
-            font-weight: 400;
-        }
-
-        @media (max-width: 1450px) {
-            font-size: 5rem;
-        }
-
-        @media (max-width: 1200px) {
-            font-size: 4rem;
-        }
+        font-size: 5rem;
+        color: $primary-color;
+        font-weight: 900;
+        transition: all 0.3s ease-in;
 
         @media (max-width: 768px) {
-            font-size: 3rem;
+            font-size: 3.5rem;
         }
     }
 

@@ -1,6 +1,5 @@
 import React from "react";
 import "./Projects.scss";
-import { Fade } from "react-awesome-reveal";
 
 
 const releases = [
@@ -15,14 +14,8 @@ const Projects = () => {
     <section id="projects">
       <main className="grid-layout">
         <div className="projects-content">
-          <Fade
-            cascade
-            direction='down'
-            duration={800}
-            triggerOnce>
-            <h4>PROJECTS</h4>
-            <h1><span>selected </span>WORKS</h1>
-          </Fade>
+            <h1>SELECTED WORKS</h1>
+
         </div>
       </main>
 

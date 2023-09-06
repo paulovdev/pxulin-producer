@@ -1,52 +1,49 @@
-import React from 'react';
+import { useRef } from "react";
+import { motion, useTransform, useScroll } from "framer-motion";
 import './AboutGfx.scss';
 import '../../styles/Globals.scss';
-import { Fade } from 'react-awesome-reveal';
 
 const AboutGfx = () => {
+    const targetRef = useRef(null);
+    const { scrollYProgress } = useScroll({
+        target: targetRef,
+    });
+
+    const x = useTransform(scrollYProgress, [0, 1], ["1%", "-95%"]);
     const gfx = [
-        { title: "SICKEE  ", year: "2022", image: "/gfx-1.png" },
-        { title: "AZ ", year: "2023", image: "/gfx-2.png" },
-        { title: "BERZERK - HEARTLSS ", year: "2019", image: "/gfx-3.jpg" },
-        { title: "NEVERMIND ", year: "2020", image: "/gfx-4.png" },
+        { title: '/gfx-1.png' },
+        { title: '/gfx-2.png' },
+        { title: '/gfx-3.jpg' },
+        { title: '/gfx-4.png' },
+        { title: '/gfx-1.png' },
+        { title: '/gfx-2.png' },
+        { title: '/gfx-3.jpg' },
+        { title: '/gfx-4.png' },
+        { title: '/gfx-1.png' },
+        { title: '/gfx-2.png' },
+        { title: '/gfx-3.jpg' },
+        { title: '/gfx-4.png' },
+        { title: '/gfx-1.png' },
+        { title: '/gfx-2.png' },
+        { title: '/gfx-3.jpg' },
+        { title: '/gfx-4.png' },
     ]
+
     return (
-        <section id='aboutgfx'>
-            <main className="grid-layout">
-                <div className="text-center">
-                    <Fade
-                        cascade
-                        direction='down'
-                        duration={800}
-                        triggerOnce>
-                        <h1>ALSO A GFX DESIGNER</h1>
-                    </Fade>
 
-                    <div className="group-text">
-                        <Fade
-                            cascade
-                            direction='left'
-                            duration={800}
-                            triggerOnce>
-                            {gfx.map((item) => (
-                                <div className="gfx-content">
-                                    <img src={item.image} alt="" />
-                                    <div className="gfx-text">
-                                        <a href="#">{item.title}</a>
-                                        <a href="#">{item.year}</a>
-                                        <a href="#">alternate</a>
-                                        <a href="#">see project</a>
+        <div className="text-center" ref={targetRef}>
 
-                                    </div>
-                                </div>
-                            ))}
-                        </Fade>
-                    </div>
+            <h1>ALSO A GFX DESIGNER</h1>
+            <img src="/scroll.gif" width={40} alt="" />
 
-
-                </div>
-            </main>
-        </section >
+            <div ref={targetRef} className="group-text">
+                <motion.div style={{ x }} className="left">
+                    {gfx.map((item) => {
+                        return <img src={item.title} />;
+                    })}
+                </motion.div>
+            </div>
+        </div>
     );
 };
 
