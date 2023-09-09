@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800;900&display=swap');
 
 $primary-color: #000000;
-$secondary-color: #ffffff;
+$secondary-color: #fcfcfc;
 $third-color: #3a3a3a;
 $border-color: #9f9f9f;
 
@@ -14,6 +14,8 @@ $border-color: #9f9f9f;
   list-style: none;
   color: #ffffff;
   font-family: 'Urbanist', sans-serif;
+  cursor: default;
+
 }
 
 .noise::before {
@@ -28,10 +30,6 @@ $border-color: #9f9f9f;
   z-index: 1000;
   pointer-events: none;
   background: url('../public/noise.gif');
-}
-
-html {
-  scroll-behavior: smooth;
 }
 
 body {
@@ -52,4 +50,15 @@ body {
 ::-webkit-scrollbar-thumb {
   background-color: #1e1e1e;
   border-radius: 10px;
+}
+
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 10px;
+  background-color: $secondary-color;
+  mix-blend-mode: exclusion;
+  transform-origin: 0%;
 }

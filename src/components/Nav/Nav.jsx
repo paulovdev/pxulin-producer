@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from 'react-router-dom'
 import "./Nav.scss";
 import { Cross as Hamburger } from 'hamburger-react'
 import { motion } from "framer-motion";
@@ -7,9 +8,8 @@ const Nav = () => {
     const [isOpen, setOpen] = useState(false);
 
     const navigation = [
-        { position: "1.", title: "HOME", href: "#home" },
-        { position: "2.", title: "ABOUT", href: "#about" },
-        { position: "3.", title: "PROJECTS", href: "#projects" },
+        { position: "1.", title: "HOME", href: "/" },
+        { position: "2.", title: "GFX WORKS", href: "/gfx" },
     ];
 
     const toggleMenu = () => {
@@ -46,7 +46,7 @@ const Nav = () => {
                     />
 
                 </motion.div>
-                <ul className={`menu ${isOpen ? "open" : ""}`}>
+                <ul className={`menu ${isOpen ? "open" : ""}`} >
                     {navigation.map((nav, index) => (
                         <motion.li
                             key={index}
@@ -58,9 +58,9 @@ const Nav = () => {
                             transition={{ duration: 0.2, delay: isOpen ? index * 0.1 : 0 }}
                         >
                             <span>{nav.position}</span>
-                            <a href={nav.href} onClick={toggleMenu}>
+                            < Link to={nav.href} onClick={toggleMenu}>
                                 {nav.title}
-                            </a>
+                            </ Link>
                         </motion.li>
                     ))}
                 </ul>

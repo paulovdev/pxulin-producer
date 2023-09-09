@@ -1,7 +1,7 @@
 import "./Home.scss";
 import '../../styles/Globals.scss';
 import '../../components/Arrows.scss';
-import { BsArrowDown, BsFillArrowRightCircleFill } from "react-icons/bs";
+import { BsFillArrowRightCircleFill } from "react-icons/bs";
 import { motion } from "framer-motion";
 
 const Home = () => {
@@ -35,7 +35,7 @@ const Home = () => {
           >
 
             <h1>A WEB DEVELOPER AND UX/UI DESIGNER</h1>
-            <button><a href="#projects">SEE MY WORKS</a><BsFillArrowRightCircleFill size={26} /></button>
+            <button><a href="#projects">GFX WORKS</a><BsFillArrowRightCircleFill size={26} fill="#000" /></button>
           </motion.div>
         </div>
 
@@ -64,11 +64,9 @@ const Home = () => {
             }}
             className="arrow-container"
           >
-            <p>SCROLL DOWN</p>
+            <p>SCROLL TO EXPLORE</p>
             <div className="arrow">
-              <a href="#about">
-                <BsArrowDown size={32} fill="#fff" />
-              </a>
+              <img src="/scroll.gif" width={50} alt="" />
             </div>
 
           </motion.div>

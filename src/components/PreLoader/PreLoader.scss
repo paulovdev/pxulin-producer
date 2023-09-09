@@ -2,10 +2,9 @@
 
 .preloader {
     height: 100vh;
-    height: calc(var(--vh, 1vh) * 100);
     width: 100%;
     margin: 0 auto;
-    background-color: #f1f1f1;
+    background-color:transparent;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -18,14 +17,6 @@
     text-align: center;
     gap: 1rem;
     overflow: hidden !important;
-
-    .preloader-content {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: row;
-        gap: 1rem;
-    }
 
     h1 {
         font-size: 10rem;
@@ -41,38 +32,6 @@
 
         @media (max-width: 768px) {
             font-size: 5rem;
-        }
-    }
-
-    .better-experience {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        gap: 1rem;
-
-        h1 {
-            font-size: 3rem;
-            color: $primary-color;
-            text-transform: uppercase;
-            font-weight: 900;
-            margin-bottom: 1rem;
-            transition: all 0.5s;
-        }
-
-        @media (max-width: 1450px) {
-            font-size: 3rem;
-        }
-
-        @media (max-width: 768px) {
-            font-size: 2rem;
-        }
-
-        .logos {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 3rem;
         }
     }
 }

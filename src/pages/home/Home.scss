@@ -2,7 +2,8 @@
 
 #home {
     min-height: 100vh;
-    background: $secondary-color;
+    background:
+        $primary-color;
 
     .home-header {
         @media (max-width: 992px) {
@@ -12,7 +13,7 @@
 
         h1 {
             font-size: 5rem;
-            color: $primary-color;
+            color: $secondary-color;
             font-weight: 900;
             transition: all 0.3s ease-in;
 
@@ -26,12 +27,9 @@
             padding: 0.7rem;
 
             border: 1px solid $border-color;
-            background-color: $primary-color;
+            background-color: $secondary-color;
             border-radius: 2rem;
 
-            color: $secondary-color;
-            font-size: 1rem;
-            font-weight: 900;
 
             display: flex;
             align-items: center;
@@ -40,6 +38,12 @@
             text-transform: uppercase;
             transition: all 0.5s;
 
+            a {
+                color: $primary-color;
+
+                font-size: 1rem;
+                font-weight: 900;
+            }
         }
     }
 
