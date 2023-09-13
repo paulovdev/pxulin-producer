@@ -7,36 +7,37 @@ import { motion } from "framer-motion";
 const Nav = () => {
     const [isOpen, setOpen] = useState(false);
 
-    const navigation = [
-        { position: "1.", title: "HOME", href: "/" },
-        { position: "2.", title: "GFX WORKS", href: "/gfx" },
-    ];
-
     const toggleMenu = () => {
         setOpen(!isOpen);
     };
 
+    const navEffect = {
+        initial: {
+            opacity: 0,
+            x: 100
+        },
+        animate: {
+            opacity: 1,
+            x: 0,
+            transition: {
+                duration: 0.5,
+                delay: 1.3,
+            }
+        }
+    }
+
     return (
-        <header className={`header ${isOpen ? "removeBlend" : ""}`}>
-            <nav className="nav">
-
-                <div>
-                </div>
-
+    <>
+        <header>
+            <nav className="nav" >
+                <div className="wrap"></div>
                 <motion.div
-                    initial={{ opacity: 0, x: 100 }}
-                    animate={{
-                        opacity: 1,
-                        x: 0,
-                        duration: 400,
-                        delay: 400,
-                        easing: "easeInOutQuad",
-                    }}
-
+                    variants={navEffect}
+                    initial='initial'
+                    animate='animate'
                     triggerOnce={true}
-                    className="bars"
+                    id="bars"
                     onClick={toggleMenu}>
-
                     <Hamburger
                         size={22}
                         color='#000000'
@@ -44,31 +45,61 @@ const Nav = () => {
                         toggled={isOpen}
                         toggle={toggleMenu}
                     />
-
                 </motion.div>
-                <ul className={`menu ${isOpen ? "open" : ""}`} >
+            </nav>
+        </header >
+
+
+        <div className='noise'>
+                <ul className={`menu-list ${isOpen ? "open" : ""}`} >
                     {navigation.map((nav, index) => (
                         <motion.li
                             key={index}
-                            initial={{ opacity: 0, x: -20 }}
+                            initial={{ opacity: 0, x: -1000 }}
                             animate={{
                                 opacity: isOpen ? 1 : 0,
-                                x: isOpen ? 0 : -20,
+                                x: isOpen ? 0 : 1000,
                             }}
-                            transition={{ duration: 0.2, delay: isOpen ? index * 0.1 : 0 }}
+                            transition={{ duration: 0.5, delay: isOpen ? index * 0.1 : 0 }}
                         >
-                            <span>{nav.position}</span>
                             < Link to={nav.href} onClick={toggleMenu}>
                                 {nav.title}
                             </ Link>
                         </motion.li>
                     ))}
+                    <div className="text-nav">
+                        {textsNav.map((text, index) => (
+                            <motion.div
+                                key={index}
+                                initial={{ opacity: 0, y: -1000 }}
+                                animate={{
+                                    opacity: isOpen ? 1 : 0,
+                                    y: isOpen ? 0 : 1000,
+                                }}
+                                transition={{ duration: 0.3, delay: isOpen ? index * 0.1 : 0 }}
+                            >
+                                <p>{text.p} <span>{text.span}</span></p>
+                            </motion.div>
+                        ))}
+                    </div>
                 </ul>
-
-
-            </nav>
-        </header >
+        </div>
+    </>
     );
 };
 
 export default Nav;
+
+
+const navigation = [
+    { title: "HOME", href: "/" },
+    { title: "GFX WORKS", href: "/gfx" },
+];
+
+
+const textsNav = [
+    { p: "TYPOGRAPHY:", span: "GOOGLE FONTS" },
+    { p: "MADE BY:", span: "PXULIN" },
+    { p: "IMAGES:", span: "FREEPIK, ENVATO" },
+    { p: "PRIVACY POLICY TERMS & CONDITIONS" },
+]

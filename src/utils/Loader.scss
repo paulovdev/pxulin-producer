@@ -1,14 +1,14 @@
-@import '../../index.scss';
+@import '../index.scss';
 
-.preloader {
+.loader {
     height: 100vh;
     width: 100%;
     margin: 0 auto;
+    background-color: $secondary-color;
     position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: $secondary-color;
     z-index: 999999;
     display: flex;
     flex-direction: column;

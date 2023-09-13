@@ -1,10 +1,10 @@
 @import '../../index.scss';
 
 header {
+    mix-blend-mode: exclusion;
     position: fixed;
     width: 100%;
     top: 0;
-    mix-blend-mode: exclusion;
     z-index: 999999;
 
     @media (max-width: 768px) {
@@ -25,59 +25,95 @@ nav {
         padding: 5px 0;
     }
 
-    ul {
-        position: fixed;
-        top: 0;
-        right: 0;
-        width: 0;
-        height: 100vh;
-        background: $primary-color;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        gap: 3rem;
-        overflow: hidden;
-        transition: width 0.1s;
-    }
-
-    li {
-        color: $primary-color;
-
-        span {
-            font-size: 1rem;
-            font-weight: 900;
-            transition: all 0.3s ease-in;
-        }
-
-        a {
-            font-size: 3rem;
-            font-weight: 900;
-            transition: all 0.3s ease-in;
-        }
-    }
 }
 
-.bars {
+#bars {
     display: flex;
     align-items: center;
     user-select: none;
-
+    mix-blend-mode: exclusion;
     background-color: $secondary-color;
     border: 1px solid $border-color;
     border-radius: 50%;
     padding: 0.2rem;
     z-index: 99999;
 
+    cursor: pointer;
+
     .hamburger-react {
         z-index: 99999;
+
     }
+}
+
+
+.menu-list {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 100vh;
+    background: $secondary-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3rem;
+    overflow: hidden;
+    transition: width .5s;
+    z-index: 9; 
+
+
+    li {
+        a {
+            color: $primary-color;
+            font-size: 5rem;
+            font-weight: 900;
+            text-decoration: none;
+            position: relative;
+            white-space: nowrap;
+        }
+
+        a::before {
+            content: "";
+            display: block;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 7px;
+            border-radius: 1rem;
+            background-color: $primary-color;
+            transition: width .3s ease-in-out;
+        }
+
+        a:hover::before {
+            width: 100%;
+        }
+
+    }
+
+    .text-nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+
+        p,
+        span {
+            color: $primary-color;
+            font-size: 1rem;
+            font-weight: 900;
+            transition: all 0.3s ease-in;
+        }
+
+        span {
+            color: #7c7c7c;
+        }
+    }
+
 }
 
 .open {
     width: 100vw;
-}
-
-.removeBlend {
-    mix-blend-mode: normal;
 }

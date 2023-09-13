@@ -2,80 +2,45 @@
 
 #home {
     min-height: 100vh;
+    width: 100%;
+    padding: 0;
+
     background:
         $primary-color;
+    text-align: center;
 
-    .home-header {
-        @media (max-width: 992px) {
-
-            width: 100%;
-        }
-
-        h1 {
-            font-size: 5rem;
-            color: $secondary-color;
-            font-weight: 900;
-            transition: all 0.3s ease-in;
-
-            @media (max-width: 768px) {
-                font-size: 3.5rem;
-            }
-        }
-
-        button {
-            margin-top: 1rem !important;
-            padding: 0.7rem;
-
-            border: 1px solid $border-color;
-            background-color: $secondary-color;
-            border-radius: 2rem;
-
-
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-
-            text-transform: uppercase;
-            transition: all 0.5s;
-
-            a {
-                color: $primary-color;
-
-                font-size: 1rem;
-                font-weight: 900;
-            }
-        }
-    }
 
     .bottom-content {
         position: relative;
-        top: 50px;
+        top: 200px;
+        width: 80vw;
 
         display: flex;
         align-items: center;
         justify-content: space-between;
 
-        ul {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-
-            a {
-                font-size: 0.8rem;
-                font-weight: 900;
-                color: #000;
-                letter-spacing: 1px;
-
-                text-transform: uppercase;
-                text-decoration: underline;
-                transition: all 0.5s;
+        .text-content {
+            p {
+                max-width: 50%;
+                font-size: 1rem;
+                font-weight: 600;
+                margin-top: 1rem;
             }
         }
 
+
         @media (max-width: 768px) {
+            top: 100px;
             flex-direction: column;
-            align-items: start;
+            align-items: center;
+            justify-content: center;
             gap: 3rem;
+
+            .text-content {
+                p {
+                    max-width: 100%;
+                }
+            }
 
             ul {
                 order: 1;

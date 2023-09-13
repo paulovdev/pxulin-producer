@@ -25,7 +25,8 @@ const PreLoader = () => {
 
   const transitionText = `${visibleNumber}%`;
 
-  return (
+  return (<>
+
     <motion.div
       animate={{ y: '100%', background: "#000" }}
       transition={{
@@ -39,6 +40,7 @@ const PreLoader = () => {
 
       </div>
     </motion.div>
+  </>
   );
 };
 

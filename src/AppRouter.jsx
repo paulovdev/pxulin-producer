@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { motion, useScroll } from "framer-motion"
 import Lenis from '@studio-freight/lenis'
 import { Route, Routes } from 'react-router-dom';
 
@@ -12,7 +11,6 @@ import Gfx from './pages/Gfx/Gfx';
 
 const AppRouter = () => {
   const [isLoading, setIsLoading] = useState(true);
-  const { scrollYProgress } = useScroll();
   const lenis = new Lenis()
 
   useEffect(() => {
@@ -23,7 +21,7 @@ const AppRouter = () => {
     };
 
     fakeDataFetch();
-
+    
     function raf(time) {
       lenis.raf(time)
       requestAnimationFrame(raf)
@@ -38,7 +36,6 @@ const AppRouter = () => {
     <>
       <Cursor />
       <Nav />
-      <motion.div className="progress-bar" style={{ scaleX: scrollYProgress }} />
       <Routes>
         <Route path="/" element={<AppLeader />} />
         <Route path="/gfx" element={<Gfx />} />

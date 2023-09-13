@@ -1,49 +1,40 @@
 import React from "react";
 import './Gfx.scss';
 import '../../styles/Globals.scss';
-import { motion } from 'framer-motion';
+import Loader from "../../utils/Loader";
+
 const Gfx = () => {
-
     return (
-        <main id="gfx">    
+        <>            <Loader section='GFX WORKS SECTION' />
+            <main id="gfx">
 
-            <div className="text-center">
-                <div className="group-text">
-                    <h1>ALSO A GFX DESIGNER</h1>
+                <div className="grid-layout">
+                    <div className="text-center">
+                        <h1>ALSO A GFX DESIGNER</h1>
+                        <div className="group-text">
+                            {gfx.map((item) => (
+                                <div className="gfx-content">
+                                    <img src={item.image} alt="" />
+                                    <div className="gfx-text">
+                                        <a href="#">{item.title}</a>
+                                        <a href="#">{item.year}</a>
+                                        <a href="#">see full project</a>
 
-                    <div className="left">
-                        <div className="text-container">
-                            <h1>h1XULIN h1IROCAO BRABO h1XULIN h1IROCAO BRABO</h1>
-                            <h1>h1XULIN h1IROCAO BRABO h1XULIN h1IROCAO BRABO</h1>
+                                    </div>
+                                </div>
+                            ))}
                         </div>
-                        <h1>h1XULIN h1IROCAO BRABO h1XULIN h1IROCAO BRABO</h1>
-                        <h1>h1XULIN h1IROCAO BRABO h1XULIN h1IROCAO BRABO</h1>
-                        <h1>h1XULIN h1IROCAO BRABO h1XULIN h1IROCAO BRABO</h1>
-                        <h1>h1XULIN h1IROCAO BRABO h1XULIN h1IROCAO BRABO</h1>
-                        <h1>h1XULIN h1IROCAO BRABO h1XULIN h1IROCAO BRABO</h1>
-                        <h1>h1XULIN h1IROCAO BRABO h1XULIN h1IROCAO BRABO</h1>
-                        <h1>h1XULIN h1IROCAO BRABO h1XULIN h1IROCAO BRABO</h1>
-                        <h1>h1XULIN h1IROCAO BRABO h1XULIN h1IROCAO BRABO</h1>
-                        <h1>h1XULIN h1IROCAO BRABO h1XULIN h1IROCAO BRABO</h1>
-                        <h1>h1XULIN h1IROCAO BRABO h1XULIN h1IROCAO BRABO</h1>
-                        <h1>h1XULIN h1IROCAO BRABO h1XULIN h1IROCAO BRABO</h1>
-                        <h1>h1XULIN h1IROCAO BRABO h1XULIN h1IROCAO BRABO</h1>
-                        <h1>h1XULIN h1IROCAO BRABO h1XULIN h1IROCAO BRABO</h1>
-                        <h1>h1XULIN h1IROCAO BRABO h1XULIN h1IROCAO BRABO</h1>
-                        <h1>h1XULIN h1IROCAO BRABO h1XULIN h1IROCAO BRABO</h1>
-                        <h1>h1XULIN h1IROCAO BRABO h1XULIN h1IROCAO BRABO</h1>
-                        <h1>h1XULIN h1IROCAO BRABO h1XULIN h1IROCAO BRABO</h1>
-                        <h1>h1XULIN h1IROCAO BRABO h1XULIN h1IROCAO BRABO</h1>
-                        <h1>h1XULIN h1IROCAO BRABO h1XULIN h1IROCAO BRABO</h1>
-                        <h1>h1XULIN h1IROCAO BRABO h1XULIN h1IROCAO BRABO</h1>
-                        <h1>h1XULIN h1IROCAO BRABO h1XULIN h1IROCAO BRABO</h1>
-                        <h1>h1XULIN h1IROCAO BRABO h1XULIN h1IROCAO BRABO</h1>
-
                     </div>
                 </div>
-            </div>
-        </main>
+            </main ></>
     );
 };
 
 export default Gfx;
+
+const gfx = [
+    { title: "SICKEE  ", year: "2022", image: "/gfx-1.png" },
+    { title: "AZ ", year: "2023", image: "/gfx-2.png" },
+    { title: "BERZERK - HEARTLSS ", year: "2019", image: "/gfx-3.jpg" },
+    { title: "NEVERMIND ", year: "2020", image: "/gfx-4.png" },
+]

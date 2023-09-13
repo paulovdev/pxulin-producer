@@ -1,0 +1,49 @@
+@import '../../index.scss';
+
+#expertises {
+    background-color: $secondary-color;
+
+   ul {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+        li {
+            a {
+                padding: 1rem;
+
+                border: 1px solid $border-color;
+                background-color: $secondary-color;
+                border-radius: 5rem;
+
+                font-size: 1rem;
+                font-weight: 500;
+
+                color: $primary-color;
+
+                transition:
+                    all 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+
+            }
+        }
+    }
+
+
+    h1 {
+        font-size: 7rem;
+        color: $primary-color;
+        font-weight: 800;
+        transition: all 0.3s ease-in;
+
+        position: sticky;
+        top: 5%;
+    }
+
+    .text-content-center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30vh !important;
+    }
+}
