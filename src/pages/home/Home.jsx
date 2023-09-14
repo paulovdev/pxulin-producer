@@ -50,9 +50,9 @@ const Home = () => {
             animate="animate"
             transition='transition'
             className="header-content">
-            <h1><span>WEB</span> DEVELOPER </h1>
-            <h1><span>UX/UI</span> DESIGNER</h1>
-            <p>I like to craft solid and scalable frontend products with great user experiences.</p>
+            <h1>WEB DEVELOPER</h1>
+            <h1>UX/UI DESIGNER</h1>
+
           </motion.div>
 
           <div className="bottom-content">

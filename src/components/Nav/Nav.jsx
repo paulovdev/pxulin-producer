@@ -40,7 +40,7 @@ const Nav = () => {
                         onClick={toggleMenu}>
                         <Hamburger
                             size={22}
-                            color='#000000'
+                            color='#000'
                             duration={0.5}
                             toggled={isOpen}
                             toggle={toggleMenu}

@@ -1,11 +1,10 @@
 import React, { useEffect } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import { ImArrowDownRight2 } from 'react-icons/im'
 
 import './About.scss';
 import '../../styles/Globals.scss';
-
-
 
 
 const AboutSection2 = () => {
@@ -31,11 +30,11 @@ const AboutSection2 = () => {
                     <motion.h1
                         initial={{ opacity: 0, x: -1000 }}
                         animate={controls}
-                    >ABOUT ME
+                    >About me <ImArrowDownRight2 fill='#000' size={60} />
                     </motion.h1>
 
                     <div className="sub-text-content">
-                        <h2>MY NAME IS PAULO VITOR, I'M 20 YEARS OLD. </h2>
+                        <h2>My name is Paulo Vitor i'm 20 years old.</h2>
                         <motion.p
                             initial={{ opacity: 0, x: 1000 }}
                             animate={subTextControls}

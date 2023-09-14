@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import { ImArrowDownRight2 } from 'react-icons/im'
 
 import './About.scss';
 import '../../styles/Globals.scss';
@@ -28,13 +29,13 @@ const AboutSection1 = () => {
                     <motion.h1
                         initial={{ opacity: 0, x: 1000 }}
                         animate={controls}
-                    >DESIGN
+                    >Design < ImArrowDownRight2 fill='#000' size={60} />
                     </motion.h1>
 
 
 
                     <div className="sub-text-content">
-                        <h2> I BUILD & DESIGN STUFF </h2>
+                        <h2> I build & design stuff </h2>
                         <motion.p
                             initial={{ opacity: 0, x: -1000 }}
                             animate={subTextControls}
