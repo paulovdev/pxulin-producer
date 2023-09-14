@@ -35,11 +35,12 @@ const AboutSection2 = () => {
                     </motion.h1>
 
                     <div className="sub-text-content">
+                        <h2>MY NAME IS PAULO VITOR, I'M 20 YEARS OLD. </h2>
                         <motion.p
                             initial={{ opacity: 0, x: 1000 }}
                             animate={subTextControls}
                             transition={{ duration: 1 }}
-                        >My name is Paulo Vitor, I'm 20 years old. I'm a front-end developer with a passion for creating beautiful and joyful digital experiences. In addition to programming, I love design, games, and travel.</motion.p >
+                        > I'm a front-end developer with a passion for creating beautiful and joyful digital experiences. In addition to programming, I love design, games, and travel.</motion.p >
 
                         <motion.p
                             initial={{ opacity: 0, x: 1000 }}

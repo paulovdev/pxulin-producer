@@ -28,19 +28,18 @@ const AboutSection1 = () => {
                     <motion.h1
                         initial={{ opacity: 0, x: 1000 }}
                         animate={controls}
-                    >THE VISION
+                    >DESIGN
                     </motion.h1>
 
 
 
                     <div className="sub-text-content">
-                        <div className="line"></div>
-
+                        <h2> I BUILD & DESIGN STUFF </h2>
                         <motion.p
                             initial={{ opacity: 0, x: -1000 }}
                             animate={subTextControls}
                             transition={{ duration: 1 }}
-                        >The fusion of heavy metal, rap, and scream, paired with PXULIN's futuristic identity, offers dark creative works that are unmatched and lead to their most unexpected yet quintessentially PXULIN project so far - PXULIN.</motion.p >
+                        >I'm probably not the typical designer positioned behind an Illustrator artboard adjusting pixels, but I design. Immersed in stylesheets tweaking font sizes and contemplating layouts is where you'll find me (~_^). I'm committed to creating fluent user experiences while staying fashionable.</motion.p >
 
                         <motion.p
                             initial={{ opacity: 0, x: -1000 }}

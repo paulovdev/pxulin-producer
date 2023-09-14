@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800;900&display=swap');
 
-$primary-color: #111111;
+$primary-color: #000000;
 $secondary-color: #fcfcfc;
 $third-color: #3a3a3a;
-$border-color: #9f9f9f;
+$border-color: #aeaeae;
 
 
 * {
@@ -24,8 +24,8 @@ $border-color: #9f9f9f;
   width: 100vw;
   height: 100vh;
   content: "";
-  /* you can control opacity of noise  */
-  opacity: .05;
+
+  opacity: .08;
   z-index: 1000;
   pointer-events: none;
   background: url('../public/noise.gif');
@@ -37,6 +37,6 @@ body {
 }
 
 ::selection {
-  background-color: #ffffff;
-  color: #ffffff;
+  background-color: $third-color;
+  color: $third-color;
 }

@@ -61,7 +61,7 @@ nav {
     gap: 3rem;
     overflow: hidden;
     transition: width .5s;
-    z-index: 9; 
+    z-index: 9;
 
 
     li {
@@ -109,6 +109,11 @@ nav {
 
         span {
             color: #7c7c7c;
+        }
+
+        @media (max-width: 768px) {
+            max-width: 90%;
+            padding: 5px 0;
         }
     }
 

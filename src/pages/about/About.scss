@@ -2,6 +2,8 @@
 
 #about {
     background-color: $secondary-color;
+    transition:
+        all 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
 
 
     h1 {
@@ -20,7 +22,7 @@
         align-items: start;
         justify-content: start;
         flex-direction: column;
-        margin-top: 30vh !important;
+        margin-top: 20vh !important;
 
         .sub-text-content {
             display: flex;
@@ -28,18 +30,26 @@
             justify-content: end;
             flex-direction: column;
 
+            h2 {
+
+                margin-bottom: 2rem !important;
+                max-width: 100%;
+
+                font-weight: 700;
+                line-height: 150%;
+
+                color: $primary-color;
+            }
+
             p {
                 margin-bottom: 2rem !important;
-                max-width: 50%;
+                max-width: 40%;
 
-                font-size: 1.7rem;
+                font-size: 1.5rem;
                 font-weight: 400;
                 line-height: 150%;
 
                 color: $primary-color;
-
-                transition:
-                    all 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
 
                 span {
                     color: $primary-color;

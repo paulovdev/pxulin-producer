@@ -1,11 +1,12 @@
 @import '../../index.scss';
 
-#homeText {
+#slideText {
     position: relative;
     display: flex;
-    height: 20vh;
+    height: 30vh;
     width: 100%;
     overflow: hidden;
+    background-color: $secondary-color;
 }
 
 
@@ -18,20 +19,17 @@
         white-space: nowrap;
     }
 
-    .slider p,
-    span {
+
+    .slider p {
         position: relative;
         margin: 0px;
-        color: $secondary-color;
+        color: $primary-color;
         font-size: 10rem;
-        font-weight: 900;
+        font-weight: 400;
         padding-right: 50px;
     }
 
-    span {
-        color: transparent;
-        -webkit-text-stroke: 1px #ffffff;
-    }
+
 
     .slider p:nth-of-type(2) {
         position: absolute;
@@ -41,8 +39,7 @@
 
     @media (max-width:992px) {
 
-        .slider p,
-        span {
+        .slider p {
             font-size: 8rem;
         }
     }

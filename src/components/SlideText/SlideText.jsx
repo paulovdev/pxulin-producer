@@ -1,10 +1,9 @@
 import { useRef, useEffect } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/all';
-import "./HomeText.scss";
+import "./SlideText.scss";
 
-
-const HomeText = () => {
+const SlideText = () => {
   const firstText = useRef(null);
   const secondText = useRef(null);
   const slider = useRef(null);
@@ -40,11 +39,11 @@ const HomeText = () => {
   }
 
   return (
-    <section id="homeText">
+    <section id="slideText">
       <div className="sliderContainer">
         <div ref={slider} className='slider'>
-          <p ref={firstText}>A <span>WEB</span> DEVELOPER AND <span>UX/UI</span> DESIGNER</p>
-          <p ref={secondText}>A <span>WEB</span> DEVELOPER AND <span>UX/UI</span> DESIGNER</p>
+          <p ref={firstText}>Brand Creation / Campaigns / Digital Experiences /</p>
+          <p ref={secondText}>Brand Creation / Campaigns / Digital Experiences /</p>
         </div>
 
       </div>
@@ -52,4 +51,4 @@ const HomeText = () => {
   );
 };
 
-export default HomeText;
+export default SlideText;

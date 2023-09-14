@@ -27,30 +27,30 @@ const Nav = () => {
     }
 
     return (
-    <>
-        <header>
-            <nav className="nav" >
-                <div className="wrap"></div>
-                <motion.div
-                    variants={navEffect}
-                    initial='initial'
-                    animate='animate'
-                    triggerOnce={true}
-                    id="bars"
-                    onClick={toggleMenu}>
-                    <Hamburger
-                        size={22}
-                        color='#000000'
-                        duration={0.5}
-                        toggled={isOpen}
-                        toggle={toggleMenu}
-                    />
-                </motion.div>
-            </nav>
-        </header >
+        <>
+            <header>
+                <nav className="nav" >
+                    <div className="wrap"></div>
+                    <motion.div
+                        variants={navEffect}
+                        initial='initial'
+                        animate='animate'
+                        triggerOnce={true}
+                        id="bars"
+                        onClick={toggleMenu}>
+                        <Hamburger
+                            size={22}
+                            color='#000000'
+                            duration={0.5}
+                            toggled={isOpen}
+                            toggle={toggleMenu}
+                        />
+                    </motion.div>
+                </nav>
+            </header >
 
 
-        <div className='noise'>
+            <div className='noise'>
                 <ul className={`menu-list ${isOpen ? "open" : ""}`} >
                     {navigation.map((nav, index) => (
                         <motion.li
@@ -83,8 +83,8 @@ const Nav = () => {
                         ))}
                     </div>
                 </ul>
-        </div>
-    </>
+            </div>
+        </>
     );
 };
 
