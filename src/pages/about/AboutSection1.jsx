@@ -29,7 +29,7 @@ const AboutSection1 = () => {
                     <motion.h1
                         initial={{ opacity: 0, x: 1000 }}
                         animate={controls}
-                    >Design < ImArrowDownRight2 fill='#000' size={60} />
+                    >Design < ImArrowDownRight2 fill='#000' size={40} />
                     </motion.h1>
 
 

@@ -5,6 +5,7 @@ import { ImArrowDownRight2 } from 'react-icons/im'
 
 import './About.scss';
 import '../../styles/Globals.scss';
+import { Rotate } from 'hamburger-react';
 
 
 const AboutSection2 = () => {
@@ -30,7 +31,7 @@ const AboutSection2 = () => {
                     <motion.h1
                         initial={{ opacity: 0, x: -1000 }}
                         animate={controls}
-                    >About me <ImArrowDownRight2 fill='#000' size={60} />
+                    > <ImArrowDownRight2 fill='#000' size={40} /> About 
                     </motion.h1>
 
                     <div className="sub-text-content">

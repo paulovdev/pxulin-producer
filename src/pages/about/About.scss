@@ -7,9 +7,9 @@
 
 
     h1 {
-        font-size: 7rem;
+        font-size: 6rem;
+        font-weight: 700;
         color: $primary-color;
-        font-weight: 600;
         transition: all 0.3s ease-in;
 
         position: sticky;
@@ -65,6 +65,12 @@
         align-items: end;
         justify-content: end;
 
+        h1 {
+            svg {
+                transform: rotate(90deg);
+            }
+        }
+
         .sub-text-content {
             display: flex;
             align-items: start;
@@ -74,16 +80,18 @@
     }
 
     @media (max-width: 768px) {
+        h1 {
+            font-size: 3rem;
+            font-weight: 600;
+        }
 
         .text-content-left,
         .text-content-right {
-            align-items: center;
-            justify-content: center;
-            text-align: center;
+
             margin-top: 10vh !important;
 
             h1 {
-                font-size: 5rem;
+                font-size: 4rem;
                 text-align: center;
                 position: relative;
                 top: 0;
@@ -98,5 +106,4 @@
             }
         }
     }
-
 }

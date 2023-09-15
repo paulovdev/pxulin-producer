@@ -51,7 +51,7 @@ const Home = () => {
             transition='transition'
             className="header-content">
             <h1>WEB DEVELOPER</h1>
-            <h1>UX/UI DESIGNER</h1>
+            <h1 style={{textAlign:'end'}}>UX/UI DESIGNER</h1>
 
           </motion.div>
 
