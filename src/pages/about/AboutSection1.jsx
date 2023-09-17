@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { ImArrowDownRight2 } from 'react-icons/im'
 
 import './About.scss';
 import '../../styles/Globals.scss';
@@ -29,24 +28,29 @@ const AboutSection1 = () => {
                     <motion.h1
                         initial={{ opacity: 0, x: 1000 }}
                         animate={controls}
-                    >Design < ImArrowDownRight2 fill='#000' size={40} />
+                    >Design
                     </motion.h1>
 
-
-
                     <div className="sub-text-content">
-                        <h2> I build & design stuff </h2>
-                        <motion.p
+                        <motion.h2
                             initial={{ opacity: 0, x: -1000 }}
                             animate={subTextControls}
-                            transition={{ duration: 1 }}
-                        >I'm probably not the typical designer positioned behind an Illustrator artboard adjusting pixels, but I design. Immersed in stylesheets tweaking font sizes and contemplating layouts is where you'll find me (~_^). I'm committed to creating fluent user experiences while staying fashionable.</motion.p >
+                            transition={{ duration: 1 }}> I build & design stuff
+                        </motion.h2>
 
                         <motion.p
                             initial={{ opacity: 0, x: -1000 }}
                             animate={subTextControls}
                             transition={{ duration: 1, delay: 0.1 }}
-                        >PXULIN is a curated collection that encapsulates PXULIN's honesty, expression, and vibrant energy. PXULIN is an independent project unlike anything previously released by PXULIN. It offers you the opportunity to physically absorb PXULIN's energy for the first time.</motion.p >
+                        >I'm probably not the typical designer positioned behind an Illustrator artboard adjusting pixels, but I design. Immersed in stylesheets tweaking font sizes and contemplating layouts is where you'll find me (~_^). I'm committed to creating fluent user experiences while staying fashionable.
+                        </motion.p >
+
+                        <motion.p
+                            initial={{ opacity: 0, x: -1000 }}
+                            animate={subTextControls}
+                            transition={{ duration: 1, delay: 0.2 }}
+                        >PXULIN is a curated collection that encapsulates PXULIN's honesty, expression, and vibrant energy. PXULIN is an independent project unlike anything previously released by PXULIN. It offers you the opportunity to physically absorb PXULIN's energy for the first time.
+                        </motion.p >
 
                     </div>
                 </div>

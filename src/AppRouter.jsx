@@ -1,27 +1,20 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import Lenis from '@studio-freight/lenis'
 import { Route, Routes } from 'react-router-dom';
 
-import Cursor from "./utils/Cursor";
+import Cursor from "./utils/Cursor/Cursor";
+import AppLeader from './AppLeader';
+
+
 import Nav from './components/Nav/Nav';
 import Footer from './components/Footer/Footer';
-import PreLoader from './components/PreLoader/PreLoader';
-import AppLeader from './AppLeader';
-import Gfx from './pages/Gfx/Gfx';
+import Gfx from './pages/gfx/Gfx';
 
 const AppRouter = () => {
-  const [isLoading, setIsLoading] = useState(true);
   const lenis = new Lenis()
 
   useEffect(() => {
-    const fakeDataFetch = () => {
-      setTimeout(() => {
-        setIsLoading(false);
-      }, 1500);
-    };
-
-    fakeDataFetch();
-
+    //lenis cursor:
     function raf(time) {
       lenis.raf(time)
       requestAnimationFrame(raf)
@@ -30,9 +23,7 @@ const AppRouter = () => {
     requestAnimationFrame(raf)
   }, []);
 
-  return isLoading ? (
-    <PreLoader />
-  ) : (
+  return (
     <>
       <Cursor />
       <Nav />

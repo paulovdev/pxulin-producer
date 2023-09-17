@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from 'react-router-dom'
 import "./Nav.scss";
 import { Cross as Hamburger } from 'hamburger-react'
@@ -6,25 +6,26 @@ import { motion } from "framer-motion";
 
 const Nav = () => {
     const [isOpen, setOpen] = useState(false);
+    const [isVisible, setIsVisible] = useState(true);
+
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
+    const handleScroll = () => {
+        if (window.scrollY > 700) {
+            setIsVisible(false);
+        } else {
+            setIsVisible(true);
+        }
+    };
 
     const toggleMenu = () => {
         setOpen(!isOpen);
     };
-
-    const navEffect = {
-        initial: {
-            opacity: 0,
-            x: 100
-        },
-        animate: {
-            opacity: 1,
-            x: 0,
-            transition: {
-                duration: 0.5,
-                delay: 1.3,
-            }
-        }
-    }
 
     return (
         <>
@@ -32,16 +33,19 @@ const Nav = () => {
                 <nav className="nav" >
                     <div className="wrap"></div>
                     <motion.div
-                        variants={navEffect}
-                        initial='initial'
-                        animate='animate'
-                        triggerOnce={true}
                         id="bars"
-                        onClick={toggleMenu}>
+                        onClick={toggleMenu}
+                        initial={{ opacity: 0, x: 3000 }}
+                        animate={{
+                            opacity: isVisible ? 1 : 0,
+                            x: isVisible ? 0 : 1000,
+                        }}
+                        transition={{ duration: 1 }}
+                    >
                         <Hamburger
-                            size={22}
+                            size={24}
                             color='#000'
-                            duration={0.5}
+                            duration={1}
                             toggled={isOpen}
                             toggle={toggleMenu}
                         />
@@ -55,14 +59,14 @@ const Nav = () => {
                     {navigation.map((nav, index) => (
                         <motion.li
                             key={index}
-                            initial={{ opacity: 0, x: -1000 }}
+                            initial={{ opacity: 0, x: 500 }}
                             animate={{
                                 opacity: isOpen ? 1 : 0,
-                                x: isOpen ? 0 : 1000,
+                                x: isOpen ? 0 : 500,
                             }}
-                            transition={{ duration: 0.5, delay: isOpen ? index * 0.1 : 0 }}
+                            transition={{ duration: 1, delay: isOpen ? index * 0.5 : 0 }}
                         >
-                            < Link to={nav.href} onClick={toggleMenu}>
+                            <Link to={nav.href} onClick={toggleMenu}>
                                 {nav.title}
                             </ Link>
                         </motion.li>
@@ -71,12 +75,12 @@ const Nav = () => {
                         {textsNav.map((text, index) => (
                             <motion.div
                                 key={index}
-                                initial={{ opacity: 0, y: -1000 }}
+                                initial={{ opacity: 0, y: 1000 }}
                                 animate={{
                                     opacity: isOpen ? 1 : 0,
                                     y: isOpen ? 0 : 1000,
                                 }}
-                                transition={{ duration: 0.3, delay: isOpen ? index * 0.1 : 0 }}
+                                transition={{ duration: 1, delay: isOpen ? index * 0.1 : 0 }}
                             >
                                 <p>{text.p} <span>{text.span}</span></p>
                             </motion.div>

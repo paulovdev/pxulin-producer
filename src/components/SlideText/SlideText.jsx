@@ -1,53 +1,48 @@
-import { useRef, useEffect } from 'react';
-import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/all';
-import "./SlideText.scss";
+import React, { useRef, useEffect, useState } from 'react';
+import { motion, useAnimation } from 'framer-motion';
+import './SlideText.scss';
 
 const SlideText = () => {
-  const firstText = useRef(null);
-  const secondText = useRef(null);
   const slider = useRef(null);
-  let xPercent = 0;
-  let direction = -1;
+  const controls = useAnimation();
+  const [scrollY, setScrollY] = useState(0);
+
+  const handleScroll = () => {
+    setScrollY(window.scrollY);
+  };
 
   useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
-    gsap.to(slider.current, {
-      scrollTrigger: {
-        trigger: document.documentElement,
-        scrub: 0.25,
-        start: 0,
-        end: window.innerHeight,
-        onUpdate: e => direction = e.direction * -1
-      },
-      x: "-500px",
-    })
-    requestAnimationFrame(animate);
-  }, [])
+    const handleAnimation = async () => {
 
-  const animate = () => {
-    if (xPercent < -100) {
-      xPercent = 0;
-    }
-    else if (xPercent > 0) {
-      xPercent = -100;
-    }
-    gsap.set(firstText.current, { xPercent: xPercent })
-    gsap.set(secondText.current, { xPercent: xPercent })
-    requestAnimationFrame(animate);
-    xPercent += 0.08 * direction;
-  }
+      await controls.start({
+        x: -scrollY * 0.2,
+        transition: {
+          type: 'spring',
+          damping: 20,
+          stiffness: 550,
+        },
+      });
+    };
+
+    handleAnimation();
+  }, [scrollY, controls]);
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   return (
     <section id="slideText">
       <div className="sliderContainer">
-        <div ref={slider} className='slider'>
-          <p ref={firstText}>Brand Creation / Campaigns / Digital Experiences /</p>
-          <p ref={secondText}>Brand Creation / Campaigns / Digital Experiences /</p>
-        </div>
-
+        <motion.div
+          ref={slider}
+          className='slider'
+          animate={controls}>
+          <p>Recent Works · Recent Works · Recent Works · Recent Works · Recent Works ·</p>
+        </motion.div>
       </div>
-    </section >
+    </section>
   );
 };
 

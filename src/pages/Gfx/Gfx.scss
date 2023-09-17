@@ -4,35 +4,59 @@
     background-color: $primary-color;
 
     .text-center {
-        padding: 50px 0;
-        text-align: center;
+        padding: 20vh 0 !important;
 
         h1 {
-            font-size: 5rem;
+            font-size: 6rem;
+            font-weight: 700;
             color: $secondary-color;
-            font-weight: 900;
-            transition: all 0.3s ease-in;
 
-            position: sticky;
-            top: 0;
+        }
+    }
+
+    .sub-text-content {
+        display: flex;
+        align-items: end;
+        justify-content: end;
+
+
+        h2 {
+            margin-bottom: 2rem !important;
+            max-width: 40%;
+
+            font-size: 1.5rem;
+            font-weight: 300;
+            line-height: 150%;
+
+            color: $secondary-color;
         }
     }
 
     .group-text {
         display: flex;
         flex-direction: column;
-        gap: 3rem;
+        gap: 10rem;
 
         .gfx-content {
-            padding: 1rem;
-            width: 100%;
             display: flex;
             flex-direction: column;
-            align-items: center;
+            align-items: end;
+            justify-content: end;
+            flex-direction: column;
+            text-align: end;
+
+            &:nth-child(3),
+            &:nth-child(1) {
+                text-align: start;
+                align-items: start;
+                justify-content: start;
+                flex-direction: column;
+            }
 
             img {
+                display: inline-block;
                 margin-bottom: 1rem !important;
-                width: 100%;
+                max-width: 700px;
                 height: 100%;
 
                 border-radius: 1rem;
@@ -44,30 +68,10 @@
                 }
             }
 
-            @media (max-width: 768px) {
-                flex-direction: column;
-            }
-
             .gfx-text {
                 width: 100%;
                 display: flex;
-                align-items: center;
-                justify-content: space-between;
-                border-bottom: 1px solid $border-color;
-
-
-                a {
-                    margin-bottom: 1rem !important;
-                    border: 1px solid $border-color;
-                    padding: 1rem;
-                    border-radius: 2rem;
-                    font-size: 0.8rem;
-                    font-weight: 900;
-                    color: $secondary-color;
-
-                    text-transform: uppercase;
-                    transition: all 0.5s;
-                }
+                flex-direction: column;
             }
         }
     }

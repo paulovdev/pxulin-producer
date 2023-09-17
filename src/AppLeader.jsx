@@ -4,6 +4,7 @@ import AboutSection2 from './pages/about/AboutSection2'
 import Expertises from './pages/expertises/Expertises'
 import SlideText from './components/SlideText/SlideText'
 import Recent from './pages/recent/Recent'
+import Services from './pages/services/Services'
 
 const AppLeader = () => {
   return (
@@ -12,8 +13,10 @@ const AppLeader = () => {
       <AboutSection1 />
       <AboutSection2 />
       <Expertises />
+
       <SlideText />
       <Recent />
+      <Services />
     </>
   )
 

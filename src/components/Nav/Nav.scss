@@ -35,7 +35,7 @@ nav {
     background-color: $secondary-color;
     border: 1px solid $border-color;
     border-radius: 50%;
-    padding: 0.2rem;
+    padding: 0.5rem;
     z-index: 99999;
 
     cursor: pointer;
@@ -46,29 +46,36 @@ nav {
     }
 }
 
-
 .menu-list {
     position: fixed;
     top: 0;
     right: 0;
+
     width: 0;
     height: 100vh;
+
     background: $secondary-color;
+
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     gap: 3rem;
+
     overflow: hidden;
-    transition: width .5s;
+    transition: width 1s ease;
     z-index: 9;
 
+
+    &.open {
+        width: 100vw;
+    }
 
     li {
         a {
             color: $primary-color;
             font-size: 5rem;
-            font-weight: 900;
+            font-weight: 600;
             text-decoration: none;
             position: relative;
             white-space: nowrap;
@@ -93,17 +100,19 @@ nav {
     }
 
     .text-nav {
+        position: relative;
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 3rem;
+        gap: 2rem;
+        top: 200px;
 
         p,
         span {
             color: $primary-color;
             font-size: 1rem;
-            font-weight: 900;
-            transition: all 0.3s ease-in;
+            font-weight: 600;
+            white-space: nowrap;
         }
 
         span {
@@ -112,21 +121,18 @@ nav {
 
 
     }
-
-    @media (max-width: 768px) {
-        li {
-            a {
-                font-size: 3rem;
-            }
-        }
-
-        .text-nav {
-            max-width: 90%;
-            padding: 5px 0;
-        }
-    }
 }
 
-.open {
-    width: 100vw;
+
+@media (max-width: 768px) {
+    li {
+        a {
+            font-size: 3rem;
+        }
+    }
+
+    .text-nav {
+        max-width: 90%;
+        padding: 5px 0;
+    }
 }

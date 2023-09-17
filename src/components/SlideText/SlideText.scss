@@ -6,30 +6,29 @@
     height: 30vh;
     width: 100%;
     overflow: hidden;
-    background-color: $secondary-color;
+    z-index: 1000;
+    background-color:
+        transparent;
 }
 
 
 .sliderContainer {
     position: absolute;
-
+    z-index: 0;
 
     .slider {
         position: relative;
         white-space: nowrap;
     }
 
-
     .slider p {
         position: relative;
         margin: 0px;
         color: $primary-color;
-        font-size: 10rem;
+        font-size: 8rem;
         font-weight: 400;
         padding-right: 50px;
     }
-
-
 
     .slider p:nth-of-type(2) {
         position: absolute;
@@ -43,6 +42,7 @@
             font-size: 8rem;
         }
     }
+
     @media (max-width:768px) {
 
         .slider p {

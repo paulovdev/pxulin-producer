@@ -1,0 +1,44 @@
+{/* <div className="second-layout">
+    <h2>Expertises</h2>
+    <ul>
+        <li><a href="#">Web designer</a></li>
+        <li><a href="#">UX/UI designer</a></li>
+        <li><a href="#">Free-lance</a></li>
+        <li><a href="#">Producer</a></li>
+    </ul>
+</div> */}
+
+{/* <div className="third-layout">
+    <h2>Socials</h2>
+    <div className="icons">
+        <img src="/icons/insta.png" alt="" />
+        <img src="/icons/figma.png" alt="" />
+        <img src="/icons/behance.png" alt="" />
+    </div>
+</div> */}
+
+
+//CARD
+<div className="cards">
+    <div className="card">
+        <div className="text-card">
+            <h1>UX/UI</h1>
+            <p>I design the interface so that it is clear, objective and, above all, intuitive for the user.</p>
+        </div>
+    </div>
+
+    <div className="card">
+        <div className="text-card">
+            <h1>UX/UI</h1>
+            <p>I design the interface so that it is clear, objective and, above all, intuitive for the user.</p>
+        </div>
+    </div>
+
+    <div className="card">
+        <div className="text-card">
+            <h1>UX/UI</h1>
+            <p>I design the interface so that it is clear, objective and, above all, intuitive for the user.</p>
+        </div>
+    </div>
+</div>
+

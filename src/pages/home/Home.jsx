@@ -4,7 +4,7 @@ import '../../components/Arrows.scss';
 import { motion } from "framer-motion";
 import { BsArrowDown } from "react-icons/bs";
 import { Link } from 'react-scroll'
-import Loader from '../../utils/Loader'
+import Loader from '../../utils/Loader/Loader'
 
 const Home = () => {
   const headerContent = {
@@ -16,8 +16,8 @@ const Home = () => {
       y: 0,
       opacity: 1,
       transition: {
-        duration: 0.5,
-        delay: 1,
+        duration: 1,
+        delay: 3,
       },
     }
   };
@@ -32,15 +32,15 @@ const Home = () => {
       y: 0,
       opacity: 1,
       transition: {
-        duration: 0.5,
-        delay: 1,
+        duration: 1,
+        delay: 3,
       },
     }
   };
 
   return (
     <>
-      <Loader section='HOME' />
+      <Loader section='Home section' />
       <section id="home">
         <main className="grid-layout">
 
@@ -50,8 +50,11 @@ const Home = () => {
             animate="animate"
             transition='transition'
             className="header-content">
-            <h1>WEB DEVELOPER</h1>
-            <h1 style={{textAlign:'end'}}>UX/UI DESIGNER</h1>
+            <h1>
+              Webflow Developer
+              &
+              Visual Designer
+            </h1>
 
           </motion.div>
 
@@ -72,10 +75,11 @@ const Home = () => {
               initial="initial"
               animate="animate"
               className="arrow-container"
+              whileHover={{ scale: 1.1 }}
             >
               <div className="arrow">
                 <Link to="about" smooth={true} className="arrow">
-                  <BsArrowDown />
+                  <BsArrowDown fill="#636363" />
                 </Link>
               </div>
             </motion.div>

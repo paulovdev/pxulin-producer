@@ -1,6 +1,6 @@
 import AppRouter from './AppRouter'
 import { BrowserRouter } from 'react-router-dom';
-
+import ScrollTop from './components/ScrollTop/ScrollTop'
 const App = () => {
   function scrollToTop() {
     window.scrollTo({
@@ -10,6 +10,7 @@ const App = () => {
   }
   return (
     <div className='noise' onLoad={scrollToTop}>
+      <ScrollTop />
       <BrowserRouter >
         <AppRouter />
       </BrowserRouter>

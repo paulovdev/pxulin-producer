@@ -1,0 +1,63 @@
+@import '../../index.scss';
+
+#services {
+    background-color: $primary-color;
+
+    .text-content {
+        margin-bottom: 2rem !important;
+        padding: 10vh 0 !important;
+
+        h1 {
+            color: $secondary-color;
+            font-size: 64px;
+            font-weight: 600;
+            line-height: 1.25em;
+        }
+    }
+
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5rem;
+
+        .card {
+            max-width: 350px;
+            height: auto;
+            border-bottom: 1px solid $border-color;
+            height: 300px;
+
+            .img-card {
+                display: inline-block;
+                margin-bottom: 1rem;
+            }
+
+            .text-card {
+                h1 {
+                    color: $secondary-color;
+                    font-size: 36px;
+                    font-weight: 400;
+                    margin-bottom: 1rem;
+                }
+
+                p {
+                    color: $secondary-color;
+                    font-size: 18px;
+                    font-weight: 300;
+                    line-height: 130%;
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+    }
+
+    @media (max-width:768px) {
+        .cards {
+            justify-content: center;
+            align-content: center;
+
+            .card {
+                max-width: 100%;
+            }
+        }
+    }
+}

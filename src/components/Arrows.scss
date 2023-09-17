@@ -2,15 +2,21 @@
 
 .arrow-container {
     position: relative;
-    mix-blend-mode: exclusion;
     display: flex;
     align-items: center;
     justify-content: end;
     gap: 2rem;
 
     &:hover {
+        cursor: pointer;
+
         svg {
             transform: translateY(10px);
+            fill: $secondary-color;
+        }
+
+        .arrow {
+            border: 1px solid $secondary-color;
         }
     }
 
@@ -22,7 +28,7 @@
         align-items: center;
         justify-content: center;
 
-        cursor: pointer;
+        transition: border 0.3s;
 
         a {
             padding: 0;
@@ -34,19 +40,6 @@
             width: 200px;
             padding: 5.3rem;
             transition: transform 0.3s;
-        }
-    }
-
-    p {
-        font-weight: 900;
-        margin-bottom: 1rem;
-        font-size: 0.8rem;
-        letter-spacing: 1px;
-        color: $secondary-color;
-        transition: all 0.3s;
-
-        @media (max-width:1250px) {
-            max-width: 100%;
         }
     }
 }
