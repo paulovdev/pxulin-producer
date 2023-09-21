@@ -7,10 +7,11 @@ import AppLeader from './AppLeader';
 
 import Nav from './components/Nav/Nav';
 import Footer from './components/Footer/Footer';
-import GfxSection from './pages/gfx/GfxSection';
 import Contact from './pages/contact/Contact';
+import Expertises from './pages/expertises/Expertises';
 
 import RecentContent1 from './pages/recent/RecentContent/RecentContent1';
+
 
 const AppRouter = () => {
   const lenis = new Lenis()
@@ -31,8 +32,8 @@ const AppRouter = () => {
       <Nav />
       <Routes>
         <Route path="/" element={<AppLeader />} />
-        <Route path="/gfx" element={<GfxSection />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/expertises" element={<Expertises />} />
         <Route path="/recent1" element={<RecentContent1 />} />
       </Routes>
       <Footer />

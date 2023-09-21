@@ -26,7 +26,7 @@ const About = () => {
             <main className="grid-layout">
                 <div className='text-content'>
                     <motion.h1
-                        initial={{ opacity: 0, x: -1000 }}
+                        initial={{ opacity: 0, x: -100 }}
                         animate={controls}
                     >About
                     </motion.h1>
@@ -34,14 +34,14 @@ const About = () => {
 
                     <div className="sub-text-content">
                         <motion.h2
-                            initial={{ opacity: 0, x: 1000 }}
+                            initial={{ opacity: 0, x: 100 }}
                             animate={subTextControls}
                             transition={{ duration: 1 }}>
                             My name is Paulo Vitor i'm 20 years old.
                         </motion.h2>
 
                         <motion.p
-                            initial={{ opacity: 0, x: 1000 }}
+                            initial={{ opacity: 0, x: 100 }}
                             animate={subTextControls}
                             transition={{ duration: 1 }}
                         >

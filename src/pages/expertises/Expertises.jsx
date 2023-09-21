@@ -1,9 +1,14 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+
+import Loader from '../../utils/Loader/Loader';
+import Services from '../services/Services'
+import FramerMagnetic from '../../utils/MagneticButton/MagneticButton'
+
 import '../../styles/Globals.scss';
 import '../about/About.scss';
 import './Expertises.scss';
-import FramerMagnetic from '../../utils/MagneticButton/MagneticButton'
+
 
 const Expertises = () => {
     const [rotation, setRotation] = useState([]);
@@ -15,43 +20,47 @@ const Expertises = () => {
     }
 
     return (
-        <section id='expertises'>
-            <main className="grid-layout">
-                <div className="text-content">
-                    <motion.h1>
-                        Expertises
-                    </motion.h1>
-                </div>
+        <>
+            <Loader />
+            <section id='expertises'>
+                <main className="grid-layout">
+                    <div className="text-content">
+                        <motion.h1>
+                            Expertises
+                        </motion.h1>
+                    </div>
 
-                {expertise.map((item, i) => (
-                    <details key={i}>
-                        <motion.summary onClick={() => rotate(i)}>
-                            {item.title}
-                            <FramerMagnetic>
-                                <div className={`plusminus ${rotation[i] ? 'active' : ''}`}></div>
-                            </FramerMagnetic>
-                        </motion.summary>
-                        <AnimatePresence>
-                            <ul>
-                                {rotation[i] && (
-                                    item.items.map((itemName, index) => (
+                    {expertise.map((item, i) => (
+                        <details key={i}>
+                            <motion.summary onClick={() => rotate(i)}>
+                                {item.title}
+                                <FramerMagnetic>
+                                    <div className={`plusminus ${rotation[i] ? 'active' : ''}`}></div>
+                                </FramerMagnetic>
+                            </motion.summary>
+                            <AnimatePresence>
+                                <ul>
+                                    {rotation[i] && (
+                                        item.items.map((itemName, index) => (
 
-                                        <motion.li
-                                            key={index}
-                                            initial={{ opacity: 0, height: 0 }}
-                                            animate={{ opacity: 1, height: 'auto' }}
-                                            exit={{ opacity: 0, height: 0 }}
-                                        >
-                                            {itemName}
-                                        </motion.li>
+                                            <motion.li
+                                                key={index}
+                                                initial={{ opacity: 0, height: 0 }}
+                                                animate={{ opacity: 1, height: 'auto' }}
+                                                exit={{ opacity: 0, height: 0 }}
+                                            >
+                                                {itemName}
+                                            </motion.li>
 
-                                    ))
-                                )}  </ul>
-                        </AnimatePresence>
-                    </details>
-                ))}
-            </main>
-        </section>
+                                        ))
+                                    )}  </ul>
+                            </AnimatePresence>
+                        </details>
+                    ))}
+                </main>
+            </section>
+            <Services />
+        </>
     );
 };
 

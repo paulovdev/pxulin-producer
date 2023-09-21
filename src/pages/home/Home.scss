@@ -6,14 +6,13 @@
     background:
         $secondary-color;
 
-
     .header-content {
-        display: inline-flex;
+        display: flex;
         flex-direction: column;
 
         h1 {
             color: $primary-color;
-            font-size: 140px;
+            font-size: 100px;
             font-weight: 600;
             line-height: 110%;
         }
@@ -82,7 +81,17 @@
         }
 
         .bottom-content {
+            position: relative;
+            top: 0;
+            width: 100%;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
             .text-content {
+                flex-direction: column;
+
                 p {
                     max-width: 100%;
                 }

@@ -1,6 +1,5 @@
 import "./Home.scss";
 import '../../styles/Globals.scss';
-import '../../components/Arrows.scss';
 import { motion } from "framer-motion";
 import { BsArrowDown } from "react-icons/bs";
 import { Link } from 'react-scroll'
@@ -18,7 +17,7 @@ const Home = () => {
       y: 0,
       opacity: 1,
       transition: {
-        duration: 1,
+        duration: 0.3,
         delay: 3,
       },
     }
@@ -34,7 +33,7 @@ const Home = () => {
       y: 0,
       opacity: 1,
       transition: {
-        duration: 1,
+        duration: 0.3,
         delay: 3,
       },
     }
@@ -76,19 +75,9 @@ const Home = () => {
 
 
             <FramerMagnetic>
-              <motion.div
-                variants={bottomContent}
-                initial="initial"
-                animate="animate"
-                className="arrow-container"
-                whileHover={{ scale: 1.1 }}
-              >
-                <div className="arrow">
-                  <Link to="about" smooth={true} className="arrow">
-                    <BsArrowDown fill="#636363" />
-                  </Link>
-                </div>
-              </motion.div>
+              <Link to="about" smooth={true} className="arrow">
+                <BsArrowDown fill="#000" size={64} />
+              </Link>
             </FramerMagnetic>
 
 

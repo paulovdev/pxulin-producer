@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from 'react-router-dom'
 import "./Nav.scss";
-import { Cross as Hamburger } from 'hamburger-react'
+import { Pivot as Hamburger } from 'hamburger-react'
 import { HiOutlineArrowNarrowRight } from 'react-icons/hi'
 import { motion } from "framer-motion";
 import FramerMagnetic from "../../utils/MagneticButton/MagneticButton";
@@ -47,9 +47,9 @@ const Nav = () => {
                             transition={{ duration: 1 }}
                         >
                             <Hamburger
-                                size={22}
+                                size={32}
                                 color='#fff'
-                                duration={1}
+                                duration={0.8}
                                 toggled={isOpen}
                                 toggle={toggleMenu}
 
@@ -83,7 +83,7 @@ const Nav = () => {
                                 </ Link>
                             </FramerMagnetic>
 
-                    
+
 
                         </motion.li>
 
@@ -114,8 +114,8 @@ export default Nav;
 
 const navigation = [
     { title: "HOME", href: "/" },
-    { title: "GFX WORKS", href: "/gfx" },
     { title: "CONTACT", href: "/contact" },
+    { title: "EXPERTISES", href: "/expertises " }
 ];
 
 
