@@ -52,10 +52,10 @@ const Home = () => {
             animate="animate"
             transition='transition'
             className="header-content">
-            <h1>Front-end</h1>
-            <h1>Developer.</h1>
+            <h1>Paulo</h1>
+            <h1>Pirocudo.</h1>
 
-            <p>I like to craft solid and scalable frontend products with great user experiences.</p>
+            <p>A front-end developer & ux/ui designer.</p>
           </motion.div>
 
           <div className="bottom-content">

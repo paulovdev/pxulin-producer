@@ -2,39 +2,43 @@ import React from 'react';
 import './Recent.scss';
 import '../../styles/Globals.scss';
 
-import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import SlideText from '../../components/SlideText/SlideText';
 const Recent = () => {
-    return (
-        <div id="recent">
-            <SlideText />
-            <main className='grid-layout'>
-                <div className="project">
-                    {works.map((item) => (
-                        <>
+    return (<>
+        <SlideText />
+        <section id="recent">
 
-                            <div className="projects">
-                                <img src={item.img} alt="" />
-                                <div className="texts">
-                                    <p>{item.year}</p>
-                                    <p>{item.title}</p>
-                                    <Link to={item.link}>See full project</Link>
-                                </div>
+            <div className="wrap">
+
+                {works.map((item) => (
+                    <>
+                        <div className="project">
+                            <div className="left">
+                                <span>{item.order}</span>
+                                <h1>{item.title}</h1>
+                                <h2>{item.subTitle}</h2>
+                                <h3>{item.year}</h3>
+                                <Link to={item.link}>See full project</Link>
                             </div>
 
-                        </>
-                    ))}
-                </div>
-            </main>
-        </div>
+                            <div className="right">
+
+                                <img src={item.img} alt="" />
+                            </div>
+                        </div>
+                    </>
+                ))}
+            </div>
+        </section>
+    </>
     )
 }
 
 export default Recent;
 
 const works = [
-    { img: '/gfx-1.png', year: '2023', title: 'Cubic Harmony: Nature and Technology', link: '/recent1' },
-    { img: '/gfx-2.png', year: '2021', title: 'Modern Steel Structure', link: '/recent2' },
-    { img: '/gfx-4.png  ', year: '2022', title: 'Serenity by the Water', link: '/recent3' },
+    { img: '/gfx-1.png', year: '2023', title: 'SICKEE', subTitle: 'by @edleran', order: '1-3', link: '/recent1' },
+    { img: '/gfx-2.png', year: '2021', title: 'AZ', subTitle: 'by @edleran', order: '2-3', link: '/recent2' },
+    { img: '/gfx-4.png  ', year: '2022', title: 'NEVERMINE', subTitle: 'by @edleran', order: '3-3', link: '/recent3' },
 ]

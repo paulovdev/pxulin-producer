@@ -2,6 +2,7 @@
 
 #about {
     background-color: $primary-color;
+    border-radius: 2rem;
 
     h1 {
         color: $secondary-color;
@@ -47,32 +48,25 @@
         }
     }
 
-}
-
-
-@media (max-width: 768px) {
-    h1 {
-        font-size: 3rem;
-        font-weight: 600;
-    }
-
-    .text-content-left,
-    .text-content {
-
-        margin: 10vh 0 !important;
-
+    @media (max-width: 768px) {
         h1 {
-            font-size: 4rem;
-            text-align: center;
-            position: relative;
-            top: 0;
+            font-size: 2rem;
+            font-weight: 600;
         }
 
-        .sub-text-content {
-            p {
-                max-width: 100%;
-                border: none;
-                padding: none;
+        .text-content {
+            h1 {
+                font-size: 4rem;
+                text-align: center;
+                position: relative;
+                top: 0;
+            }
+
+            .sub-text-content {
+                p {
+                    max-width: 100%;
+
+                }
             }
         }
     }

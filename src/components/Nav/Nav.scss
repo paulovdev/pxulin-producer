@@ -50,6 +50,7 @@ nav {
 
     background: $primary-color;
 
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -57,7 +58,7 @@ nav {
     gap: 3rem;
 
     overflow: hidden;
-    transition: width 1s ease;
+    transition: width .8s ease;
     z-index: 9;
 
 
@@ -148,7 +149,7 @@ nav {
             padding: 5px 0;
             justify-content: start;
             top: 0;
-            flex-wrap: wrap ;
+            flex-wrap: wrap;
         }
     }
 }
