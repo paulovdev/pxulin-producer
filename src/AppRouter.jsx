@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import Lenis from '@studio-freight/lenis'
 import { Route, Routes } from 'react-router-dom';
 
@@ -16,7 +16,7 @@ const AppRouter = () => {
   const lenis = new Lenis()
 
   useEffect(() => {
-    //lenis cursor:
+
     function raf(time) {
       lenis.raf(time)
       requestAnimationFrame(raf)

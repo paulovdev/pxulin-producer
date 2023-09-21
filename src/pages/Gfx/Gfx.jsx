@@ -113,9 +113,3 @@ const Gfx = () => {
 };
 
 export default Gfx;
-
-/* const gfx = [
-    { title: "AZ ", year: "2023", image: "/gfx-2.png" },
-    { title: "BERZERK - HEARTLSS ", year: "2019", image: "/gfx-3.jpg" },
-    { title: "NEVERMIND ", year: "2020", image: "/gfx-4.png" },
-] */
