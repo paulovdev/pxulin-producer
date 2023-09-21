@@ -4,8 +4,8 @@
     background-color: $primary-color;
 
     .text-content {
-        margin-bottom: 2rem !important;
-        padding: 10vh 0 !important;
+        margin: 10vh 0 !important;
+        width: 70vw;
 
         h1 {
             color: $secondary-color;
@@ -18,13 +18,13 @@
     .cards {
         display: flex;
         flex-wrap: wrap;
-        gap: 5rem;
+        gap: 2rem;
 
         .card {
             max-width: 350px;
             height: auto;
             border-bottom: 1px solid $border-color;
-            height: 330px;
+            height: 300px;
 
             .img-card {
                 display: inline-block;
@@ -50,7 +50,7 @@
         }
     }
 
-    @media (max-width:768px) {
+    @media (max-width:992px) {
         .cards {
             justify-content: center;
             align-content: center;

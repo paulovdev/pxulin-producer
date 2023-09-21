@@ -8,7 +8,7 @@ const Cursor = () => {
     <AnimatedCursor
       color="255,255,255"
       innerSize={3}
-      outerSize={40}
+      outerSize={33}
       innerScale={1}
       outerScale={2}
       outerAlpha={1}
@@ -33,7 +33,8 @@ const Cursor = () => {
         '.link',
         '#bars',
         'p',
-        '.image'
+        '.image',
+        'summary'
       ]}
     />
 

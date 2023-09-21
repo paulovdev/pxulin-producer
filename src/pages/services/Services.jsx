@@ -47,7 +47,7 @@ const Services = () => {
                         </div>
                     </div>
 
-                    <div className="card">
+                    {/*  <div className="card">
                         <div className="img-card">
                             <img src="/icons/nft.png" alt="" />
                         </div>
@@ -55,7 +55,7 @@ const Services = () => {
                             <h1>NFT Creator</h1>
                             <p>Explosions of color, flashy collisions of pixels, sensory overload – our NFTs are different. The courage to pare things down and embrace original concepts is what makes them come alive.</p>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </main>
         </section>

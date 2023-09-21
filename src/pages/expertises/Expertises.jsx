@@ -1,11 +1,19 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { AiOutlinePlus } from 'react-icons/ai'
+import React, { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import '../../styles/Globals.scss';
 import '../about/About.scss';
-import './Expertises.scss'
+import './Expertises.scss';
+import FramerMagnetic from '../../utils/MagneticButton/MagneticButton'
 
 const Expertises = () => {
+    const [rotation, setRotation] = useState([]);
+
+    function rotate(i) {
+        const newRotation = [...rotation];
+        newRotation[i] = !newRotation[i];
+        setRotation(newRotation);
+    }
+
     return (
         <section id='expertises'>
             <main className="grid-layout">
@@ -15,28 +23,73 @@ const Expertises = () => {
                     </motion.h1>
                 </div>
 
-                <div className="bottom-content">
-                    <h1>UX Design</h1>
-                    <AiOutlinePlus fill='#fff' size={32} />
+                {expertise.map((item, i) => (
+                    <details key={i}>
+                        <motion.summary onClick={() => rotate(i)}>
+                            {item.title}
+                            <FramerMagnetic>
+                                <div className={`plusminus ${rotation[i] ? 'active' : ''}`}></div>
+                            </FramerMagnetic>
+                        </motion.summary>
+                        <AnimatePresence>
+                            <ul>
+                                {rotation[i] && (
+                                    item.items.map((itemName, index) => (
 
-                </div>
-                <div className="border"></div>
-                <div className="bottom-content">
-                    <h1>Branding</h1>
-                    <AiOutlinePlus fill='#fff' size={32} />
+                                        <motion.li
+                                            key={index}
+                                            initial={{ opacity: 0, height: 0 }}
+                                            animate={{ opacity: 1, height: 'auto' }}
+                                            exit={{ opacity: 0, height: 0 }}
+                                        >
+                                            {itemName}
+                                        </motion.li>
 
-
-                </div>
-                <div className="border"></div>
-                <div className="bottom-content">
-                    <h1>Webflow Development</h1>
-                    <AiOutlinePlus fill='#fff' size={32} />
-
-                </div>
-                <div className="border"></div>
+                                    ))
+                                )}  </ul>
+                        </AnimatePresence>
+                    </details>
+                ))}
             </main>
         </section>
-    )
-}
+    );
+};
 
 export default Expertises;
+
+const expertise = [
+    {
+        title: 'UX Design',
+        items: [
+            'User Research',
+            'Wireframing',
+            'Prototyping',
+            'Usability Testing',
+            'Information Architecture',
+            'Interaction Design'
+        ]
+    },
+    {
+        title: 'Core Technologies',
+        items: [
+            'JavaScript',
+            'React',
+            'CSS',
+            'Sass',
+            'Node.js',
+            'Webpack',
+            'Redux',
+            'RESTful APIs',
+            'Git',
+            'Responsive Web Design'
+        ]
+    },
+    {
+        title: 'Webflow Development',
+        items: [
+            'Webflow CMS',
+            'Webflow Interactions',
+            'Webflow Hosting'
+        ]
+    }
+];

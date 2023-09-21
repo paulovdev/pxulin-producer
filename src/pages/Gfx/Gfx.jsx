@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { ImArrowDownRight2 } from 'react-icons/im'
 
 import './Gfx.scss';
 import '../../styles/Globals.scss';
@@ -42,7 +41,7 @@ const Gfx = () => {
 
     return (
         <>
-            <Loader section='GFX Works' />
+            <Loader/>
             <main id="gfx" ref={ref}>
                 <div className="grid-layout">
                     <div className="text-center">
@@ -51,7 +50,7 @@ const Gfx = () => {
                             initial="initial"
                             animate="animate"
                             transition='transition'
-                        >GFX WORKS <ImArrowDownRight2 fill='#fff' size={40} />
+                        >GFX Works
                         </motion.h1>
                     </div>
 

@@ -15,10 +15,10 @@ const SlideText = () => {
     const handleAnimation = async () => {
 
       await controls.start({
-        x: -scrollY * 0.2,
+        x: -scrollY * 0.4,
         transition: {
           type: 'spring',
-          damping: 20,
+          damping: 100,
           stiffness: 550,
         },
       });

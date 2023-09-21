@@ -2,7 +2,7 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import './Loader.scss'
 
-const Loader = ({ section }) => {
+const Loader = () => {
     return (
         <>
             <motion.div

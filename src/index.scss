@@ -1,8 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@300;400;500;600;700;800;900&display=swap');
-$primary-color: #0e1012;
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap');
+
+
+$primary-color: #000000;
 $secondary-color: #ffffff;
-$third-color: #3a3a3a;
-$border-color: #636363;
+$third-color: #888888;
+$border-color: #909090;
 
 * {
   padding: 0;
@@ -11,7 +13,7 @@ $border-color: #636363;
   text-decoration: none;
   list-style: none;
   color: $secondary-color;
-  font-family: 'Alexandria', sans-serif;
+  font-family: 'Outfit', sans-serif;
 }
 
 html.lenis {
@@ -49,10 +51,19 @@ html.lenis {
 
 body {
   height: 100%;
-  overflow: hidden;
 }
 
 ::selection {
   background-color: $third-color;
   color: $third-color;
+}
+
+
+::-webkit-scrollbar {
+  width: 1px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $primary-color;
+  border-radius: 4px;
 }

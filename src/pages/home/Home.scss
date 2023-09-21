@@ -4,34 +4,50 @@
     min-height: 100vh;
 
     background:
-        $primary-color;
+        $secondary-color;
 
 
     .header-content {
+        display: inline-flex;
+        flex-direction: column;
+
         h1 {
-            color: $secondary-color;
-            max-width: 70%;
-            font-size: 84px;
+            color: $primary-color;
+            font-size: 140px;
             font-weight: 600;
-            line-height: 1.25em;
+            line-height: 110%;
+        }
+
+        p {
+            margin-top: 1rem;
+            color: $primary-color;
+            max-width: 75%;
+
+            font-size: 22px;
+            line-height: 1.5;
+            font-weight: 400;
         }
     }
 
     .bottom-content {
         position: relative;
-        top: 100px;
-        width: 80vw;
+        top: 50px;
+        width: 70vw;
 
         display: flex;
         align-items: center;
         justify-content: space-between;
 
         .text-content {
-            p {
-                color: $secondary-color;
-                max-width: 50%;
+            display: flex;
+            align-items: center;
+            gap: 2rem;
 
-                font-size: 24px;
+            p {
+                color: $primary-color;
+                max-width: 25%;
+
+                font-size: 18px;
                 line-height: 1.5;
                 font-weight: 300;
             }
@@ -57,7 +73,7 @@
         .header-content {
 
             h1 {
-                color: $secondary-color;
+                color: $primary-color;
                 font-size: 38px;
                 font-weight: 600;
                 max-width: 100%;

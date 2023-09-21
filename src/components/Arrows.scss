@@ -11,12 +11,12 @@
         cursor: pointer;
 
         svg {
-            transform: translateY(10px);
-            fill: $secondary-color;
+            transform: translateY(30px);
+            fill: $primary-color;
         }
 
         .arrow {
-            border: 1px solid $secondary-color;
+            border: 1px solid $primary-color;
         }
     }
 

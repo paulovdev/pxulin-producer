@@ -1,0 +1,23 @@
+@import '../../index.scss';
+
+#contact {
+    background-color: $secondary-color;
+    padding: 10vh 0 !important;
+
+    .text-content {
+        width: 70vw;
+
+
+        h1 {
+            color: $primary-color;
+            font-size: 64px;
+            font-weight: 600;
+        }
+
+        p {
+            color: $primary-color;
+            font-size: 32px;
+            font-weight: 300;
+        }
+    }
+}

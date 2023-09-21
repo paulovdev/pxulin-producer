@@ -2,7 +2,10 @@ import React, { useState, useEffect } from "react";
 import { Link } from 'react-router-dom'
 import "./Nav.scss";
 import { Cross as Hamburger } from 'hamburger-react'
+import { HiOutlineArrowNarrowRight } from 'react-icons/hi'
 import { motion } from "framer-motion";
+import FramerMagnetic from "../../utils/MagneticButton/MagneticButton";
+
 
 const Nav = () => {
     const [isOpen, setOpen] = useState(false);
@@ -32,31 +35,36 @@ const Nav = () => {
             <header>
                 <nav className="nav" >
                     <div className="wrap"></div>
-                    <motion.div
-                        id="bars"
-                        onClick={toggleMenu}
-                        initial={{ opacity: 0, x: 3000 }}
-                        animate={{
-                            opacity: isVisible ? 1 : 0,
-                            x: isVisible ? 0 : 1000,
-                        }}
-                        transition={{ duration: 1 }}
-                    >
-                        <Hamburger
-                            size={24}
-                            color='#000'
-                            duration={1}
-                            toggled={isOpen}
-                            toggle={toggleMenu}
-                        />
-                    </motion.div>
+                    < FramerMagnetic>
+                        <motion.div
+                            id="bars"
+                            onClick={toggleMenu}
+                            initial={{ opacity: 0, x: 3000 }}
+                            animate={{
+                                opacity: isVisible ? 1 : 0,
+                                x: isVisible ? 0 : 1000,
+                            }}
+                            transition={{ duration: 1 }}
+                        >
+                            <Hamburger
+                                size={22}
+                                color='#fff'
+                                duration={1}
+                                toggled={isOpen}
+                                toggle={toggleMenu}
+
+                            />
+                        </motion.div>
+                    </FramerMagnetic>
+
                 </nav>
             </header >
 
 
             <div className='noise'>
-                <ul className={`menu-list ${isOpen ? "open" : ""}`} >
+                <ul className={`menu-list ${isOpen ? "open" : ""}`}>
                     {navigation.map((nav, index) => (
+
                         <motion.li
                             key={index}
                             initial={{ opacity: 0, x: 500 }}
@@ -66,10 +74,19 @@ const Nav = () => {
                             }}
                             transition={{ duration: 1, delay: isOpen ? index * 0.5 : 0 }}
                         >
-                            <Link to={nav.href} onClick={toggleMenu}>
-                                {nav.title}
-                            </ Link>
+
+
+                            < FramerMagnetic >
+                                <Link to={nav.href} onClick={toggleMenu}>
+                                    {nav.title}
+                                    < HiOutlineArrowNarrowRight className="arrow-right" />
+                                </ Link>
+                            </FramerMagnetic>
+
+                    
+
                         </motion.li>
+
                     ))}
                     <div className="text-nav">
                         {textsNav.map((text, index) => (
@@ -98,6 +115,7 @@ export default Nav;
 const navigation = [
     { title: "HOME", href: "/" },
     { title: "GFX WORKS", href: "/gfx" },
+    { title: "CONTACT", href: "/contact" },
 ];
 
 

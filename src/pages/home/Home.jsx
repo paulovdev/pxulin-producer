@@ -5,6 +5,8 @@ import { motion } from "framer-motion";
 import { BsArrowDown } from "react-icons/bs";
 import { Link } from 'react-scroll'
 import Loader from '../../utils/Loader/Loader'
+import FramerMagnetic from "../../utils/MagneticButton/MagneticButton";
+
 
 const Home = () => {
   const headerContent = {
@@ -41,6 +43,7 @@ const Home = () => {
   return (
     <>
       <Loader section='Home section' />
+
       <section id="home">
         <main className="grid-layout">
 
@@ -50,12 +53,10 @@ const Home = () => {
             animate="animate"
             transition='transition'
             className="header-content">
-            <h1>
-              Webflow Developer
-              &
-              Visual Designer
-            </h1>
+            <h1>Front-end</h1>
+            <h1>Developer.</h1>
 
+            <p>I like to craft solid and scalable frontend products with great user experiences.</p>
           </motion.div>
 
           <div className="bottom-content">
@@ -67,22 +68,30 @@ const Home = () => {
               className="text-content"
             >
               <p>
-                PXULIN® ― Design for digital solutions, specialized in building brands, websites and interactive applications. Work by Paulo Vitor, Web Dev and UX/UI Designer.
+                Highly skilled at progressive enhancement, design systems & UI Engineering.
               </p>
+
+              <p>Proven experience building successful products for clients across several countries.</p>
             </motion.div>
-            <motion.div
-              variants={bottomContent}
-              initial="initial"
-              animate="animate"
-              className="arrow-container"
-              whileHover={{ scale: 1.1 }}
-            >
-              <div className="arrow">
-                <Link to="about" smooth={true} className="arrow">
-                  <BsArrowDown fill="#636363" />
-                </Link>
-              </div>
-            </motion.div>
+
+
+            <FramerMagnetic>
+              <motion.div
+                variants={bottomContent}
+                initial="initial"
+                animate="animate"
+                className="arrow-container"
+                whileHover={{ scale: 1.1 }}
+              >
+                <div className="arrow">
+                  <Link to="about" smooth={true} className="arrow">
+                    <BsArrowDown fill="#636363" />
+                  </Link>
+                </div>
+              </motion.div>
+            </FramerMagnetic>
+
+
           </div>
         </main>
       </section>
