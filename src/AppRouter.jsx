@@ -7,7 +7,7 @@ import AppLeader from './AppLeader';
 
 import Nav from './components/Nav/Nav';
 import Footer from './components/Footer/Footer';
-import Gfx from './pages/gfx/Gfx';
+import GfxSection from './pages/gfx/GfxSection';
 import Contact from './pages/contact/Contact';
 
 import RecentContent1 from './pages/recent/RecentContent/RecentContent1';
@@ -31,7 +31,7 @@ const AppRouter = () => {
       <Nav />
       <Routes>
         <Route path="/" element={<AppLeader />} />
-        <Route path="/gfx" element={<Gfx />} />
+        <Route path="/gfx" element={<GfxSection />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/recent1" element={<RecentContent1 />} />
       </Routes>

@@ -7,7 +7,7 @@ import '../../styles/Globals.scss';
 import Loader from "../../utils/Loader/Loader";
 
 
-const Gfx = () => {
+const GfxSection = () => {
     const controls = useAnimation();
     const controls1 = useAnimation();
 
@@ -41,7 +41,7 @@ const Gfx = () => {
 
     return (
         <>
-            <Loader/>
+            <Loader />
             <main id="gfx" ref={ref}>
                 <div className="grid-layout">
                     <div className="text-center">
@@ -112,4 +112,4 @@ const Gfx = () => {
     );
 };
 
-export default Gfx;
+export default GfxSection;
