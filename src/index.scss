@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap');
 
 
-$primary-color: #000000;
+$primary-color: #111111;
 $secondary-color: #ffffff;
 $third-color: #898989;
 $border-color: #909090;
+$padding: 10vh 0 !important;
+$margin: 10vh 0 !important;
 
 * {
   padding: 0;
@@ -34,19 +36,6 @@ html.lenis {
 
 .lenis.lenis-scrolling iframe {
   pointer-events: none;
-}
-
-.noise::before {
-  position: fixed;
-  inset: 0;
-  width: 100vw;
-  height: 100vh;
-  content: "";
-
-  opacity: .05;
-  z-index: 1000;
-  pointer-events: none;
-  background: url('../public/noise.gif');
 }
 
 body {

@@ -1,12 +1,12 @@
 @import '../index.scss';
 
-.arrow-container {
+.arrow {
+    width: 400px;
+    height: 400px;
 
+    svg {
 
-    .arrow {
-        svg {
-            border-radius: 100%;
-            transition: transform 0.3s;
-        }
+        border-radius: 100%;
+        transition: transform 0.3s;
     }
 }

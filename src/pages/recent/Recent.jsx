@@ -2,6 +2,7 @@ import React from 'react';
 import './Recent.scss';
 import '../../styles/Globals.scss';
 
+import { RiArrowRightDownLine } from 'react-icons/ri'
 import { Link } from 'react-router-dom';
 import SlideText from '../../components/SlideText/SlideText';
 const Recent = () => {
@@ -19,7 +20,7 @@ const Recent = () => {
                                 <h1>{item.title}</h1>
                                 <h2>{item.subTitle}</h2>
                                 <h3>{item.year}</h3>
-                                <Link to={item.link}>See full project</Link>
+                                <Link to={item.link}>See full project  <RiArrowRightDownLine /></Link>
                             </div>
 
                             <div className="right">

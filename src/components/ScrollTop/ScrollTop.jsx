@@ -35,7 +35,7 @@ const ScrollTop = () => {
         <div
             className='scroll-top'
             onClick={scrollToTop}>
-            <Link to='noise' smooth={true}>
+            <Link to='root' smooth={true}>
                 <motion.button
                     initial={{ opacity: 0, x: 500 }}
                     animate={{

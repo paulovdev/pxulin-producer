@@ -11,6 +11,7 @@ export default function Framer({ children }) {
         const middleX = clientX - (left + width / 2)
         const middleY = clientY - (top + height / 2)
         setPosition({ x: middleX, y: middleY })
+
     }
 
     const reset = () => {

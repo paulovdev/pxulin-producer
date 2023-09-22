@@ -28,15 +28,22 @@ const AppRouter = () => {
 
   return (
     <>
-      <Cursor />
-      <Nav />
-      <Routes>
-        <Route path="/" element={<AppLeader />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/expertises" element={<Expertises />} />
-        <Route path="/recent1" element={<RecentContent1 />} />
-      </Routes>
-      <Footer />
+      <div onLoad={function scrollToTop() {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth"
+        });
+      }}>
+        <Cursor />
+        <Nav />
+        <Routes>
+          <Route path="/" element={<AppLeader />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/expertises" element={<Expertises />} />
+          <Route path="/recent1" element={<RecentContent1 />} />
+        </Routes>
+        <Footer />
+      </div>
     </>
   );
 };

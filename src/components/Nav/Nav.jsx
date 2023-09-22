@@ -61,50 +61,50 @@ const Nav = () => {
             </header >
 
 
-            <div className='noise'>
-                <ul className={`menu-list ${isOpen ? "open" : ""}`}>
-                    {navigation.map((nav, index) => (
 
-                        <motion.li
+            <ul className={`menu-list ${isOpen ? "open" : ""}`}>
+                {navigation.map((nav, index) => (
+
+                    <motion.li
+                        key={index}
+                        initial={{ opacity: 0, x: 500 }}
+                        animate={{
+                            opacity: isOpen ? 1 : 0,
+                            x: isOpen ? 0 : 500,
+                        }}
+                        transition={{ duration: 1, delay: isOpen ? index * 0.5 : 0 }}
+                    >
+
+
+                        < FramerMagnetic >
+                            <Link to={nav.href} onClick={toggleMenu}>
+                                {nav.title}
+                                < HiOutlineArrowNarrowRight className="arrow-right" />
+                            </ Link>
+                        </FramerMagnetic>
+
+
+
+                    </motion.li>
+
+                ))}
+                <div className="text-nav">
+                    {textsNav.map((text, index) => (
+                        <motion.div
                             key={index}
-                            initial={{ opacity: 0, x: 500 }}
+                            initial={{ opacity: 0, y: 1000 }}
                             animate={{
                                 opacity: isOpen ? 1 : 0,
-                                x: isOpen ? 0 : 500,
+                                y: isOpen ? 0 : 1000,
                             }}
-                            transition={{ duration: 1, delay: isOpen ? index * 0.5 : 0 }}
+                            transition={{ duration: 1, delay: isOpen ? index * 0.1 : 0 }}
                         >
-
-
-                            < FramerMagnetic >
-                                <Link to={nav.href} onClick={toggleMenu}>
-                                    {nav.title}
-                                    < HiOutlineArrowNarrowRight className="arrow-right" />
-                                </ Link>
-                            </FramerMagnetic>
-
-
-
-                        </motion.li>
-
+                            <p>{text.p} <span>{text.span}</span></p>
+                        </motion.div>
                     ))}
-                    <div className="text-nav">
-                        {textsNav.map((text, index) => (
-                            <motion.div
-                                key={index}
-                                initial={{ opacity: 0, y: 1000 }}
-                                animate={{
-                                    opacity: isOpen ? 1 : 0,
-                                    y: isOpen ? 0 : 1000,
-                                }}
-                                transition={{ duration: 1, delay: isOpen ? index * 0.1 : 0 }}
-                            >
-                                <p>{text.p} <span>{text.span}</span></p>
-                            </motion.div>
-                        ))}
-                    </div>
-                </ul>
-            </div>
+                </div>
+            </ul>
+
         </>
     );
 };

@@ -2,7 +2,7 @@
 
 #about {
     background-color: $primary-color;
-    border-radius: 2rem;
+
 
     h1 {
         color: $secondary-color;
@@ -14,7 +14,7 @@
     }
 
     .text-content {
-        padding: 20vh 0 !important;
+        padding: $padding;
 
         display: flex;
         justify-content: end;

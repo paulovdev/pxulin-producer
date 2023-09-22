@@ -1,0 +1,64 @@
+@import '../../index.scss';
+
+#contact-home {
+    background-color: #141414;
+
+    padding: $padding;
+
+    display: flex;
+    align-items: center;
+
+
+    .text-content {
+        display: flex;
+
+        flex-direction: column;
+        gap: 1rem;
+
+        h1 {
+            position: relative;
+            color: $secondary-color;
+            font-size: 64px;
+            font-weight: 300;
+            line-height: 120%;
+            position: sticky;
+            top: 100px;
+
+            display: flex;
+            align-items: end;
+            gap: 1rem;
+        }
+
+        .border {
+            margin: 10px 0;
+            width: 0;
+            height: 3px;
+            overflow: hidden;
+            background-color: $secondary-color;
+            transition: width .8s;
+        }
+
+        svg {
+            transition: transform .5s;
+        }
+
+        a:hover {
+            svg {
+                transform: rotate(45deg);
+            }
+
+            .border {
+                width: 70%;
+            }
+        }
+    }
+
+    @media (max-width:768px) {
+        .text-content {
+            h1 {
+                font-size: 52px;
+            }
+        }
+
+    }
+}
