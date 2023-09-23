@@ -2,19 +2,19 @@ import React from 'react'
 import './RecentContent.scss'
 import Loader from '../../../utils/Loader/Loader'
 
-const RecentContent1 = () => {
+const RecentContent2 = () => {
     return (
         <>
             <Loader />
             <section id='recent1'>
                 <div className="text-content">
-                    <h1>AZ</h1>
+                    <h1>SICKEE</h1>
                     <p>After doing some research and brainstorming with my team, we came up with a creative design</p>
                 </div>
 
                 <div
                     style={{
-                        background: 'url(/gfx-2.png) no-repeat center',
+                        background: 'url(/gfx-1.png) no-repeat center',
                         backgroundSize: 'cover',
                         backgroundAttachment: 'fixed',
                         width: '100%',
@@ -36,7 +36,7 @@ const RecentContent1 = () => {
 
                     <div className="col">
                         <h1>YEAR</h1>
-                        <p>2023</p>
+                        <p>2022</p>
                     </div>
                 </div>
             </section>
@@ -44,4 +44,4 @@ const RecentContent1 = () => {
     )
 }
 
-export default RecentContent1;
+export default RecentContent2;

@@ -28,23 +28,16 @@ const About = () => {
                     <motion.h1
                         initial={{ opacity: 0, x: -100 }}
                         animate={controls}
-                    >A BIT ABOUT ME
+                    > A BIT ABOUT ME
                     </motion.h1>
 
-
                     <div className="sub-text-content">
-                        <motion.h2
-                            initial={{ opacity: 0, x: 100 }}
-                            animate={subTextControls}
-                            transition={{ duration: 1 }}>
-                            My name is Paulo Vitor i'm 20 years old.
-                        </motion.h2>
-
                         <motion.p
                             initial={{ opacity: 0, x: 100 }}
                             animate={subTextControls}
                             transition={{ duration: 1 }}
                         >
+                            My name is Paulo Vitor i'm 20 years old.
                             I'm a front-end developer with a passion for creating beautiful and joyful digital experiences. In addition to programming, I love design, games, and travel.
 
                         </motion.p >

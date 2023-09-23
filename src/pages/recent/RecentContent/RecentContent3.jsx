@@ -2,19 +2,19 @@ import React from 'react'
 import './RecentContent.scss'
 import Loader from '../../../utils/Loader/Loader'
 
-const RecentContent1 = () => {
+const RecentContent3 = () => {
     return (
         <>
             <Loader />
             <section id='recent1'>
                 <div className="text-content">
-                    <h1>AZ</h1>
+                    <h1>BERZERK</h1>
                     <p>After doing some research and brainstorming with my team, we came up with a creative design</p>
                 </div>
 
                 <div
                     style={{
-                        background: 'url(/gfx-2.png) no-repeat center',
+                        background: 'url(/gfx-3.jpg) no-repeat center',
                         backgroundSize: 'cover',
                         backgroundAttachment: 'fixed',
                         width: '100%',
@@ -44,4 +44,4 @@ const RecentContent1 = () => {
     )
 }
 
-export default RecentContent1;
+export default RecentContent3;

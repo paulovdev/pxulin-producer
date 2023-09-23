@@ -1,0 +1,53 @@
+@import '../../../index.scss';
+
+#recent1 {
+    background-color: $primary-color;
+    padding: $padding;
+
+    .text-content {
+        width: $width;
+
+        h1 {
+            font-size: 150px;
+            font-weight: 600;
+        }
+
+        p {
+            font-size: 54px;
+            font-weight: 300;
+            line-height: 150%;
+            max-width: 60%;
+        }
+    }
+
+    .specs {
+        width: $width;
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+
+        .col {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: 3rem;
+
+            h1,
+            p {
+                border-bottom: 1px solid $border-color;
+                width: 500px;
+            }
+
+            h1 {
+                font-weight: 500;
+                font-size: 50px;
+            }
+
+            p {
+                font-weight: 600;
+                font-size: 100px;
+
+            }
+        }
+    }
+}

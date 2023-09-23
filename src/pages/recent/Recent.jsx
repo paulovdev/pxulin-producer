@@ -41,7 +41,27 @@ const Recent = () => {
 export default Recent;
 
 const works = [
-    { img: '/gfx-1.png', year: '2023', title: 'SICKEE', subTitle: 'by @edleran', order: '1 - 3', link: '/recent1' },
-    { img: '/gfx-2.png', year: '2021', title: 'AZ', subTitle: 'by @edleran', order: '2 - 3', link: '/recent2' },
-    { img: '/gfx-4.png', year: '2022', title: 'NEVERMINE', subTitle: 'by @edleran', order: '3 - 3', link: '/recent3' },
+    {
+        img: '/gfx-2.png',
+        year: '2021',
+        title: 'AZ',
+        subTitle: 'by @edleran',
+        order: '1 - 3',
+        link: '/recent1'
+    },
+    {
+        img: '/gfx-1.png',
+        year: '2023', title: 'SICKEE',
+        subTitle: 'by @edleran',
+        order: '2 - 3',
+        link: '/recent2'
+    },
+    {
+        img: '/gfx-3.jpg',
+        year: '2022',
+        title: 'BERZERK',
+        subTitle: 'by @edleran',
+        order: '3 - 3',
+        link: '/recent3'
+    },
 ];

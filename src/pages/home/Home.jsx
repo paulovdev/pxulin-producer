@@ -19,7 +19,7 @@ const Home = () => {
       opacity: 1,
       transition: {
         duration: 0.3,
-        delay: 3,
+        delay: 2,
       },
     }
   };
@@ -35,7 +35,7 @@ const Home = () => {
       opacity: 1,
       transition: {
         duration: 0.3,
-        delay: 3,
+        delay: 2,
       },
     }
   };
@@ -53,8 +53,7 @@ const Home = () => {
             animate="animate"
             transition='transition'
             className="header-content">
-            <h1>Paulo</h1>
-            <h1>Pimentel.</h1>
+            <h1>Paulo Vitor.</h1>
 
             <p>A front-end developer & ux/ui designer.</p>
           </motion.div>

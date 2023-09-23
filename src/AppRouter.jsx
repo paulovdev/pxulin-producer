@@ -5,12 +5,14 @@ import { Route, Routes } from 'react-router-dom';
 import Cursor from "./utils/Cursor/Cursor";
 import AppLeader from './AppLeader';
 
-import Nav from './components/Nav/Nav';
+import Header from './components/Navbar/Header';
 import Footer from './components/Footer/Footer';
 import Contact from './pages/contact/Contact';
 import Expertises from './pages/expertises/Expertises';
 
 import RecentContent1 from './pages/recent/RecentContent/RecentContent1';
+import RecentContent2 from './pages/recent/RecentContent/RecentContent2';
+import RecentContent3 from './pages/recent/RecentContent/RecentContent3';
 
 
 const AppRouter = () => {
@@ -35,12 +37,14 @@ const AppRouter = () => {
         });
       }}>
         <Cursor />
-        <Nav />
+        <Header />
         <Routes>
           <Route path="/" element={<AppLeader />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/expertises" element={<Expertises />} />
           <Route path="/recent1" element={<RecentContent1 />} />
+          <Route path="/recent2" element={<RecentContent2 />} />
+          <Route path="/recent3" element={<RecentContent3 />} />
         </Routes>
         <Footer />
       </div>

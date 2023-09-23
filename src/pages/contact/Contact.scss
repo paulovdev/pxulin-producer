@@ -19,4 +19,28 @@
             font-weight: 300;
         }
     }
+
+    form {
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 2rem;
+            color: $secondary-color;
+
+            border-radius: 1rem;
+            background-color: $primary-color;
+
+            margin-bottom: 2rem;
+        }
+
+        button {
+            width: 100%;
+            padding: 2rem;
+            color: $secondary-color;
+
+            border-radius: 1rem;
+            background-color: $primary-color;
+        }
+    }
 }

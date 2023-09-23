@@ -1,0 +1,48 @@
+@import '../../index.scss';
+
+header {
+
+    mix-blend-mode: exclusion;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 9999;
+
+    @media (max-width: 768px) {
+        padding: 10px;
+    }
+}
+
+nav {
+    max-width: $width;
+    margin: 0 auto;
+    padding: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media (max-width: 768px) {
+        max-width: 90%;
+        padding: 5px 0;
+    }
+
+}
+
+#bars {
+    position: absolute;
+    right: 0;
+
+    background-color: $secondary-color;
+    border-radius: 50%;
+    padding: 1rem;
+
+    user-select: none;
+    mix-blend-mode: exclusion;
+    z-index: 9999;
+
+    cursor: pointer;
+
+    .hamburger-react {
+        z-index: 9999;
+    }
+}
