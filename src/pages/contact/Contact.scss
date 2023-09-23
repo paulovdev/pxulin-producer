@@ -2,15 +2,14 @@
 
 #contact {
     background-color: $secondary-color;
-    padding: 10vh 0 !important;
+    padding: $padding;
 
     .text-content {
-        width: 70vw;
-
+        width: $width;
 
         h1 {
             color: $primary-color;
-            font-size: 64px;
+            font-size: 200px;
             font-weight: 600;
         }
 

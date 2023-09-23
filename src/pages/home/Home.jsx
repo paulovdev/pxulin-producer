@@ -1,11 +1,12 @@
 import "./Home.scss";
 import '../../styles/Globals.scss';
 import { motion } from "framer-motion";
-import { BsArrowDown } from "react-icons/bs";
+import { RiArrowRightDownLine } from "react-icons/ri";
 import { Link } from 'react-scroll'
+
 import Loader from '../../utils/Loader/Loader'
 import FramerMagnetic from "../../utils/MagneticButton/MagneticButton";
-
+import "../../components/Arrows.scss";
 
 const Home = () => {
   const headerContent = {
@@ -53,7 +54,7 @@ const Home = () => {
             transition='transition'
             className="header-content">
             <h1>Paulo</h1>
-            <h1>Pirocudo.</h1>
+            <h1>Pimentel.</h1>
 
             <p>A front-end developer & ux/ui designer.</p>
           </motion.div>
@@ -76,7 +77,7 @@ const Home = () => {
 
             <FramerMagnetic>
               <Link to="about" smooth={true} className="arrow">
-                <BsArrowDown fill="#000" size={64} />
+                < RiArrowRightDownLine fill="#fff" size={64} />
               </Link>
             </FramerMagnetic>
 

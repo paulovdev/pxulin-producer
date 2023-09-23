@@ -28,7 +28,7 @@ const About = () => {
                     <motion.h1
                         initial={{ opacity: 0, x: -100 }}
                         animate={controls}
-                    >About
+                    >A BIT ABOUT ME
                     </motion.h1>
 
 

@@ -4,12 +4,12 @@
     background-color: $primary-color;
 
     .text-content {
-        margin: 10vh 0 !important;
-        width: 70vw;
+        margin: $margin ;
+        width: $width;
 
         h1 {
             color: $secondary-color;
-            font-size: 64px;
+            font-size: 200px;
             font-weight: 600;
             line-height: 1.25em;
         }

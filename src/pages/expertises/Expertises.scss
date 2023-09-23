@@ -2,27 +2,22 @@
 
 #expertises {
     background-color: $primary-color;
-    padding: 10vh 0 !important;
+    padding: $padding;
 
     .text-content {
-        width: 80vw;
+        width: $width;
 
 
         h1 {
             color: $secondary-color;
-            font-size: 64px;
+            font-size: 200px;
             font-weight: 600;
             line-height: 1.25em;
         }
     }
 
-    .border {
-        margin: 5vh 0 !important;
-        border-bottom: 1px solid $border-color;
-    }
-
     details {
-        padding: 3rem 0;
+        padding: 4rem 0;
         border-bottom: 1px solid $border-color;
         user-select: none;
 
@@ -32,25 +27,22 @@
             justify-content: space-between;
 
             color: $secondary-color;
-            font-size: 38px;
-            font-weight: 400;
+            font-size: 58px;
+            font-weight: 500;
         }
 
         ul {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
+            display: flex;
+            gap: 3rem;
             padding: 5vh 0 !important;
 
             li {
-                list-style: outside;
+                list-style: disc;
 
                 color: $secondary-color;
 
-                font-size: 24px;
-                line-height: 160%;
-                font-weight: 300;
-
-
+                font-size: 32px;
+                font-weight: 400;
             }
         }
     }
