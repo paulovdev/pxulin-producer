@@ -1,9 +1,13 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion';
+import { BsFillArrowUpRightCircleFill } from 'react-icons/bs'
+
+import Magnetic from '../../utils/MagneticButton/MagneticButton'
+import Loader from "../../utils/Loader/Loader";
 
 import './Contact.scss'
 import '../../styles/Globals.scss';
-import Loader from "../../utils/Loader/Loader";
+
 
 const Contact = () => {
     const [name, setName] = useState('');
@@ -48,28 +52,43 @@ const Contact = () => {
 
 
                     <form onSubmit={handleSubmit}>
-                        <input
-                            type="text"
-                            placeholder="What's your name?"
-                            value={name}
-                            onChange={(e) => setName(e.target.value)}
-                            required
-                        />
-                        <input
-                            type="email"
-                            placeholder="What's your email?"
-                            value={email}
-                            onChange={(e) => setEmail(e.target.value)}
-                            required
-                        />
-                        <textarea
-                            rows="10"
-                            placeholder="What's your message?"
-                            value={message}
-                            onChange={(e) => setMessage(e.target.value)}
-                            required
-                        />
-                        <button type="submit">Submit</button>
+                        <div className="input-wrapper">
+                            <label htmlFor="name">What's your name?</label>
+                            <input
+                                id='name'
+                                type="text"
+                                placeholder="Paulo"
+                                value={name}
+                                onChange={(e) => setName(e.target.value)}
+                                required
+                            />
+                        </div>
+                        <div className="input-wrapper">
+                            <label htmlFor="email">What's your email?</label>
+                            <input
+                                id='email'
+                                type="email"
+                                placeholder="Paulo@example.com "
+                                value={email}
+                                onChange={(e) => setEmail(e.target.value)}
+                                required
+                            />
+                        </div>
+                        <div className="textarea-wrapper">
+                            <label htmlFor="message">Send me a message!</label>
+                            <textarea
+                                id='message'
+                                rows="10"
+                                placeholder="Message..."
+                                value={message}
+                                onChange={(e) => setMessage(e.target.value)}
+                                required
+                            />
+                        </div>
+
+
+                        <button type="submit"><h1>Submit<BsFillArrowUpRightCircleFill size={40} /></h1></button>
+
                     </form>
 
                 </main>
