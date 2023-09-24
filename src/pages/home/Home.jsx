@@ -53,35 +53,31 @@ const Home = () => {
             animate="animate"
             transition='transition'
             className="header-content">
-            <h1>Paulo Vitor.</h1>
+            <div className="home-title">
+              <h1>Design</h1>
+              <h1>that tells</h1>
+              <h1>your story</h1>
+            </div>
 
-            <p>A front-end developer & ux/ui designer.</p>
+
+            <div className="bottom-content">
+              <motion.div
+                variants={bottomContent}
+                initial="initial"
+                animate="animate"
+                transition='transition'
+                className="text-content"
+              >
+                <FramerMagnetic>
+                  <Link to="about" smooth={true} className="arrow">
+                    < RiArrowRightDownLine fill="#fff" size={64} />
+                  </Link>
+                </FramerMagnetic>
+              </motion.div>
+            </div>
           </motion.div>
 
-          <div className="bottom-content">
-            <motion.div
-              variants={bottomContent}
-              initial="initial"
-              animate="animate"
-              transition='transition'
-              className="text-content"
-            >
-              <p>
-                Highly skilled at progressive enhancement, design systems & UI Engineering.
-              </p>
 
-              <p>Proven experience building successful products for clients across several countries.</p>
-            </motion.div>
-
-
-            <FramerMagnetic>
-              <Link to="about" smooth={true} className="arrow">
-                < RiArrowRightDownLine fill="#fff" size={64} />
-              </Link>
-            </FramerMagnetic>
-
-
-          </div>
         </main>
       </section>
     </>

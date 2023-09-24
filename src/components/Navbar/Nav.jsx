@@ -7,10 +7,18 @@ import { motion } from "framer-motion";
 
 import "./Nav.scss";
 
-const Nav = ({ isOpen, toggleMenu }) => {
+const Nav = ({ isOpen, toggleMenu, isVisible }) => {
     return (
         <>
-            <ul className={`menu-list ${isOpen ? "open" : ""}`}>
+            <motion.ul
+                initial={{ opacity: 0, x: 3000 }}
+                animate={{
+                    opacity: isVisible ? 1 : 0,
+                    x: isVisible ? 0 : 1000,
+                }}
+                transition={{ duration: 1 }}
+
+                className={`menu-list ${isOpen ? "open" : ""}`}>
                 {navigation.map((nav, index) => (
                     <motion.li
                         key={index}
@@ -39,7 +47,7 @@ const Nav = ({ isOpen, toggleMenu }) => {
                         </motion.div>
                     ))}
                 </div>
-            </ul>
+            </motion.ul>
         </>
     );
 };
@@ -53,8 +61,7 @@ const navigation = [
 ];
 
 const textsNav = [
-    { p: "TYPOGRAPHY:", span: "GOOGLE FONTS" },
-    { p: "MADE BY:", span: "PXULIN" },
-    { p: "IMAGES:", span: "FREEPIK, ENVATO" },
+    { p: "MADE BY:", span: "PAULO VITOR" },
+    { p: "©  ALL RIGHTS RESERVED ", span: " 2023" },
     { p: "PRIVACY POLICY TERMS & CONDITIONS" },
 ];

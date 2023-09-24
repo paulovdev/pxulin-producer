@@ -59,7 +59,7 @@ const Header = () => {
                     </FramerMagnetic>
                 </nav>
             </header>
-            <Nav isOpen={isOpen} toggleMenu={toggleMenu} />
+            <Nav isOpen={isOpen} toggleMenu={toggleMenu} isVisible={isVisible} />
         </>
     );
 };

@@ -9,10 +9,9 @@ const ContactHome = () => {
         <section id='contact-home'>
             <main className="grid-layout">
                 <div className="text-content">
-                    <h1>Get started today</h1>
                     <Magnetic>
                         <Link to='/contact'>
-                            <h1>Let's talk <BsFillArrowUpRightCircleFill size={80} /></h1>
+                            <h1>Let's talk <BsFillArrowUpRightCircleFill size={200} /></h1>
                             <div className="border"></div>
                         </Link>
                     </Magnetic>

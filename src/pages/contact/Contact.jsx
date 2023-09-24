@@ -1,8 +1,6 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion';
-import { BsFillArrowUpRightCircleFill } from 'react-icons/bs'
 
-import Magnetic from '../../utils/MagneticButton/MagneticButton'
 import Loader from "../../utils/Loader/Loader";
 
 import './Contact.scss'
@@ -44,7 +42,7 @@ const Contact = () => {
                 <main className='grid-layout'>
                     <div className="text-content">
                         <motion.h1>
-                            Send me a message!
+                            Get in Touch.
                         </motion.h1>
                         <p>Got a question or proposal, or just want
                             to say hello? Go ahead.</p>
@@ -87,7 +85,9 @@ const Contact = () => {
                         </div>
 
 
-                        <button type="submit"><h1>Submit<BsFillArrowUpRightCircleFill size={40} /></h1></button>
+                        <button type="submit">
+                          Submit
+                        </button>
 
                     </form>
 

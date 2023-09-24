@@ -28,7 +28,7 @@ const About = () => {
                     <motion.h1
                         initial={{ opacity: 0, x: -100 }}
                         animate={controls}
-                    > A BIT ABOUT ME
+                    >About me
                     </motion.h1>
 
                     <div className="sub-text-content">
@@ -42,6 +42,9 @@ const About = () => {
 
                         </motion.p >
                     </div>
+                </div>
+                <div className="image">
+                    <img src="/gfx-4.png" alt="" />
                 </div>
             </main>
         </section>

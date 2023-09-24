@@ -1,6 +1,10 @@
-import React from 'react'
-import './RecentContent.scss'
-import Loader from '../../../utils/Loader/Loader'
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { MdKeyboardReturn } from 'react-icons/md';
+
+import './RecentContent.scss';
+
+import Loader from '../../../utils/Loader/Loader';
 
 const RecentContent1 = () => {
     return (
@@ -8,6 +12,11 @@ const RecentContent1 = () => {
             <Loader />
             <section id='recent1'>
                 <div className="text-content">
+
+                    <div className="return">
+                        <Link to='/'><MdKeyboardReturn fill='#fff' size={50} /></Link>
+                    </div>
+
                     <h1>AZ</h1>
                     <p>After doing some research and brainstorming with my team, we came up with a creative design</p>
                 </div>
@@ -26,7 +35,7 @@ const RecentContent1 = () => {
                 <div className="specs">
                     <div className="col">
                         <h1>CLIENT</h1>
-                        <p>EDLERAN</p>
+                        <p>Magistral™</p>
                     </div>
 
                     <div className="col">

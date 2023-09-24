@@ -1,18 +1,20 @@
 @import '../../index.scss';
 
 #home {
-    min-height: 90vh;
+    min-height: 150vh;
 
     background:
         $secondary-color;
 
     .header-content {
-        display: flex;
-        flex-direction: column;
+        width: $width;
+        display: inline-flex;
+        align-items: center;
+        gap: 20%;
 
         h1 {
             color: $primary-color;
-            font-size: 150px;
+            font-size: 200px;
             font-weight: 600;
         }
 
@@ -25,75 +27,20 @@
         }
     }
 
-    .bottom-content {
-        position: relative;
-        top: 50px;
-        width: $width;
-
-
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-
-        .text-content {
-            display: flex;
-            align-items: center;
-            gap: 2rem;
-
-            p {
-                color: $primary-color;
-                max-width: 30%;
-
-                font-size: 24px;
-                line-height: 150%;
-                font-weight: 300;
-            }
-        }
-
-
-        @media (max-width: 768px) {
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            gap: 3rem;
-
-            .text-content {
-                p {
-                    max-width: 100%;
-                }
-            }
-        }
-    }
-
     @media (max-width: 768px) {
+        min-height: 90vh;
 
         .header-content {
+            align-items: start;
+            flex-direction: column;
+            gap: 3rem;
 
             h1 {
                 color: $primary-color;
-                font-size: 50px;
+                font-size: 80px;
                 font-weight: 600;
-                max-width: 100%;
             }
 
-        }
-
-        .bottom-content {
-            position: relative;
-            top: 0;
-            width: 100%;
-
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-
-            .text-content {
-                flex-direction: column;
-
-                p {
-                    max-width: 100%;
-                }
-            }
         }
     }
 }
