@@ -14,12 +14,12 @@
 
         h1 {
             font-size: 150px;
-            font-weight: 600;
+            font-weight: 900;
         }
 
         p {
             font-size: 54px;
-            font-weight: 300;
+            font-weight: 500;
             line-height: 150%;
             max-width: 60%;
         }
@@ -45,12 +45,12 @@
 
             h1 {
                 font-weight: 500;
-                font-size: 50px;
+                font-size: 40px;
             }
 
             p {
-                font-weight: 600;
-                font-size: 100px;
+                font-weight: 900;
+                font-size: 80px;
 
             }
         }
@@ -63,14 +63,11 @@
 
             h1 {
                 font-size: 80px;
-                font-weight: 600;
             }
 
             p {
                 font-size: 32px;
-                font-weight: 300;
-                line-height: 150%;
-                max-width: 60%;
+                max-width: 100%;
             }
         }
 
@@ -85,7 +82,7 @@
                 display: flex;
                 align-items: center;
                 flex-direction: column;
-                gap: 0m;
+                gap: 0;
                 width: 100%;
 
                 h1,
@@ -94,12 +91,10 @@
                 }
 
                 h1 {
-                    font-weight: 500;
                     font-size: 40px;
                 }
 
                 p {
-                    font-weight: 600;
                     font-size: 80px;
                 }
             }

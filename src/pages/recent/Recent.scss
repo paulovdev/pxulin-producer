@@ -2,8 +2,7 @@
 
 #recent {
     background: $secondary-color;
-    margin: $margin;
-    padding: 0;
+    padding: $padding;
 
     .image-container {
         width: $width;
@@ -44,7 +43,7 @@
                     h1 {
                         color: $secondary-color;
                         font-size: 150px;
-                        font-weight: 600;
+                        font-weight: 900;
 
                         margin-bottom: 0.5rem;
                     }
@@ -122,29 +121,13 @@
                     position: relative;
 
                     img {
-                        border-radius: 1rem;
                         width: 100%;
                         height: 500px;
                     }
 
                     .text {
-                        position: absolute;
-                        color: $secondary-color;
-                        font-size: 150px;
-                        top: 50%;
-                        left: 50%;
-                        transform: translate(-50%, -50%);
-                        display: flex;
-                        flex-direction: column;
-                        opacity: 0;
-                        transition: opacity .5s;
-
                         h1 {
-                            color: $secondary-color;
                             font-size: 80px;
-                            font-weight: 600;
-
-                            margin-bottom: 0.5rem;
                         }
 
                     }

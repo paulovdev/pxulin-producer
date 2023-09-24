@@ -35,7 +35,6 @@ const Header = () => {
         <>
             <header>
                 <nav className="nav">
-                    <div className="wrap"></div>
                     <FramerMagnetic>
                         <motion.div
                             id="bars"

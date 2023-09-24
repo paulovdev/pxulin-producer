@@ -1,6 +1,7 @@
 @import '../../index.scss';
 
 #slideText {
+    background-color: $secondary-color;
     position: relative;
     width: 100%;
     height: 250px;
@@ -25,8 +26,8 @@
         position: relative;
         margin: 0px;
         color: $primary-color;
-        font-size: 200px;
-        font-weight: 600;
+        font-size: 150px;
+        font-weight: 900;
     }
 
     .slider p:nth-of-type(2) {

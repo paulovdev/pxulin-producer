@@ -2,20 +2,14 @@
 
 .arrow {
     svg {
-        width: 300px;
-        height: 300px;
+        width: 150px;
+        height: 150px;
 
         background-color: $primary-color;
         border-radius: 50%;
-        padding: 5.5rem;
+        padding: 3.5rem;
 
         transition: transform .3s;
-
-        @media (max-width:768px) {
-            width: 200px;
-            height: 200px;
-            padding: 4.5rem;
-        }
     }
 
     &:hover {

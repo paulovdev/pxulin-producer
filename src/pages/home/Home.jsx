@@ -53,30 +53,41 @@ const Home = () => {
             animate="animate"
             transition='transition'
             className="header-content">
+
+
             <div className="home-title">
-              <h1>Design</h1>
-              <h1>that tells</h1>
-              <h1>your story</h1>
+              <h1>Paulo</h1>
+              <h1>Pirocao.</h1>
             </div>
-
-
-            <div className="bottom-content">
-              <motion.div
-                variants={bottomContent}
-                initial="initial"
-                animate="animate"
-                transition='transition'
-                className="text-content"
-              >
-                <FramerMagnetic>
-                  <Link to="about" smooth={true} className="arrow">
-                    < RiArrowRightDownLine fill="#fff" size={64} />
-                  </Link>
-                </FramerMagnetic>
-              </motion.div>
-            </div>
+            <p>Hey, I'm Paulo, a Front-end Developer, UX/UI Designer, Music Producer & Game Developer.</p>
           </motion.div>
 
+          <div className="border"></div>
+
+          <motion.div
+            variants={bottomContent}
+            initial="initial"
+            animate="animate"
+            transition='transition'
+            className="bottom-content"
+          >
+            <div className="left-content">
+              <div className="text-available">
+                Available for freelance <span></span>
+              </div>
+              <div className="icons">
+                <img src="/public/icons/instagram.png" width={40} height={40} alt="" />
+                <img src="/public/icons/facebook.png" width={40} height={40} alt="" />
+                <img src="/public/icons/linkedin.png" width={40} height={40} alt="" />
+              </div>
+            </div>
+
+            <FramerMagnetic>
+              <Link to="about" smooth={true} className="arrow">
+                < RiArrowRightDownLine fill="#fff" size={64} />
+              </Link>
+            </FramerMagnetic>
+          </motion.div>
 
         </main>
       </section>
