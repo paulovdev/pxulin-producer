@@ -10,6 +10,9 @@
     overflow: hidden;
     z-index: 1000;
 
+    b {
+        color: $primary-color;
+    }
 }
 
 
@@ -27,7 +30,7 @@
         margin: 0px;
         color: $primary-color;
         font-size: 150px;
-        font-weight: 900;
+        font-weight: 500;
     }
 
     .slider p:nth-of-type(2) {

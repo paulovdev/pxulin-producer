@@ -1,8 +1,7 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap');
 
-
-$primary-color: #101010;
-$secondary-color: #e2e2e2;
+$primary-color: #1e1e1e;
+$secondary-color: #efefef;
 $third-color: #b4b4b4;
 $border-color: #909090;
 $width: 90vw;
@@ -16,8 +15,9 @@ $margin: 10vh 0 !important;
   text-decoration: none;
   list-style: none;
   color: $secondary-color;
-  /*   font-family: 'Outfit', sans-serif; */
-  font-family: 'General Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
+
+
 }
 
 html.lenis {
@@ -42,6 +42,7 @@ html.lenis {
 
 body {
   height: 100%;
+  background-color: $secondary-color;
 }
 
 .noise::before {

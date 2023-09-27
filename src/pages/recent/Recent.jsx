@@ -20,17 +20,18 @@ const Recent = () => {
                         <div key={index} className="project" id={index}>
                             <div className="image">
                                 <img src={item.img} alt="" />
-                                <div className="text">
-                                    <h1>{item.title}</h1>
-                                    <h2>{item.subTitle}</h2>
-                                    <h3>{item.year}</h3>
-
-                                    <Link to={item.link}><BsFillArrowUpRightCircleFill size={32} fill='#ffffff' />FULL PROJECT </Link>
-
-                                </div>
                             </div>
                             <div className="text">
+                                <div className="a">
+                                    <h1>{item.title}</h1>
+                                    <h2>{item.year}</h2>
+                                </div>
+                                <div className="b">
+                                    <h2>{item.subTitle}</h2>
 
+
+                                    <Link to={item.link}><BsFillArrowUpRightCircleFill size={32} fill='#121212' />FULL PROJECT </Link>
+                                </div>
 
                             </div>
                         </div>
@@ -45,23 +46,32 @@ export default Recent;
 
 const works = [
     {
-        img: '/gfx-2.png',
-        year: '2021',
-        title: 'AZ',
-        subTitle: 'by pxulin',
-        link: '/recent1'
-    },
-    {
-        img: '/gfx-1.png',
-        year: '2023', title: 'SICKEE',
-        subTitle: 'by vivetic',
-        link: '/recent2'
+        img: '/gfx-3.jpg',
+        year: '2022',
+        title: 'BERZERK',
+        subTitle: 'BY PXULIN',
+        link: '/recent3'
     },
     {
         img: '/gfx-3.jpg',
         year: '2022',
         title: 'BERZERK',
-        subTitle: 'by pxulin',
+        subTitle: 'BY PXULIN',
+        link: '/recent3'
+    },
+    {
+        img: '/gfx-3.jpg',
+        year: '2022',
+        title: 'BERZERK',
+        subTitle: 'BY PXULIN',
+        link: '/recent3'
+    },
+
+    {
+        img: '/gfx-3.jpg',
+        year: '2022',
+        title: 'BERZERK',
+        subTitle: 'BY PXULIN',
         link: '/recent3'
     },
 ];

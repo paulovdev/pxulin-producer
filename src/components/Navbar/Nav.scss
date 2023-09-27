@@ -10,7 +10,7 @@
 
     background: $primary-color;
 
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -29,7 +29,7 @@
         width: $width;
         text-align: end;
 
-        display: flex;
+        display: inline-flex;
         align-items: center;
         justify-content: start;
 
@@ -53,7 +53,7 @@
 
         a {
             color: $secondary-color;
-            font-size: 68px;
+            font-size: 100px;
             font-weight: 600;
             text-decoration: none;
             position: relative;
@@ -71,7 +71,7 @@
         align-items: center;
         justify-content: start;
         gap: 2rem;
-        top: 200px;
+        top: 50px;
         width: $width;
 
         p,

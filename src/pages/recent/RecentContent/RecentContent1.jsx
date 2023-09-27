@@ -17,8 +17,9 @@ const RecentContent1 = () => {
                         <Link to='/'><MdKeyboardReturn fill='#fff' size={50} /></Link>
                     </div>
 
-                    <h1>AZ</h1>
-                    <p>After doing some research and brainstorming with my team, we came up with a creative design</p>
+                    <h1>THE BATMAN</h1>
+                    <h1>LANDING PAGE</h1>
+                    <p>Simple and beautiful, landing page for a turbine page for the batman movie</p>
                 </div>
 
                 <div
@@ -34,18 +35,20 @@ const RecentContent1 = () => {
 
                 <div className="specs">
                     <div className="col">
-                        <h1>CLIENT</h1>
-                        <p>Magistral™</p>
+                        <h1>TYPOGRAPH</h1>
+                        <p>Poppins</p>
                     </div>
 
                     <div className="col">
-                        <h1>SERVICE</h1>
-                        <p>GFX</p>
+                        <h1>COLOR PALETTE</h1>
+                        <div className='color-pallete'>
+                            <span>HEX #f70122</span>
+                        </div>
                     </div>
 
                     <div className="col">
                         <h1>YEAR</h1>
-                        <p>2023</p>
+                        <p>2022</p>
                     </div>
                 </div>
             </section>

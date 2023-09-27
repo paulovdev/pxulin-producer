@@ -56,13 +56,10 @@ const Home = () => {
 
 
             <div className="home-title">
-              <h1>Paulo</h1>
-              <h1>Pirocao.</h1>
+              <h1>FRONT-END <b>DEV.</b></h1>
+              <h1><b>UX/UI</b> DESIGNER</h1>
             </div>
-            <p>Hey, I'm Paulo, a Front-end Developer, UX/UI Designer, Music Producer & Game Developer.</p>
           </motion.div>
-
-          <div className="border"></div>
 
           <motion.div
             variants={bottomContent}
@@ -71,24 +68,16 @@ const Home = () => {
             transition='transition'
             className="bottom-content"
           >
-            <div className="left-content">
-              <div className="text-available">
-                Available for freelance <span></span>
-              </div>
-              <div className="icons">
-                <img src="/public/icons/instagram.png" width={40} height={40} alt="" />
-                <img src="/public/icons/facebook.png" width={40} height={40} alt="" />
-                <img src="/public/icons/linkedin.png" width={40} height={40} alt="" />
-              </div>
-            </div>
 
+            <p>
+              HI, I'M <b>PAULO</b> A <b>FRONT-END</b> DEVELOPER,  <b>UX/UI</b> DESIGNER, <b>MUSICAL</b> PRODUCER & <b>GAME</b> DEVELOPER.
+            </p>
             <FramerMagnetic>
               <Link to="about" smooth={true} className="arrow">
-                < RiArrowRightDownLine fill="#fff" size={64} />
+                <RiArrowRightDownLine fill="#fff" size={32} />
               </Link>
             </FramerMagnetic>
           </motion.div>
-
         </main>
       </section>
     </>

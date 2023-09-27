@@ -5,7 +5,7 @@ header {
     position: fixed;
     top: 0;
     right: 0;
-    padding: 20px 50px;
+    padding: 50px 150px;
     z-index: 9999;
 
     @media (max-width: 768px) {
@@ -14,33 +14,19 @@ header {
 }
 
 nav {
-    max-width: $width;
-    margin: 0 auto;
-    padding: 10px 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 3rem;
+    #bars {
 
-    @media (max-width: 768px) {
-        max-width: 90%;
-        padding: 5px 0;
-    }
+        background-color: $secondary-color;
+        border-radius: 50%;
+        padding: 1rem;
 
-}
-
-#bars {
-    background-color: $secondary-color;
-    border-radius: 50%;
-    padding: 1rem;
-
-    user-select: none;
-    mix-blend-mode: exclusion;
-    z-index: 9999;
-
-    cursor: pointer;
-
-    .hamburger-react {
+        user-select: none;
         z-index: 9999;
+
+        cursor: pointer;
+
+        .hamburger-react {
+            z-index: 9999;
+        }
     }
 }

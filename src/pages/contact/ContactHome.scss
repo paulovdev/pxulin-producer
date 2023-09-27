@@ -17,8 +17,8 @@
         h1 {
             position: relative;
             color: $secondary-color;
-            font-size: 150px;
-            font-weight: 900;
+            font-size: 50px;
+            font-weight: 500;
             line-height: 100%;
             position: sticky;
             top: 100px;
@@ -55,12 +55,12 @@
     @media (max-width:768px) {
         .text-content {
             h1 {
-                font-size: 70px;
+                font-size: 32px;
             }
 
             svg {
-                height: 70px;
-                width: 70px;
+                height: 40px;
+                width: 40px;
             }
         }
 

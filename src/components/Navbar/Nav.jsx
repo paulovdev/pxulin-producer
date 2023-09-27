@@ -62,6 +62,6 @@ const navigation = [
 
 const textsNav = [
     { p: "MADE BY:", span: "PAULO VITOR" },
-    { p: "©  ALL RIGHTS RESERVED ", span: " 2023" },
     { p: "PRIVACY POLICY TERMS & CONDITIONS" },
+    { p: "©  ALL RIGHTS RESERVED ", span: " 2023" },
 ];

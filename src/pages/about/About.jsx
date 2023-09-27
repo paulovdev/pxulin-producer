@@ -24,28 +24,24 @@ const About = () => {
     return (
         <section id='about' ref={ref}>
             <main className="grid-layout">
-                <div className='text-content'>
-                    <motion.h1
-                        initial={{ opacity: 0, x: -100 }}
-                        animate={controls}
-                    >About me
-                    </motion.h1>
 
-                    <div className="sub-text-content">
-                        <motion.p
-                            initial={{ opacity: 0, x: 100 }}
-                            animate={subTextControls}
-                            transition={{ duration: 1 }}
-                        >
-                            My name is Paulo Vitor i'm 20 years old.
-                            I'm a front-end developer with a passion for creating beautiful and joyful digital experiences. In addition to programming, I love design, games, and travel.
-
-                        </motion.p >
+                <div className="sub-text-content">
+                    <motion.p
+                        initial={{ opacity: 0, x: 100 }}
+                        animate={subTextControls}
+                        transition={{ duration: 1 }}
+                    >
+                        MY NAME IS <b>PAULO VITOR</b> I'M <b>20 YEARS OLD</b>.
+                        I'M A PASSION FOR CREATING BEAUTIFUL AND JOYFUL <b>DIGITAL EXPERIENCES</b>. IN ADDITION TO <b>PROGRAMMING</b>, I LOVE DESIGN, <b>GAMES</b>, AND <b>TRAVEL</b>.
+                    </motion.p >
+                    <div className="text-available">
+                        <p>
+                            AVAILABLE FOR <b>FREELANCE</b></p>
+                        <span></span>
                     </div>
+
                 </div>
-                <div className="image">
-                    <img src="/gfx-4.png" alt="" />
-                </div>
+
             </main>
         </section>
     );
