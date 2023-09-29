@@ -42,42 +42,42 @@ const Contact = () => {
                 <main className='grid-layout'>
                     <div className="text-content">
                         <motion.h1>
-                            GET IN <b>TOUCH</b>.
+                            Get in Touch.
                         </motion.h1>
-                        <p>GOT A <b> QUESTION</b> OR <b>PROPOSAL</b>, OR JUST WANT
-                            TO SAY <b>HELLO</b>? GO <b>AHEAD</b>.</p>
+                        <p>Got a question or proposal, or just want
+                            to say hello? Go ahead.</p>
                     </div>
 
 
                     <form onSubmit={handleSubmit}>
                         <div className="input-wrapper">
-                            <label htmlFor="name">WHAT'S YOUR <b>NAME</b>?</label>
+                            <label htmlFor="name">What's your name?</label>
                             <input
                                 id='name'
                                 type="text"
-                                placeholder="PAULO"
+                                placeholder="Paulo"
                                 value={name}
                                 onChange={(e) => setName(e.target.value)}
                                 required
                             />
                         </div>
                         <div className="input-wrapper">
-                            <label htmlFor="email">WHAT'S YOUR  <b>EMAIL</b>?</label>
+                            <label htmlFor="email">What's your email?</label>
                             <input
                                 id='email'
                                 type="email"
-                                placeholder="PAULO@EXAMPLE.COM"
+                                placeholder="Paulo@example.com "
                                 value={email}
                                 onChange={(e) => setEmail(e.target.value)}
                                 required
                             />
                         </div>
                         <div className="textarea-wrapper">
-                            <label htmlFor="message">SEND ME A  <b>MESSAGE</b>!</label>
+                            <label htmlFor="message">Send me a message!</label>
                             <textarea
                                 id='message'
                                 rows="10"
-                                placeholder="MESSAGE..."
+                                placeholder="Message..."
                                 value={message}
                                 onChange={(e) => setMessage(e.target.value)}
                                 required
@@ -86,7 +86,7 @@ const Contact = () => {
 
 
                         <button type="submit">
-                            SUBMIT
+                          Submit
                         </button>
 
                     </form>

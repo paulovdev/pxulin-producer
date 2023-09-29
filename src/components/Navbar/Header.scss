@@ -2,6 +2,7 @@
 
 header {
     mix-blend-mode: exclusion;
+
     position: fixed;
     top: 0;
     right: 0;
@@ -15,11 +16,6 @@ header {
 
 nav {
     #bars {
-
-        background-color: $secondary-color;
-        border-radius: 50%;
-        padding: 1rem;
-
         user-select: none;
         z-index: 9999;
 

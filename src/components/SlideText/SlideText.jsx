@@ -39,11 +39,10 @@ const SlideText = () => {
           ref={slider}
           className='slider'
           animate={controls}>
-          <p>WORKS •
-            <b>DESIGN</b> • PROJECTS •
-            <b>UX/UI</b> • WORKS •
-            <b>DESIGN</b> • PROJECTS
-            • <b>UX/UI</b> • </p>
+          <p>
+            • Works • <b>Design</b> • Projects • <b>UX/UI </b>
+            • Works • <b>Design</b> • Projects • <b>UX/UI </b>
+          </p>
         </motion.div>
       </div>
     </section>

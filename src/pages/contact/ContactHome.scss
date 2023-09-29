@@ -1,8 +1,9 @@
 @import '../../index.scss';
 
 #contact-home {
-    background-color: #141414;
+    background-color: $primary-color;
     padding: $padding;
+    height: 80vh;
 
     display: flex;
     align-items: center;
@@ -17,11 +18,9 @@
         h1 {
             position: relative;
             color: $secondary-color;
-            font-size: 50px;
+            font-size: 150px;
             font-weight: 500;
             line-height: 100%;
-            position: sticky;
-            top: 100px;
 
             display: flex;
             align-items: center;

@@ -28,6 +28,7 @@
     li {
         width: $width;
         text-align: end;
+        border-bottom: 1px solid $border-color;
 
         display: inline-flex;
         align-items: center;
@@ -54,7 +55,7 @@
         a {
             color: $secondary-color;
             font-size: 100px;
-            font-weight: 600;
+            font-weight: 400;
             text-decoration: none;
             position: relative;
             white-space: nowrap;

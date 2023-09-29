@@ -11,7 +11,7 @@ const ContactHome = () => {
                 <div className="text-content">
                     <Magnetic>
                         <Link to='/contact'>
-                            <h1>LET'S <b>WORK</b> TOGETHER <BsFillArrowUpRightCircleFill size={80} /></h1>
+                            <h1>Let's Talk<BsFillArrowUpRightCircleFill size={80} /></h1>
                             <div className="border"></div>
                         </Link>
                     </Magnetic>

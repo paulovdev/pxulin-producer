@@ -18,9 +18,6 @@ const Recent = () => {
 
                     {works.map((item, index) => (
                         <div key={index} className="project" id={index}>
-                            <div className="image">
-                                <img src={item.img} alt="" />
-                            </div>
                             <div className="text">
                                 <div className="a">
                                     <h1>{item.title}</h1>
@@ -28,9 +25,7 @@ const Recent = () => {
                                 </div>
                                 <div className="b">
                                     <h2>{item.subTitle}</h2>
-
-
-                                    <Link to={item.link}><BsFillArrowUpRightCircleFill size={32} fill='#121212' />FULL PROJECT </Link>
+                                    <Link to={item.link}><BsFillArrowUpRightCircleFill size={32} fill='#121212' />View </Link>
                                 </div>
 
                             </div>
@@ -46,32 +41,32 @@ export default Recent;
 
 const works = [
     {
-        img: '/gfx-3.jpg',
+
         year: '2022',
-        title: 'BERZERK',
-        subTitle: 'BY PXULIN',
+        title: 'Berserk',
+        subTitle: 'Web Design, Webflow Development',
         link: '/recent3'
     },
     {
-        img: '/gfx-3.jpg',
-        year: '2022',
-        title: 'BERZERK',
-        subTitle: 'BY PXULIN',
+
+        year: '2021',
+        title: 'Vivetic',
+        subTitle: 'Web Design, Webflow Development',
         link: '/recent3'
     },
     {
-        img: '/gfx-3.jpg',
+
         year: '2022',
-        title: 'BERZERK',
-        subTitle: 'BY PXULIN',
+        title: 'Kinin',
+        subTitle: 'Web Design, Webflow Development',
         link: '/recent3'
     },
 
     {
-        img: '/gfx-3.jpg',
-        year: '2022',
-        title: 'BERZERK',
-        subTitle: 'BY PXULIN',
+
+        year: '2020',
+        title: 'Chiriguita',
+        subTitle: 'Web Design, Webflow Development',
         link: '/recent3'
     },
 ];

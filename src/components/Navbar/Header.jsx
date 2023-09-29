@@ -47,11 +47,11 @@ const Header = () => {
                             transition={{ duration: 1 }}
                         >
                             <Hamburger
-                                size={32}
+                                size={42}
                                 duration={0.8}
                                 toggled={isOpen}
                                 toggle={toggleMenu}
-                                color="#000"
+                                color="#fff"
                             />
                         </motion.div>
                     </FramerMagnetic>

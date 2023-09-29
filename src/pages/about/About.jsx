@@ -24,22 +24,18 @@ const About = () => {
     return (
         <section id='about' ref={ref}>
             <main className="grid-layout">
-
                 <div className="sub-text-content">
                     <motion.p
                         initial={{ opacity: 0, x: 100 }}
                         animate={subTextControls}
                         transition={{ duration: 1 }}
                     >
-                        MY NAME IS <b>PAULO VITOR</b> I'M <b>20 YEARS OLD</b>.
-                        I'M A PASSION FOR CREATING BEAUTIFUL AND JOYFUL <b>DIGITAL EXPERIENCES</b>. IN ADDITION TO <b>PROGRAMMING</b>, I LOVE DESIGN, <b>GAMES</b>, AND <b>TRAVEL</b>.
+                        I'm Paulo Vitor, 20 years old,  of my passion for design, code & interaction positions me in a unique place in the web design world.
                     </motion.p >
-                    <div className="text-available">
-                        <p>
-                            AVAILABLE FOR <b>FREELANCE</b></p>
-                        <span></span>
+                    <div className="other-text">
+                        <p>The combination of my passion for design, code & interaction positions me in a unique place in the web design world.</p>
+                        <span>Available to freelance</span>
                     </div>
-
                 </div>
 
             </main>
@@ -53,3 +49,8 @@ export default About;
 
 
 
+{/*                     <div className="text-available">
+                        <p>
+                            AVAILABLE FOR <b>FREELANCE</b></p>
+                        <span></span>
+                    </div> */}

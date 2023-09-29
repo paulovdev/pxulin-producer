@@ -53,12 +53,10 @@ const Home = () => {
             animate="animate"
             transition='transition'
             className="header-content">
+            <h1>Paulin</h1>
+            <p>©2023</p>
+            <div className="border"></div>
 
-
-            <div className="home-title">
-              <h1>FRONT-END <b>DEV.</b></h1>
-              <h1><b>UX/UI</b> DESIGNER</h1>
-            </div>
           </motion.div>
 
           <motion.div
@@ -68,13 +66,12 @@ const Home = () => {
             transition='transition'
             className="bottom-content"
           >
-
-            <p>
-              HI, I'M <b>PAULO</b> A <b>FRONT-END</b> DEVELOPER,  <b>UX/UI</b> DESIGNER, <b>MUSICAL</b> PRODUCER & <b>GAME</b> DEVELOPER.
-            </p>
+            <p>Front-end • UX/UI Designer • Musical Producer • Game Developer</p>
+            <p>Highly skilled at progressive enhancement, design systems & UI Engineering.</p>
+            <p>Highly skilled at progressive enhancement, design systems & UI Engineering.</p>
             <FramerMagnetic>
               <Link to="about" smooth={true} className="arrow">
-                <RiArrowRightDownLine fill="#fff" size={32} />
+                <RiArrowRightDownLine />
               </Link>
             </FramerMagnetic>
           </motion.div>

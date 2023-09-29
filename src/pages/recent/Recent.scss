@@ -2,6 +2,7 @@
 
 #recent {
     background: $secondary-color;
+    position: sticky;
     padding: $padding;
 
     .image-container {
@@ -13,52 +14,31 @@
 
         .project {
             display: flex;
-            align-items: start;
             flex-direction: column;
-
-            .image {
-                display: inline-flex;
-                align-items: center;
-                position: relative;
-
-                img {
-                    border-radius: 1rem;
-                    width: 800px;
-                    height: 800px;
-                }
-
-                &:hover {
-                    img {
-                        filter: brightness(50%);
-                    }
-                }
-            }
+            gap: 3rem;
+            width: 100%;
 
             .text {
-                display: flex;
-                flex-direction: column;
-                width: 100%;
+                padding: 2rem 0 !important;
+                border-bottom: 1px solid $border-color;
 
                 .a {
-
                     display: flex;
                     align-items: center;
                     justify-content: space-between;
+                    margin-bottom: 2rem;
 
                     h1 {
                         color: $primary-color;
-                        font-size: 50px;
-                        font-weight: 600;
-
-                        margin-bottom: 0.5rem;
+                        font-size: 5rem;
+                        font-weight: 300;
                     }
 
                     h2 {
                         color: $primary-color;
-                        font-size: 26px;
-                        font-weight: 600;
+                        font-size: 1.5rem;
+                        font-weight: 300;
 
-                        margin-bottom: 0.5rem;
                     }
                 }
 
@@ -69,18 +49,17 @@
 
                     h2 {
                         color: $primary-color;
-                        font-size: 32px;
-                        font-weight: 500;
+                        font-size: 1.5rem;
+                        font-weight: 300;
 
-                        margin-bottom: 0.5rem;
                     }
 
 
 
                     a {
                         color: $primary-color;
-                        font-size: 18px;
-                        font-weight: 600;
+                        font-size: 1.5rem;
+                        font-weight: 300;
 
 
                         display: flex;

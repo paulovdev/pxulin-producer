@@ -55,9 +55,9 @@ const Nav = ({ isOpen, toggleMenu, isVisible }) => {
 export default Nav;
 
 const navigation = [
-    { order: '01', title: "HOME", href: "/" },
-    { order: '02', title: "CONTACT", href: "/contact" },
-    { order: '03', title: "EXPERTISES", href: "/expertises" }
+    { order: '01', title: "Home", href: "/" },
+    { order: '02', title: "Contact", href: "/contact" },
+    { order: '03', title: "Expertises", href: "/expertises" }
 ];
 
 const textsNav = [
