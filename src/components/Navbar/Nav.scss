@@ -1,94 +1,70 @@
-@import '../../index.scss';
-
+@import "../../index.scss";
 .menu-list {
     position: fixed;
     right: 0;
     top: 0;
 
-    width: 0;
-    height: 100vh;
+    width: 100vw;
+    height: 0;
 
-    background: $primary-color;
+    background: $secondary-color;
 
-    display: inline-flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     gap: 3rem;
 
     overflow: hidden;
-    transition: width .8s ease;
-    z-index: 9;
-
+    transition: height 0.5s ease-in-out;
+    z-index: 998;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     &.open {
-        width: 100vw;
-        transition: width .8s ease-in-out;
+        height: 100vh;
+    
     }
 
     li {
-        width: $width;
-        text-align: end;
-        border-bottom: 1px solid $border-color;
+        width: 80%;
 
-        display: inline-flex;
-        align-items: center;
+        display: flex;
+        align-items: start;
         justify-content: start;
 
-        .arrow-right {
-            width: 0;
-            overflow: hidden;
-            transition: width .3s, transform .3s;
-        }
-
-        &:hover {
-            .arrow-right {
-                width: 100%;
-                transform: translateX(20px);
-            }
-        }
-
-        span {
-            font-size: 22px;
-            color: #7c7c7c;
-        }
-
         a {
-            color: $secondary-color;
-            font-size: 100px;
-            font-weight: 400;
-            text-decoration: none;
+            color: $primary-color;
+            font-size: 4rem;
+            font-weight: 600;
+
             position: relative;
-            white-space: nowrap;
 
             display: flex;
             align-items: center;
             gap: 1rem;
+            &:hover {
+                text-decoration: underline;
+            }
         }
     }
 
     .text-nav {
         position: relative;
+        top: 100px;
+        width: 80%;
+
         display: flex;
         align-items: center;
-        justify-content: start;
+        justify-content: center;
         gap: 2rem;
-        top: 50px;
-        width: $width;
 
-        p,
-        span {
-            color: $secondary-color;
+        p {
+            color: $primary-color;
             font-size: 1rem;
-            font-weight: 600;
-            white-space: nowrap;
-        }
-
-        span {
-            color: #7c7c7c;
+            font-weight: 500;
         }
     }
 
-    @media (max-width: 768px) {
+    /*     @media (max-width: 768px) {
         li {
             a {
                 font-size: 42px;
@@ -102,5 +78,5 @@
             justify-content: start;
             top: 0;
         }
-    }
+    } */
 }

@@ -1,8 +1,7 @@
-@import url('https://fonts.cdnfonts.com/css/neue-helvetica-bq');
-
-$primary-color: #141414;
-$secondary-color: #e2e2e2;
-$third-color: #272727;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+$primary-color: #141516;
+$secondary-color: #efefed;
+$third-color: #2b2b2b;
 $border-color: #b4b4b4;
 $width: 85vw;
 $padding: 10vh 0 !important;
@@ -13,11 +12,8 @@ $margin: 10vh 0 !important;
   margin: 0;
   box-sizing: border-box;
   text-decoration: none;
-  list-style: none;
   color: $secondary-color;
-  font-family: 'Neue Helvetica BQ', sans-serif;
-
-
+  font-family: 'Poppins', sans-serif;
 }
 
 html.lenis {
@@ -40,16 +36,29 @@ html.lenis {
   pointer-events: none;
 }
 
+.noise::before {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  content: "";
+  /* you can control opacity of noise  */
+  opacity: 0;
+  z-index: 1000;
+  pointer-events: none;
+  background: url("/noise.gif");
+}
+
 body {
   height: 100%;
   background-color: $secondary-color;
 }
 
 ::selection {
-  background-color: $third-color;
-  color: $third-color;
+  background-color: #b4b4b4;
+  color: $primary-color;
 }
-
 
 ::-webkit-scrollbar {
   width: 1px;

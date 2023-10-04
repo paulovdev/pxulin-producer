@@ -1,4 +1,4 @@
-@import '../../index.scss';
+@import "../../index.scss";
 
 header {
     mix-blend-mode: exclusion;
@@ -6,11 +6,11 @@ header {
     position: fixed;
     top: 0;
     right: 0;
-    padding: 50px 150px;
+    margin: 30px 145px;
     z-index: 9999;
 
     @media (max-width: 768px) {
-        padding: 10px 20px;
+        margin: 10px 20px;
     }
 }
 

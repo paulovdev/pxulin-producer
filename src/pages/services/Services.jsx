@@ -9,51 +9,47 @@ const Services = () => {
             <main className='grid-layout'>
                 <div className="text-content">
                     <motion.h1>
-                        Services
+                        I can help you with ...
                     </motion.h1>
                 </div>
 
                 <div className="cards">
                     <div className="card">
-                        <div className="img-card">
-                            <img src="/icons/figma.png" alt="" />
+                        <div className="order">
+                            01
                         </div>
                         <div className="text-card">
-                            <h1>UI/UX Design
+                            <h1>Design
                             </h1>
                             <p>
-                                Boost your website with an eye-catching design, backed up by smooth UX and creativity.</p>
+                                With a solid track record in designing websites and apps, I deliver strong and user-friendly digital designs. Solid company branding is the foundation of any succesful website.
+                            </p>
                         </div>
                     </div>
 
                     <div className="card">
-                        <div className="img-card">
-                            <img src="/icons/insta.png" alt="" />
+                        <div className="order">
+                            02
 
                         </div>
                         <div className="text-card">
-                            <h1>React Dev.</h1>
-                            <p>You coming in for an amazing custom Webflow website, crafted with expertise and attention to detail.</p>
+                            <h1>Development</h1>
+                            <p>
+                                I build scalable websites from scratch that fit seamlessly with design. My focus is on micro animations, transitions and interaction. For content management I use Kirby CMS.
+
+                            </p>
                         </div>
                     </div>
 
                     <div className="card">
-                        <div className="img-card">
-                            <img src="/icons/behance.png" alt="" />
+                        <div className="order">
+                            03
                         </div>
                         <div className="text-card">
-                            <h1>Behance Content</h1>
-                            <p>Get a pixel-perfect, beautifully animated, and well-structured Webflow site based on your hi-fi prototype.</p>
-                        </div>
-                    </div>
-
-                    <div className="card">
-                        <div className="img-card">
-                            <img src="/icons/nft.png" alt="" />
-                        </div>
-                        <div className="text-card">
-                            <h1>NFT Creator</h1>
-                            <p>Explosions of color, flashy collisions of pixels, sensory overload – our NFTs are different. The courage to pare things down and embrace original concepts is what makes them come alive.</p>
+                            <h1>The full package</h1>
+                            <p>
+                                A complete website from concept to implementation, that's what makes me stand out. My great sense for design and my development skills enable me to create kick-ass projects.
+                            </p>
                         </div>
                     </div>
                 </div>

@@ -1,70 +1,105 @@
-@import '../../index.scss';
+@import "../../index.scss";
 
 #about {
-    background-color: $primary-color;
-    padding: $padding ;
+    background-color: $secondary-color;
 
-    .sub-text-content {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-
-        p {
-            color: $secondary-color;
-            font-size: 2.5rem;
-            font-weight: 400;
-
-            max-width: 60%;
-            margin-bottom: 3rem;
+    .title {
+        margin: $margin;
+        h1 {
+            font-size: 10rem;
+            font-weight: 500;
+            line-height: 100%;
+            color: $primary-color;
         }
+    }
+    .text {
+        display: flex;
+        align-items: end;
+        justify-content: end;
+        flex-direction: column;
+        p {
+            text-indent: 5rem;
+            width: 60%;
+            font-size: 3em;
+            line-height: 1.5;
+            color: $primary-color;
+        }
+    }
 
-        .other-text {
+    .bottom-content {
+        margin: $margin;
+
+        display: flex;
+        align-items: end;
+        justify-content: end;
+        p {
+            width: 400px;
+            padding: 1.5rem;
+            border-radius: 5rem;
+            border: 1px solid $border-color;
+            color: $primary-color;
+            font-size: 2rem;
+
             display: flex;
             align-items: center;
-            flex-direction: column;
-
-            p {
+            justify-content: center;
+            &:hover {
+                background-color: $primary-color;
                 color: $secondary-color;
-                font-size: 1rem;
-                font-weight: 300;
+                cursor: pointer;
             }
+        }
+    }
 
-            span {
-                width: 250px;
-                height: 250px;
-                background-color: $third-color;
-                border-radius: 50%;
+    @media (max-width: 992px) {
+        .title {
+            h1 {
+                font-size: 100px;
+                font-weight: 500;
+                line-height: 100%;
+                color: $primary-color;
+            }
+        }
+        .text {
+            display: flex;
+            align-items: start;
+            justify-content: start;
+            flex-direction: column;
+            p {
+                text-indent: 1rem;
+                width: 100%;
+                font-size: 2em;
+                line-height: 1.5;
+                color: $primary-color;
+            }
+        }
 
-                color: $secondary-color;
+        .bottom-content {
+            margin: $margin;
 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            p {
+                width: 100%;
+                padding: 1.5rem;
+                border-radius: 5rem;
+                border: 1px solid $border-color;
+                color: $primary-color;
+                font-size: 2rem;
 
                 display: flex;
                 align-items: center;
                 justify-content: center;
-
-                box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-            }
-        }
-    }
-
-
-}
-
-@media (max-width: 992px) {
-    #about {
-
-        .sub-text-content {
-            width: 100%;
-
-            p {
-                max-width: 100%;
-                font-size: 32px;
+                &:hover {
+                    background-color: $primary-color;
+                    color: $secondary-color;
+                    cursor: pointer;
+                }
             }
         }
     }
 }
-
-
 
 /* .text-available {
     margin: 2rem 0;

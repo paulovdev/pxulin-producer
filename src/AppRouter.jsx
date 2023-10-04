@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import Lenis from '@studio-freight/lenis'
 import { Route, Routes } from 'react-router-dom';
 
-import Cursor from "./utils/Cursor/Cursor";
+/* import Cursor from "./utils/Cursor/Cursor"; */
 import AppLeader from './AppLeader';
 
 import Header from './components/Navbar/Header';
@@ -36,7 +36,7 @@ const AppRouter = () => {
           behavior: "smooth"
         });
       }}>
-        <Cursor />
+        {/*    <Cursor /> */}
         <Header />
         <Routes>
           <Route path="/" element={<AppLeader />} />
