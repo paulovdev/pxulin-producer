@@ -1,0 +1,103 @@
+@import "../../index.scss";
+
+#works {
+    background: $secondary-color;
+    .about-content {
+        width: $width;
+        margin: $margin;
+
+        span {
+            color: $primary-color;
+
+            font-size: 1.5rem;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: -0.083rem;
+        }
+    }
+
+    .worksContent {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        .project {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: $width;
+
+            h1 {
+                color: $primary-color;
+
+                font-size: 4rem;
+                font-weight: 700;
+                line-height: normal;
+                letter-spacing: -0.22rem;
+            }
+
+            h2 {
+                color: $primary-color;
+
+                font-size: 1.5rem;
+                font-weight: 400;
+                line-height: 135%;
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        .about-content {
+            span {
+                text-align: center;
+                font-size: 3rem;
+                text-transform: uppercase;
+            }
+        }
+
+        .worksContent {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+            .project {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: $width;
+
+                h1 {
+                    color: $primary-color;
+
+                    font-size: 2rem;
+                    font-weight: 700;
+                    line-height: normal;
+                    letter-spacing: -0.12rem;
+                }
+
+                h2 {
+                    color: $primary-color;
+
+                    font-size: 1rem;
+                    font-weight: 400;
+                    line-height: 135%;
+                }
+            }
+        }
+    }
+}
+.cursor,
+.cursorLabel {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: $primary-color;
+    position: absolute;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    font-weight: 400;
+    pointer-events: none;
+}

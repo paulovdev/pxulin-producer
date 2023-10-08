@@ -6,27 +6,20 @@ import { motion } from "framer-motion";
 
 import "./Nav.scss";
 
-const Nav = ({ isOpen, toggleMenu, isVisible }) => {
+const Nav = ({ isOpen, toggleMenu }) => {
     return (
         <>
 
             <motion.ul
-                initial={{ opacity: 0, x: 3000 }}
                 animate={{
-                    opacity: isVisible ? 1 : 0,
-                    x: isVisible ? 0 : 1000,
+                    opacity: isOpen ? 1 : 0,
+                    y: isOpen ? 0 : 1000
                 }}
-                transition={{ duration: 1 }}
 
-                className={`menu-list ${isOpen ? "open" : ""}`}>
+                className='mobile'>
                 {navigation.map((nav, index) => (
                     <>
-                        <motion.li
-                            key={index}
-                            initial={{ x: 500 }}
-                            animate={{ x: isOpen ? 0 : 500 }}
-                            transition={{ duration: 1, delay: isOpen ? index * 0.3 : 0 }}
-                        >
+                        <li key={index} >
                             <FramerMagnetic>
 
                                 <Link to={nav.href} onClick={toggleMenu}>
@@ -34,7 +27,7 @@ const Nav = ({ isOpen, toggleMenu, isVisible }) => {
                                 </Link>
 
                             </FramerMagnetic>
-                        </motion.li></>
+                        </li></>
                 ))}
 
                 <div className="text-nav">
@@ -50,7 +43,7 @@ const Nav = ({ isOpen, toggleMenu, isVisible }) => {
                         </motion.div>
                     ))}
                 </div>
-            </motion.ul>
+            </motion.ul >
         </>
     );
 };

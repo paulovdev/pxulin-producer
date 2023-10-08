@@ -1,11 +1,11 @@
 @import "../../index.scss";
-.menu-list {
+.mobile {
     position: fixed;
     right: 0;
     top: 0;
 
     width: 100vw;
-    height: 0;
+    height: 100vh;
 
     background: $secondary-color;
 
@@ -19,9 +19,8 @@
     transition: height 0.5s ease-in-out;
     z-index: 998;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-    &.open {
-        height: 100vh;
-    
+    @media (min-width: 992px) {
+        display: none;
     }
 
     li {
@@ -63,20 +62,4 @@
             font-weight: 500;
         }
     }
-
-    /*     @media (max-width: 768px) {
-        li {
-            a {
-                font-size: 42px;
-            }
-        }
-
-        .text-nav {
-            max-width: 100%;
-            align-items: start;
-            flex-direction: column;
-            justify-content: start;
-            top: 0;
-        }
-    } */
 }

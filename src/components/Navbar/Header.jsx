@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Pivot as Hamburger } from 'hamburger-react'
 import { motion } from "framer-motion";
-
+import { Link } from 'react-router-dom'
 import Nav from "./Nav";
 
 import './Header.scss'
@@ -54,9 +54,35 @@ const Header = () => {
                             color="#fff"
                         />
                     </motion.div>
+
+                    <motion.div
+                        initial={{ opacity: 0, x: 3000 }}
+                        animate={{
+                            opacity: isVisible ? 1 : 0,
+                            x: isVisible ? 0 : 1000,
+                        }}
+                        transition={{ duration: 1 }}>
+                        <ul className="desktop">
+                            <li>
+                                <Link to='/'>Home</Link>
+                                <div className="block"></div>
+                            </li>
+
+                            <li>
+                                <Link to='/contact'>Contact</Link>
+                                <div className="block"></div>
+                            </li>
+
+                            <li>
+                                <Link to='/expertises'>Expertises</Link>
+                                <div className="block"></div></li>
+                        </ul>
+                    </motion.div>
                 </nav>
             </header>
-            <Nav isOpen={isOpen} toggleMenu={toggleMenu} isVisible={isVisible} />
+
+
+            <Nav isOpen={isOpen} toggleMenu={toggleMenu} />
         </>
     );
 };

@@ -12,15 +12,15 @@ const Loader = () => {
                     type: "spring",
                 }}
                 className="loader">
-                <div className='noise'>
-                    <motion.div
-                        initial={{ y: "100%" }}
-                        animate={{ y: "0", transition: 1 }}
-                        className='loading'
-                    >
-                        <img src="/loading.gif" width={50} alt="" />
-                    </motion.div>
-                </div>
+
+                <motion.div
+                    initial={{ y: "100%" }}
+                    animate={{ y: "0", transition: 1 }}
+                    className='loading'
+                >
+                    <img src="/loading.gif" width={50} alt="" />
+                </motion.div>
+
             </motion.div>
         </>
     )

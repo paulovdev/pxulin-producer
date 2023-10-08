@@ -1,0 +1,38 @@
+@import "../../index.scss";
+
+#cookies {
+  position: fixed;
+  bottom: 0;
+  padding: 1rem;
+  margin: 1rem;
+  width: 600px;
+  height: 150px;
+  border-radius: 1rem;
+  background-color: $secondary-color;
+  border: 1px solid $border-color;
+
+  z-index: 99999;
+  p {
+    color: $primary-color;
+    font: size 1rem;
+  }
+  button {
+    position: relative;
+    padding: 0.3rem 1rem;
+    background-color: $secondary-color;
+    border: 1px solid $border-color;
+    border-radius: 2rem;
+    top: 10px;
+
+    color: $primary-color;
+    font-size: 1rem;
+    font-weight: 500;
+
+    transition: all 0.3s;
+
+    &:hover {
+      background-color: $primary-color;
+      color: $secondary-color;
+    }
+  }
+}

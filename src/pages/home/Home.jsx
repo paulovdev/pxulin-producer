@@ -1,8 +1,6 @@
 import "./Home.scss";
 import '../../styles/Globals.scss';
 
-import { RiArrowRightDownLine } from 'react-icons/ri'
-
 import { Link } from 'react-scroll'
 
 import Loader from '../../utils/Loader/Loader'
@@ -17,26 +15,24 @@ const Home = () => {
 
         <main className="grid-layout">
           <div className="header-content">
-            <h1>PAULIN</h1>
+            <p>©2023</p>
+            <h1>Paulin</h1>
+            <h1>Web Designer</h1>
           </div>
-          <div className="border"></div>
+          <div className="bottom-content">
 
-          <div className="middle-content">
-            <h3>Rio de Janeiro, Brazil
-              <br /> Local Time → 21:44 PM
-            </h3>
+            <div>
+              <Link to="about" smooth={true} className="scroll-down">
+                <div className="line"></div>
+                <p>SCROLL</p>
 
-            <h3>Monday
-              <br />October 2, 2023
-            </h3>
+              </Link>
+            </div>
 
-            <Link to="about" smooth={true} className="arrow">
-              < RiArrowRightDownLine size={64} />
-            </Link>
 
+            <p className="sub-text">A skilled digital designer and artdirector who specializes in webdesign, UX/UI, Framer, and no-codetools.</p>
 
           </div>
-
 
 
         </main>
@@ -46,6 +42,3 @@ const Home = () => {
 };
 
 export default Home;
-
-
-{/*          <p>©2023</p> */ }

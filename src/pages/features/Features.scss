@@ -1,0 +1,107 @@
+@import "../../index.scss";
+
+#features {
+    margin: $margin;
+    .title {
+        h1 {
+            color: $primary-color;
+            text-align: center;
+            font-size: 6rem;
+            font-weight: 500;
+            line-height: 135%;
+            letter-spacing: -0.33rem;
+        }
+    }
+
+    .feat-header {
+        width: 100%;
+        h1 {
+            position: sticky;
+            top: 50%;
+            color: $primary-color;
+
+            font-size: 4rem;
+            font-style: normal;
+            font-weight: 900;
+            line-height: 135%;
+            letter-spacing: -0.22rem;
+
+            margin: $margin;
+        }
+        .subtitle {
+            display: flex;
+            justify-content: end;
+            text-align: end;
+            p {
+                color: $primary-color;
+
+                font-size: 2.375rem;
+                font-weight: 400;
+                line-height: normal;
+                letter-spacing: -0.131rem;
+                max-width: 60%;
+            }
+        }
+
+        &:nth-child(4) {
+            h1 {
+                text-align: end;
+            }
+            .subtitle {
+                display: flex;
+                justify-content: start;
+                text-align: start;
+            }
+        }
+        &:nth-child(5) {
+            h1 {
+                text-align: center;
+                position: static;
+                top: 0;
+            }
+            .subtitle {
+                display: flex;
+                justify-content: center;
+                text-align: center;
+            }
+        }
+    }
+
+    @media (max-width: 992px) {
+        .title {
+            h1 {
+                font-size: 3.5rem;
+                letter-spacing: -0.23rem;
+            }
+        }
+
+        .feat-header {
+            h1 {
+                position: static;
+                top: 0;
+                font-size: 4rem;
+            }
+            .subtitle {
+                display: flex;
+                justify-content: start;
+                text-align: start;
+                p {
+                    position: static;
+                    top: 0;
+                    max-width: 100%;
+                }
+            }
+
+            &:nth-child(4) {
+                h1 {
+                    text-align: end;
+                }
+                .subtitle {
+                    display: flex;
+                    justify-content: end;
+                    text-align: end;
+                }
+            }
+        }
+    }
+}

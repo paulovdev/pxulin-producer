@@ -10,9 +10,9 @@ import Footer from './components/Footer/Footer';
 import Contact from './pages/contact/Contact';
 import Expertises from './pages/expertises/Expertises';
 
-import RecentContent1 from './pages/recent/RecentContent/RecentContent1';
-import RecentContent2 from './pages/recent/RecentContent/RecentContent2';
-import RecentContent3 from './pages/recent/RecentContent/RecentContent3';
+import WorksC1 from './pages/works/WorksContent/WorksC1';
+import WorksC2 from './pages/works/WorksContent/WorksC2';
+import WorksC3 from './pages/works/WorksContent/WorksC3';
 
 
 const AppRouter = () => {
@@ -42,9 +42,9 @@ const AppRouter = () => {
           <Route path="/" element={<AppLeader />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/expertises" element={<Expertises />} />
-          <Route path="/recent1" element={<RecentContent1 />} />
-          <Route path="/recent2" element={<RecentContent2 />} />
-          <Route path="/recent3" element={<RecentContent3 />} />
+          <Route path="/worksc1" element={<WorksC1 />} />
+          <Route path="/worksc2" element={<WorksC2 />} />
+          <Route path="/worksc3" element={<WorksC3 />} />
         </Routes>
         <Footer />
       </div>
