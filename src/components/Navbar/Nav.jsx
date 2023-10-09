@@ -6,20 +6,19 @@ import { motion } from "framer-motion";
 
 import "./Nav.scss";
 
-const Nav = ({ isOpen, toggleMenu }) => {
+const Nav = ({ isOpen, toggleMenu, scrollToTop }) => {
     return (
         <>
-
             <motion.ul
                 animate={{
                     opacity: isOpen ? 1 : 0,
                     y: isOpen ? 0 : 1000
                 }}
 
-                className='mobile'>
+                className='menu-opened'>
                 {navigation.map((nav, index) => (
                     <>
-                        <li key={index} >
+                        <li key={index} onClick={scrollToTop}>
                             <FramerMagnetic>
 
                                 <Link to={nav.href} onClick={toggleMenu}>

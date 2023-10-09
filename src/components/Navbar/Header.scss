@@ -6,11 +6,11 @@ header {
     position: fixed;
     top: 0;
     right: 0;
-    margin: 30px 145px;
+    margin: 40px 50px;
     z-index: 9999;
 
     @media (max-width: 992px) {
-        margin: 10px 20px;
+        margin: 40px 30px;
     }
 }
 
@@ -22,22 +22,22 @@ nav {
         li {
             text-decoration: none;
             list-style: none;
-
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-            gap: 1rem;
             a {
-                font-weight: 600;
+                font-weight: 500;
                 font-size: 1.1rem;
+
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                gap: 1rem;
             }
             .block {
                 opacity: 0;
                 position: absolute;
                 top: 30px;
 
-                width: 10px;
-                height: 10px;
+                width: 8px;
+                height: 8px;
 
                 overflow: hidden;
                 background-color: $secondary-color;
@@ -52,13 +52,18 @@ nav {
             }
         }
 
-        @media (max-width: 992px) {
-            display: none;
+        @media (max-width: 768px) {
+            gap: 2rem;
         }
     }
 
     #bars {
-        display: none;
+        position: fixed;
+        background-color: $secondary-color;
+        border-radius: 50%;
+        padding: 1rem;
+        right: 50px;
+        display: flex;
         user-select: none;
         z-index: 9999;
 
@@ -66,9 +71,6 @@ nav {
 
         .hamburger-react {
             z-index: 9999;
-        }
-        @media (max-width: 992px) {
-            display: block;
         }
     }
 }

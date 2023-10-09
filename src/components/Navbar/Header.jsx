@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Pivot as Hamburger } from 'hamburger-react'
 import { motion } from "framer-motion";
 import { Link } from 'react-router-dom'
+import FramerMagnetic from "../../utils/MagneticButton/MagneticButton";
 import Nav from "./Nav";
 
 import './Header.scss'
@@ -25,6 +26,11 @@ const Header = () => {
             setIsVisible(true);
         }
     };
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0
+        });
+    };
 
     const toggleMenu = () => {
         setOpen(!isOpen);
@@ -41,8 +47,8 @@ const Header = () => {
                         onClick={toggleMenu}
                         initial={{ opacity: 0, x: 3000 }}
                         animate={{
-                            opacity: isVisible ? 1 : 0,
-                            x: isVisible ? 0 : 1000,
+                            opacity: isVisible ? 0 : 1,
+                            x: isVisible ? 1000 : 0,
                         }}
                         transition={{ duration: 1 }}
                     >
@@ -51,7 +57,7 @@ const Header = () => {
                             duration={0.5}
                             toggled={isOpen}
                             toggle={toggleMenu}
-                            color="#fff"
+                            color="#000"
                         />
                     </motion.div>
 
@@ -59,30 +65,33 @@ const Header = () => {
                         initial={{ opacity: 0, x: 3000 }}
                         animate={{
                             opacity: isVisible ? 1 : 0,
-                            x: isVisible ? 0 : 1000,
+                            x: isVisible ? 0 : 500,
                         }}
                         transition={{ duration: 1 }}>
                         <ul className="desktop">
-                            <li>
-                                <Link to='/'>Home</Link>
-                                <div className="block"></div>
-                            </li>
+                            {navigation.map((nav, index) => (
+                                <>
+                                    <li key={index}>
+                                        <FramerMagnetic>
+                                            <Link
+                                                to={nav.href}
+                                                onClick={toggleMenu}>
+                                                {nav.title}
+                                                <div className="block"></div>
+                                            </Link>
 
-                            <li>
-                                <Link to='/contact'>Contact</Link>
-                                <div className="block"></div>
-                            </li>
+                                        </FramerMagnetic>
+                                    </li>
+                                </>
+                            ))}
 
-                            <li>
-                                <Link to='/expertises'>Expertises</Link>
-                                <div className="block"></div></li>
                         </ul>
                     </motion.div>
                 </nav>
-            </header>
+            </header >
 
 
-            <Nav isOpen={isOpen} toggleMenu={toggleMenu} />
+            <Nav isOpen={isOpen} toggleMenu={toggleMenu} scrollToTop={scrollToTop} />
         </>
     );
 };
@@ -90,4 +99,8 @@ const Header = () => {
 export default Header;
 
 
-
+const navigation = [
+    { title: "Home", href: "/" },
+    { title: "Contact", href: "/contact" },
+    { title: "Expertises", href: "/expertises" }
+];

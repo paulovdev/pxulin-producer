@@ -10,7 +10,7 @@
         h1 {
             font-size: 8rem;
             line-height: normal;
-            font-weight: 500;
+            font-weight: 700;
             letter-spacing: -0.313rem;
             color: $secondary-color;
             letter-spacing: -0.44rem;
@@ -35,20 +35,20 @@
 
         .scroll-down {
             display: flex;
+            justify-content: center;
             align-items: center;
-            flex-direction: column;
-            gap: 4rem;
-
-            p {
-                font-weight: 400;
-                font-size: 1.2rem;
-                letter-spacing: 1px;
-                transform: rotate(-90deg);
+            margin-left: 2rem;
+            svg {
+                width: 70px;
+                height: 70px;
+                background-color: $third-color;
+                border-radius: 50%;
+                padding: 1rem;
             }
-            .line {
-                width: 3px;
-                height: 100px;
-                background-color: $secondary-color;
+
+            img {
+                position: absolute;
+                animation: animation 10s linear infinite;
             }
         }
     }
@@ -64,29 +64,11 @@
             position: relative;
             top: 100px;
             width: $width;
+
             p {
-                font-size: 1.3rem;
-                letter-spacing: -0.084rem;
-                max-width: 80%;
-            }
-
-            .scroll-down {
-                display: flex;
-                align-items: center;
-                flex-direction: column;
-                gap: 4rem;
-
-                p {
-                    font-weight: 400;
-                    font-size: 1.2rem;
-                    letter-spacing: 1px;
-                    transform: rotate(-90deg);
-                }
-                .line {
-                    width: 3px;
-                    height: 70px;
-                    background-color: $secondary-color;
-                }
+                font-size: 1.2rem;
+                letter-spacing: -0.104rem;
+                max-width: 60%;
             }
         }
     }
