@@ -56,19 +56,29 @@
     @media (max-width: 992px) {
         .header-content {
             h1 {
-                font-size: 4rem;
+                font-size: 4.5rem;
                 letter-spacing: -0.34rem;
             }
         }
         .bottom-content {
             position: relative;
-            top: 100px;
+            top: 80px;
             width: $width;
+            flex-direction: column;
 
             p {
-                font-size: 1.2rem;
+                font-size: 1.5rem;
                 letter-spacing: -0.104rem;
-                max-width: 60%;
+                max-width: 100%;
+                text-align: center;
+            }
+
+            .scroll-down {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-left: 0;
+                margin-bottom: 70px;
             }
         }
     }

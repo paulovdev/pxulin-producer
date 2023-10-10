@@ -45,7 +45,8 @@ const Works = () => {
                     className='cursor'
                     variants={scaleAnimation}
                     initial="initial"
-                    animate={active ? "enter" : "closed"}>
+                    animate={active ? "enter" : "closed"}
+                    >
                 </motion.div>
                 <motion.div
                     ref={cursorLabel}

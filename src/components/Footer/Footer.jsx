@@ -1,18 +1,16 @@
-import './Footer.scss'
-import { AiOutlineArrowUp } from 'react-icons/ai'
-import { Link } from 'react-scroll'
+import "./Footer.scss";
 
-import ScrollTop from '../ScrollTop/ScrollTop'
+import ScrollTop from "../ScrollTop/ScrollTop";
 
 const Footer = () => {
-    return (
-        <footer>
-            <ScrollTop />
-            <Link to="home" smooth={true}>
-                <AiOutlineArrowUp size={62} />
-            </Link>
-        </footer>
-    )
-}
+  return (
+    <footer>
+      <div className="footer-content">
+        Paulo Vitor
+        <ScrollTop />
+      </div>
+    </footer>
+  );
+};
 
-export default Footer
+export default Footer;

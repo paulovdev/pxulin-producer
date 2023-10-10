@@ -1,10 +1,15 @@
 @import "../../index.scss";
 
 #features {
+    background-color: $primary-color;
     margin: $margin;
+    .grid-layout {
+        width: $width2;
+    }
     .title {
+        margin: $margin;
         h1 {
-            color: $primary-color;
+            color: $secondary-color;
             text-align: center;
             font-size: 6rem;
             font-weight: 600;
@@ -13,56 +18,55 @@
         }
     }
 
-    .feat-header {
+    .feat-content {
+        display: flex;
+    }
+
+    .left-title {
         width: 100%;
         h1 {
             position: sticky;
             top: 50%;
-            color: $primary-color;
 
-            font-size: 4rem;
-            font-style: normal;
-            font-weight: 900;
-            line-height: 135%;
+            width: 100%;
+            height: 150px;
+            padding: 1rem;
+
+            color: $secondary-color;
+
+            font-size: 3rem;
+            font-weight: 500;
+
             letter-spacing: -0.22rem;
 
-            margin: $margin;
-        }
-        .subtitle {
             display: flex;
-            justify-content: end;
-            text-align: end;
-            p {
-                color: $primary-color;
-
-                font-size: 2.375rem;
-                font-weight: 400;
-                line-height: normal;
-                letter-spacing: -0.131rem;
-                max-width: 60%;
-            }
+            align-items: center;
+            justify-content: center;
         }
+    }
 
-        &:nth-child(4) {
-            h1 {
+    .right-texts {
+        .feat-header {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+           
+            .subtitle {
+                padding: $padding;
+                display: flex;
+                justify-content: end;
                 text-align: end;
-            }
-            .subtitle {
-                display: flex;
-                justify-content: start;
-                text-align: start;
-            }
-        }
-        &:nth-child(5) {
-            h1 {
-                text-align: center;
-                position: static;
-                top: 0;
-            }
-            .subtitle {
-                display: flex;
-                justify-content: center;
-                text-align: center;
+
+                p {
+                    color: $secondary-color;
+
+                    font-size: 2.375rem;
+                    font-weight: 400;
+                    line-height: normal;
+                    letter-spacing: -0.131rem;
+                    max-width: 80%;
+                }
             }
         }
     }
@@ -70,36 +74,50 @@
     @media (max-width: 992px) {
         .title {
             h1 {
-                font-size: 3.5rem;
+                font-size: 3rem;
                 letter-spacing: -0.23rem;
             }
         }
 
-        .feat-header {
+        .feat-content {
+            display: flex;
+            flex-direction: column;
+        }
+        .left-title {
+            width: 100%;
             h1 {
                 position: static;
-                top: 0;
-                font-size: 4rem;
-            }
-            .subtitle {
-                display: flex;
-                justify-content: start;
-                text-align: start;
-                p {
-                    position: static;
-                    top: 0;
-                    max-width: 100%;
-                }
-            }
 
-            &:nth-child(4) {
-                h1 {
-                    text-align: end;
-                }
+                width: 100%;
+                height: 150px;
+                padding: 1rem;
+
+                color: $secondary-color;
+
+                font-size: 3rem;
+                font-weight: 500;
+
+                letter-spacing: -0.22rem;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+
+        .right-texts {
+            .feat-header {
+                padding: 1px;
                 .subtitle {
+                    padding: 1px;
                     display: flex;
                     justify-content: end;
                     text-align: end;
+
+                    p {
+                        font-size: 2.075rem;
+                        max-width: 100%;
+                    }
                 }
             }
         }

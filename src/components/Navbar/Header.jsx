@@ -75,7 +75,7 @@ const Header = () => {
                                         <FramerMagnetic>
                                             <Link
                                                 to={nav.href}
-                                                onClick={toggleMenu}>
+                                            >
                                                 {nav.title}
                                                 <div className="block"></div>
                                             </Link>

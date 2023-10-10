@@ -1,27 +1,23 @@
-@import '../../index.scss';
+@import "../../index.scss";
 
 footer {
-    background-color: $primary-color;
+    background-color: $third-color;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    .footer-content {
+        width: $width2;
+        padding: $padding;
 
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
 
-
-    p {
-        font-size: 1rem;
-        color: #ffffff;
-        letter-spacing: 2px;
-        text-transform: uppercase;
+        p {
+            font-size: 2rem;
+            color: $secondary-color;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
     }
-
-    svg {
-        height: 50px;
-        width: 50px;
-        border: 1px solid #757575;
-        border-radius: 5rem;
-        padding: 1rem;
-        cursor: pointer;
-    }
-
 }

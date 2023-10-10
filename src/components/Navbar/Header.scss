@@ -36,12 +36,11 @@ nav {
                 position: absolute;
                 top: 30px;
 
-                width: 8px;
-                height: 8px;
+                width: 15px;
+                height: 3px;
 
                 overflow: hidden;
                 background-color: $secondary-color;
-                border-radius: 50%;
 
                 transition: opacity 0.3s;
             }
