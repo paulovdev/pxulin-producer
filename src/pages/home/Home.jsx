@@ -2,7 +2,7 @@ import "./Home.scss";
 import "../../styles/Globals.scss";
 
 import { GoArrowDown } from "react-icons/go";
- import { Link } from "react-scroll";
+import { Link } from "react-scroll";
 
 import Loader from "../../utils/Loader/Loader";
 
@@ -16,7 +16,7 @@ const Home = () => {
           <div className="header-content">
             <p>©2023</p>
             <h1>Paulin</h1>
-            <h1>Web Designer</h1>
+            <h1>Front-end Dev</h1>
           </div>
 
           <div className="bottom-content">

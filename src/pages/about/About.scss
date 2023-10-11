@@ -2,10 +2,10 @@
 
 #about {
     background-color: $secondary-color;
-    margin: $margin;
+    padding: $padding;
 
     .about-content {
-        width: $width;
+        width: $width2;
         display: flex;
         justify-content: space-between;
 
@@ -42,7 +42,7 @@
             }
 
             p {
-                margin: 50px 0;
+                margin: 0 0 100px 0;
                 color: $third-color;
                 font-size: 1.75rem;
                 font-weight: 400;
@@ -53,6 +53,8 @@
 
     @media (max-width: 768px) {
         .about-content {
+            width: 100%;
+            padding: 1rem;
             align-items: center;
             justify-content: center;
             flex-direction: column;

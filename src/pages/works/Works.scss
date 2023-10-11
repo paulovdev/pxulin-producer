@@ -2,13 +2,13 @@
 
 #works {
     background: $secondary-color;
+
     .about-content {
-        width: $width;
+        width: $width2;
         margin: $margin;
 
         span {
             color: $primary-color;
-
 
             font-size: 2rem;
             font-weight: 500;
@@ -30,7 +30,7 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            width: $width;
+            width: $width2;
 
             h1 {
                 color: $primary-color;

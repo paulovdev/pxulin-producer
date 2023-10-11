@@ -10,19 +10,17 @@ const About = () => {
           <div className="about-content">
             <div className="left">
               <span>
-               
                 <div className="line"></div> About me
               </span>
             </div>
             <div className="right">
-              <h3>My name is Paulo Vitor, and I'm a 20 year old</h3>
               <p>
-                I have a passion for creating beautiful and joyful digital
-                experiences. Besides programming, I have a deep love for design,
-                games, and traveling. Over the past few years, I've had the
-                privilege of working with creative individuals from agencies,
-                startups, and small businesses on various design and development
-                projects.
+                My name is Paulo Vitor, and I'm a 19 year old I have a passion
+                for creating beautiful and joyful digital experiences. Besides
+                programming, I have a deep love for design, games, and
+                traveling. Over the past few years, I've had the privilege of
+                working with creative individuals from agencies, startups, and
+                small businesses on various design and development projects.
               </p>
 
               <p>
