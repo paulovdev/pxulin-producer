@@ -7,7 +7,7 @@ header {
     top: 0;
     right: 0;
     margin: 40px 50px;
-    z-index: 9999;
+    z-index: 9999999;
 
     @media (max-width: 992px) {
         margin: 40px 30px;
@@ -24,7 +24,7 @@ nav {
             list-style: none;
             a {
                 font-weight: 500;
-                font-size: 1.1rem;
+                font-size: 1rem;
 
                 display: flex;
                 align-items: center;

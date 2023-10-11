@@ -9,7 +9,10 @@ const About = () => {
         <main className="grid-layout">
           <div className="about-content">
             <div className="left">
-              <span>About me</span>
+              <span>
+               
+                <div className="line"></div> About me
+              </span>
             </div>
             <div className="right">
               <h3>My name is Paulo Vitor, and I'm a 20 year old</h3>

@@ -31,3 +31,16 @@ button {
         max-width: 100%;
     }
 }
+
+.border {
+    margin: $margin;
+    width: 100%;
+    height: 1px;
+    background: $border-color;
+}
+
+.line {
+    width: 100px;
+    height: 3px;
+    background: $primary-color;
+}

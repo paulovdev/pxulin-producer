@@ -1,4 +1,5 @@
 import React from "react";
+import { FaAsterisk } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import "./Features.scss";
@@ -9,7 +10,7 @@ const Features = () => {
     enter: (i) => ({
       y: "0",
       opacity: 1,
-      transition: { duration: 0.75, ease: [0.40, 1, 0.60, 1], delay: 0.2 * i },
+      transition: { duration: 0.75, ease: [0.4, 1, 0.6, 1], delay: 0.2 * i },
     }),
   };
 
@@ -56,7 +57,11 @@ const Features = () => {
         <main className="grid-layout">
           <div className="feat-content" ref={ref2}>
             <div className="left-title">
-              <h1>The combination of my passion for design</h1>
+              <h1>
+                {" "}
+                <FaAsterisk size={22} />
+                The combination of my passion for design
+              </h1>
             </div>
 
             <div className="right-texts">

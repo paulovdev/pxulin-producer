@@ -15,9 +15,14 @@
             span {
                 color: $primary-color;
 
-                font-size: 2.5rem;
+                font-size: 2rem;
                 font-weight: 500;
                 letter-spacing: -0.083rem;
+
+                display: flex;
+                align-items: center;
+                justify-content: start;
+                gap: 2rem;
             }
         }
 

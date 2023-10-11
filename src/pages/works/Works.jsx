@@ -55,7 +55,7 @@ const Works = () => {
                     initial="initial"
                     animate={active ? "enter" : "closed"}>View</motion.div>
                 <div className="about-content">
-                    <span>Selected works</span>
+                    <span><div className="line"></div> Selected works</span>
                 </div>
                 <div className="worksContent">
                     {works.map((item, index) => (

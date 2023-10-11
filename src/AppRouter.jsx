@@ -1,41 +1,42 @@
-import { useEffect } from 'react';
-import Lenis from '@studio-freight/lenis'
-import { Route, Routes } from 'react-router-dom';
+import { useEffect } from "react";
+import gsap from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
+import Lenis from "@studio-freight/lenis";
+import { Route, Routes } from "react-router-dom";
 
 /* import Cursor from "./utils/Cursor/Cursor"; */
-import AppLeader from './AppLeader';
+import AppLeader from "./AppLeader";
 
-import Header from './components/Navbar/Header';
-import Footer from './components/Footer/Footer';
-import Contact from './pages/contact/Contact';
-import Expertises from './pages/expertises/Expertises';
+import Header from "./components/Navbar/Header";
+import Footer from "./components/Footer/Footer";
+import Contact from "./pages/contact/Contact";
+import Expertises from "./pages/expertises/Expertises";
 
-import WorksC1 from './pages/works/WorksContent/WorksC1';
-import WorksC2 from './pages/works/WorksContent/WorksC2';
-import WorksC3 from './pages/works/WorksContent/WorksC3';
-
+import WorksC1 from "./pages/works/WorksContent/WorksC1";
+import WorksC2 from "./pages/works/WorksContent/WorksC2";
+import WorksC3 from "./pages/works/WorksContent/WorksC3";
 
 const AppRouter = () => {
-  const lenis = new Lenis()
+  const lenis = new Lenis();
 
-  useEffect(() => {
+  lenis.on("scroll", ScrollTrigger.update);
 
-    function raf(time) {
-      lenis.raf(time)
-      requestAnimationFrame(raf)
-    }
+  gsap.ticker.add((time) => {
+    lenis.raf(time * 500);
+  });
 
-    requestAnimationFrame(raf)
-  }, []);
+  gsap.ticker.lagSmoothing(0);
 
   return (
     <>
-      <div onLoad={function scrollToTop() {
-        window.scrollTo({
-          top: 0,
-          behavior: "smooth"
-        });
-      }}>
+      <div
+        onLoad={function scrollToTop() {
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+          });
+        }}
+      >
         {/*    <Cursor /> */}
         <Header />
         <Routes>
