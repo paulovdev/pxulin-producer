@@ -15,7 +15,7 @@
             letter-spacing: -0.083rem;
 
             display: flex;
-            align-items: center;
+            align-items: start;
             justify-content: start;
             gap: 2rem;
         }
@@ -54,9 +54,8 @@
     @media (max-width: 768px) {
         .about-content {
             span {
-                text-align: center;
-                font-size: 3rem;
-                text-transform: uppercase;
+                color: $primary-color;
+                font-size: 2.5rem;
             }
         }
 

@@ -54,6 +54,7 @@ const Features = () => {
         </div>
 
         <div className="border"></div>
+        
         <main className="grid-layout">
           <div className="feat-content" ref={ref2}>
             <div className="left-title">

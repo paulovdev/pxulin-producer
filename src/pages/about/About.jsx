@@ -9,8 +9,7 @@ const About = () => {
         <main className="grid-layout">
           <div className="about-content">
             <div className="left">
-              <span>
-                <div className="line"></div> About me
+              <span>About me
               </span>
             </div>
             <div className="right">

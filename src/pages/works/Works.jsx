@@ -76,9 +76,7 @@ const Works = () => {
         View
       </motion.div>
       <div className="about-content">
-        <span>
-          <div className="line"></div> Selected works
-        </span>
+        <span>Selected works</span>
       </div>
       <div className="worksContent">
         {works.map((item, index) => (

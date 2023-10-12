@@ -2,12 +2,10 @@
 
 #features {
     background-color: $primary-color;
-    .grid-layout {
-        width: $width2;
-    }
+
     .title {
         width: $width;
-        margin: $margin;
+        margin: 5rem 0 0 0;
         h1 {
             color: $secondary-color;
             text-align: center;
@@ -20,10 +18,10 @@
 
     .feat-content {
         display: flex;
+        width: $width2;
     }
 
     .left-title {
-        width: 100%;
         h1 {
             position: sticky;
             top: 50%;
@@ -46,13 +44,12 @@
 
     .right-texts {
         .feat-header {
-            width: 100%;
             display: flex;
             align-items: center;
             flex-direction: column;
 
             .subtitle {
-                padding: $padding;
+                padding: 3rem 0;
                 display: flex;
                 justify-content: end;
                 text-align: end;
@@ -79,20 +76,19 @@
         }
 
         .feat-content {
+            width: 100%;
             display: flex;
             flex-direction: column;
         }
         .left-title {
-            width: 100%;
             h1 {
                 position: static;
-                font-size: 3rem;
+                font-size: 2rem;
             }
         }
 
         .right-texts {
             .feat-header {
-                padding: 1px;
                 .subtitle {
                     padding: 1px;
                     display: flex;
@@ -100,7 +96,7 @@
                     text-align: end;
 
                     p {
-                        font-size: 3.075rem;
+                        font-size: 1.5rem;
                         max-width: 90%;
                     }
                 }
