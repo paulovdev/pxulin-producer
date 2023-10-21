@@ -1,7 +1,7 @@
 @import "../../index.scss";
 
 #contact-home {
-    background-color: $primary-color;
+    background-color: $secondary-color;
     padding: $padding;
     height: 80vh;
 
@@ -16,7 +16,7 @@
 
         h1 {
             position: relative;
-            color: $secondary-color;
+            color: $primary-color;
             font-size: 150px;
             font-weight: 500;
             line-height: 100%;
@@ -31,7 +31,7 @@
             width: 0;
             height: 3px;
             overflow: hidden;
-            background-color: $secondary-color;
+            background-color: $primary-color;
             transition: width 1s;
         }
 
@@ -53,7 +53,7 @@
     @media (max-width: 768px) {
         .text-content {
             h1 {
-                font-size: 32px;
+                font-size: 2.5rem;
             }
 
             svg {

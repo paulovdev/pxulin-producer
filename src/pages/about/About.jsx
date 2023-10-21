@@ -9,26 +9,24 @@ const About = () => {
         <main className="grid-layout">
           <div className="about-content">
             <div className="left">
-              <span>About me
-              </span>
+              <span>Sobre mim</span>
             </div>
             <div className="right">
               <p>
-                My name is Paulo Vitor, and I'm a 19 year old I have a passion
-                for creating beautiful and joyful digital experiences. Besides
-                programming, I have a deep love for design, games, and
-                traveling. Over the past few years, I've had the privilege of
-                working with creative individuals from agencies, startups, and
-                small businesses on various design and development projects.
+                Meu nome é Paulo Vitor, tenho 19 anos e tenho uma paixão para
+                criar experiências digitais bonitas e alegres. Além do mais
+                programação, tenho um profundo amor por design, jogos e
+                viajando. Nos últimos anos, tive o privilégio de trabalhando com
+                indivíduos criativos de agências, startups e pequenas empresas
+                em vários projetos de design e desenvolvimento.
               </p>
 
               <p>
-                I have a passion for creating beautiful and joyful digital
-                experiences. Besides programming, I have a deep love for design,
-                games, and traveling. Over the past few years, I've had the
-                privilege of working with creative individuals from agencies,
-                startups, and small businesses on various design and development
-                projects.
+                Tenho paixão por criar imagens digitais bonitas e alegres
+                experiências. Além de programação, tenho um profundo amor por
+                design, jogos e viagens. Nos últimos anos, tive a privilégio de
+                trabalhar com pessoas criativas de agências, startups e pequenas
+                empresas em vários projetos e desenvolvimento projetos.
               </p>
             </div>
           </div>

@@ -73,10 +73,11 @@ const Works = () => {
         initial="initial"
         animate={active ? "enter" : "closed"}
       >
-        View
+        Ver
       </motion.div>
       <div className="about-content">
-        <span>Selected works</span>
+        <span>Projetos</span>
+        <span>(05)</span>
       </div>
       <div className="worksContent">
         {works.map((item, index) => (
@@ -104,25 +105,25 @@ export default Works;
 const works = [
   {
     title: "Project Alpha",
-    subTitle: "Exploring New Horizons",
+    subTitle: "Explorando Novos Horizontes",
     link: "/worksc1",
     image: "/gfx-4.png",
   },
   {
     title: "InnovateX",
-    subTitle: "Revolutionizing Wellness",
+    subTitle: "Revolucionando o bem-estar",
     link: "/worksc1",
     image: "/gfx-1.png",
   },
   {
     title: "TechVenture",
-    subTitle: "The Journey of Gatha",
+    subTitle: "A Jornada de Gatha",
     link: "/worksc1",
     image: "/gfx-2.png",
   },
   {
     title: "EcoSolutions",
-    subTitle: "Sustainability in Action",
+    subTitle: "Sustentabilidade em Ação",
     link: "/worksc1",
     image: "/gfx-5.png",
   },

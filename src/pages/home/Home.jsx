@@ -15,8 +15,8 @@ const Home = () => {
         <main className="grid-layout">
           <div className="header-content">
             <p>©2023</p>
-            <h1>Paulin</h1>
-            <h1>Front-end Dev</h1>
+            <h1>Paulo Vitor </h1>
+            <h1>Desenvolvedor front-end</h1>
           </div>
 
           <div className="bottom-content">
@@ -26,8 +26,7 @@ const Home = () => {
             </Link>
 
             <p className="sub-text">
-              A skilled digital designer and artdirector who specializes in
-              webdesign, UX/UI, Framer, and no-codetools.
+            Um designer digital qualificado e diretor de arte especializado em webdesign, UX/UI, Framer e ferramentas sem código.
             </p>
           </div>
         </main>

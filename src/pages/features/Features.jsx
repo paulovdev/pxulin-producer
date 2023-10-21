@@ -54,14 +54,13 @@ const Features = () => {
         </div>
 
         <div className="border"></div>
-        
+
         <main className="grid-layout">
           <div className="feat-content" ref={ref2}>
             <div className="left-title">
               <h1>
                 {" "}
-                <FaAsterisk size={22} />
-                The combination of my passion for design
+                <FaAsterisk size={22} />A combinação do design
               </h1>
             </div>
 
@@ -93,19 +92,19 @@ const Features = () => {
 export default Features;
 
 const text = [
-  "When showcasing a portfolio as",
-  "a web designer and UX/UI specialist,",
-  "we emphasize several key attributes",
+  "Ao apresentar um portfólio como",
+  "um web designer e especialista em UX/UI",
+  "enfatizamos vários atributos-chave",
 ];
 
 const features = [
   {
-    text: "Crafting visually stunning and user-friendly websites that leave a lasting impression.",
+    text: "Criação de sites visualmente impressionantes e fáceis de usar que deixam uma impressão duradoura.",
   },
   {
-    text: "Designing intuitive user interfaces that enhance user experiences and engagement.",
+    text: "Projetar interfaces de usuário intuitivas que melhoram as experiências e o envolvimento do usuário.",
   },
   {
-    text: "Optimizing web performance and ensuring responsive designs for various devices.",
+    text: "Otimizando o desempenho da web e garantindo designs responsivos para diversos dispositivos.",
   },
 ];

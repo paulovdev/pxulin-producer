@@ -1,61 +1,46 @@
-import React from 'react'
-import { motion } from 'framer-motion';
-import './Services.scss'
-import '../../styles/Globals.scss';
+import React from "react";
+import "./Services.scss";
+import "../../styles/Globals.scss";
 
 const Services = () => {
-    return (
-        <section id='services'>
-            <main className='grid-layout'>
-                <div className="text-content">
-                    <motion.h1>
-                        I can help you with ...
-                    </motion.h1>
-                </div>
+  return (
+    <section id="services">
+      <main className="grid-layout">
+        <div className="text-content">
+          <h1>Eu posso te ajudar com...</h1>
+        </div>
 
-                <div className="cards">
-                    <div className="card">
-                        <div className="order">
-                            01
-                        </div>
-                        <div className="text-card">
-                            <h1>Design
-                            </h1>
-                            <p>
-                                With a solid track record in designing websites and apps, I deliver strong and user-friendly digital designs. Solid company branding is the foundation of any succesful website.
-                            </p>
-                        </div>
-                    </div>
+        <div className="cards">
+          {services.map((service, index) => (
+            <div className="card" key={index}>
+              <div className="order">0{index + 1}</div>
+              <div className="text-card">
+                <h1>{service.title}</h1>
+                <p>{service.description}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </main>
+    </section>
+  );
+};
 
-                    <div className="card">
-                        <div className="order">
-                            02
-
-                        </div>
-                        <div className="text-card">
-                            <h1>Development</h1>
-                            <p>
-                                I build scalable websites from scratch that fit seamlessly with design. My focus is on micro animations, transitions and interaction. For content management I use Kirby CMS.
-
-                            </p>
-                        </div>
-                    </div>
-
-                    <div className="card">
-                        <div className="order">
-                            03
-                        </div>
-                        <div className="text-card">
-                            <h1>The full package</h1>
-                            <p>
-                                A complete website from concept to implementation, that's what makes me stand out. My great sense for design and my development skills enable me to create kick-ass projects.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </main>
-        </section>
-    )
-}
-
-export default Services
+export default Services;
+const services = [
+  {
+    title: "Design",
+    description:
+      "Com um histórico sólido em design de sites e aplicativos, entrego designs digitais fortes e amigáveis ao usuário. A construção sólida de uma marca empresarial é a base de qualquer site de sucesso.",
+  },
+  {
+    title: "Desenvolvimento",
+    description:
+      "Construo sites escaláveis do zero que se integram perfeitamente ao design. Meu foco está em microanimações, transições e interações. Para gerenciamento de conteúdo, utilizo o CMS Kirby.",
+  },
+  {
+    title: "Completo",
+    description:
+      "Um site completo, desde o conceito até a implementação, é o que me destaca. Minha grande habilidade em design e minhas habilidades de desenvolvimento me permitem criar projetos incríveis.",
+  },
+];

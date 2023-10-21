@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import Lenis from "@studio-freight/lenis";
@@ -10,7 +10,6 @@ import AppLeader from "./AppLeader";
 import Header from "./components/Navbar/Header";
 import Footer from "./components/Footer/Footer";
 import Contact from "./pages/contact/Contact";
-import Expertises from "./pages/expertises/Expertises";
 
 import WorksC1 from "./pages/works/WorksContent/WorksC1";
 import WorksC2 from "./pages/works/WorksContent/WorksC2";
@@ -42,7 +41,6 @@ const AppRouter = () => {
         <Routes>
           <Route path="/" element={<AppLeader />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/expertises" element={<Expertises />} />
           <Route path="/worksc1" element={<WorksC1 />} />
           <Route path="/worksc2" element={<WorksC2 />} />
           <Route path="/worksc3" element={<WorksC3 />} />
