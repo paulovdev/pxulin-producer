@@ -11,9 +11,9 @@ const AppLeader = () => {
     <>
       <Home />
       <About />
+      <Works />
       <Features />
       <Several />
-      <Works />
       <Expertises />
       <ContactHome />
     </>

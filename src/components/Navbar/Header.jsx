@@ -55,7 +55,7 @@ const Header = () => {
             transition={{ duration: 1 }}
           >
             <Hamburger
-              size={42}
+              size={32}
               duration={0.5}
               toggled={isOpen}
               toggle={toggleMenu}

@@ -1,9 +1,9 @@
 @import "../../index.scss";
 
 #contact-home {
-    background-color: $secondary-color;
+    background-color: $primary-color;
     padding: $padding;
-    height: 80vh;
+    height: 50vh;
 
     display: flex;
     align-items: center;
@@ -16,8 +16,8 @@
 
         h1 {
             position: relative;
-            color: $primary-color;
-            font-size: 150px;
+            color: $secondary-color;
+            font-size: 3rem;
             font-weight: 500;
             line-height: 100%;
 
@@ -26,23 +26,16 @@
             gap: 1rem;
         }
 
-        .border {
+        .border- {
             margin: 10px 0;
             width: 0;
             height: 3px;
             overflow: hidden;
-            background-color: $primary-color;
+            background-color: $secondary-color;
             transition: width 1s;
         }
 
-        svg {
-            transition: transform 0.5s;
-        }
-
         a:hover {
-            svg {
-                transform: rotate(45deg);
-            }
 
             .border {
                 width: 100%;
@@ -54,11 +47,6 @@
         .text-content {
             h1 {
                 font-size: 2.5rem;
-            }
-
-            svg {
-                height: 40px;
-                width: 40px;
             }
         }
     }

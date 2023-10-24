@@ -9,8 +9,8 @@ const Several = () => {
       <section id="several">
         <main className="grid-layout">
           <div className="several-content">
-            <h1>Nosso Centro Criativo</h1>
-            <h1>Explorar, ampliar limites e</h1>
+            <h1>Centro Criativo</h1>
+            <h1>Explorar, ampliar e</h1>
             <h1>Encontrar soluções</h1>
           </div>
 
@@ -19,7 +19,6 @@ const Several = () => {
               <img src="/rounded-text.png" width={200} height={180} alt="" />
             </Link>
           </motion.div>
-          <div className="border"></div>
         </main>
       </section>
     </>

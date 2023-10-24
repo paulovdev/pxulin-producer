@@ -1,6 +1,7 @@
 @import "../../index.scss";
 
 #several {
+    background-color: $secondary-color;
     .several-content {
         width: $width;
         margin: $margin;
@@ -28,7 +29,7 @@
     @media (max-width: 992px) {
         .several-content {
             h1 {
-                font-size: 4rem;
+                font-size: 3rem;
                 letter-spacing: -0.24rem;
             }
         }

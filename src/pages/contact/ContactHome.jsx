@@ -1,6 +1,5 @@
 import React from "react";
 import "./ContactHome.scss";
-import { BsFillArrowUpRightCircleFill } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import Magnetic from "../../utils/MagneticButton/MagneticButton";
 
@@ -12,10 +11,9 @@ const ContactHome = () => {
           <Magnetic>
             <Link to="/contact">
               <h1>
-                Vamos conversar
-                <BsFillArrowUpRightCircleFill size={80} fill="#000" />
+                Vamos conversar!
               </h1>
-              <div className="border"></div>
+              <div className="border-"></div>
             </Link>
           </Magnetic>
         </div>

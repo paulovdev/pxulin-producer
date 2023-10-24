@@ -56,6 +56,7 @@
 
     @media (max-width: 768px) {
         .about-content {
+            width: $width;
             span {
                 color: $primary-color;
                 font-size: 2.5rem;

@@ -1,7 +1,7 @@
 @import "../../index.scss";
 
 #about {
-    background-color: $secondary-color;
+    background-color: $primary-color;
     padding: $padding;
 
     .about-content {
@@ -13,7 +13,7 @@
             width: 100%;
 
             span {
-                color: $primary-color;
+                color: $secondary-color;
 
                 font-size: 2rem;
                 font-weight: 500;
@@ -33,7 +33,7 @@
             flex-direction: column;
 
             h3 {
-                color: $primary-color;
+                color: $secondary-color;
 
                 font-size: 2rem;
                 font-weight: 600;
@@ -43,7 +43,7 @@
 
             p {
                 margin: 0 0 100px 0;
-                color: $third-color;
+                color: $secondary-color;
                 font-size: 1.75rem;
                 font-weight: 400;
                 line-height: 135%;
@@ -65,7 +65,7 @@
                 gap: 1rem;
                 margin-bottom: 2rem;
                 span {
-                    color: $primary-color;
+                    color: $secondary-color;
                     font-size: 2.5rem;
                 }
             }
@@ -73,7 +73,7 @@
             .right {
                 height: 100%;
                 h3 {
-                    color: $primary-color;
+                    color: $secondary-color;
 
                     font-size: 1.8rem;
                     line-height: normal;
@@ -83,7 +83,7 @@
 
                 p {
                     margin: 25px 0;
-                    color: $primary-color;
+                    color: $secondary-color;
                     font-size: 1.3rem;
                     font-weight: 400;
                     line-height: 135%;
