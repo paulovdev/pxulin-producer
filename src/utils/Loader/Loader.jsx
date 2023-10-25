@@ -18,7 +18,7 @@ const Loader = () => {
           animate={{ y: "0", transition: 1 }}
           className="loading"
         >
-          <h1>PAULO</h1>
+          <img src="/loading.gif" alt="" />
         </motion.div>
       </motion.div>
     </>
