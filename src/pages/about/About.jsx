@@ -20,14 +20,6 @@ const About = () => {
                 indivíduos criativos de agências, startups e pequenas empresas
                 em vários projetos de design e desenvolvimento.
               </p>
-
-              <p>
-                Tenho paixão por criar imagens digitais bonitas e alegres
-                experiências. Além de programação, tenho um profundo amor por
-                design, jogos e viagens. Nos últimos anos, tive a privilégio de
-                trabalhar com pessoas criativas de agências, startups e pequenas
-                empresas em vários projetos e desenvolvimento projetos.
-              </p>
             </div>
           </div>
         </main>
