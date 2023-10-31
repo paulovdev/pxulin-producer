@@ -1,7 +1,6 @@
 import "./Home.scss";
 import "../../styles/Globals.scss";
 
-import { GoArrowDown } from "react-icons/go";
 import { Link } from "react-scroll";
 
 import Loader from "../../utils/Loader/Loader";
@@ -14,19 +13,25 @@ const Home = () => {
       <section id="home">
         <main className="grid-layout">
           <div className="header-content">
-            <p>©2023</p>
-            <h1>Paulo Vitor </h1>
-            <h1>Desenvolvedor front-end</h1>
+            <h1>
+              A <span>web</span> developer & <span>ux/ui</span> designer
+            </h1>
+
+            <Link to="about" smooth={true} className="scroll-down">
+              <img
+                className="round-text"
+                src="/round-text.png"
+                width={150}
+                height={160}
+                alt=""
+              />
+            </Link>
           </div>
 
           <div className="bottom-content">
-            <Link to="about" smooth={true} className="scroll-down">
-              <img src="/rounded-text-2.png" width={150} height={150} alt="" />
-              <GoArrowDown size={44} />
-            </Link>
-
-            <p className="sub-text">
-            Um designer digital qualificado e diretor de arte especializado em webdesign, UX/UI, Framer e ferramentas sem código.
+            <p>
+              I assist companies in creating human ✧ focused online interactions
+              via ✺︎ design
             </p>
           </div>
         </main>

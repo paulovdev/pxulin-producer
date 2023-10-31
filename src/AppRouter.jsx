@@ -1,10 +1,8 @@
-
+import { Route, Routes } from "react-router-dom";
+import React from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import Lenis from "@studio-freight/lenis";
-import { Route, Routes } from "react-router-dom";
-
-/* import Cursor from "./utils/Cursor/Cursor"; */
 import AppLeader from "./AppLeader";
 
 import Header from "./components/Navbar/Header";
@@ -25,9 +23,9 @@ const AppRouter = () => {
   });
 
   gsap.ticker.lagSmoothing(0);
-
   return (
     <>
+    
       <div
         onLoad={function scrollToTop() {
           window.scrollTo({
@@ -36,7 +34,6 @@ const AppRouter = () => {
           });
         }}
       >
-        {/*    <Cursor /> */}
         <Header />
         <Routes>
           <Route path="/" element={<AppLeader />} />

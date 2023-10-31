@@ -7,12 +7,21 @@ import { motion } from "framer-motion";
 import "./Nav.scss";
 
 const Nav = ({ isOpen, toggleMenu, scrollToTop }) => {
+  const section = document.querySelectorAll("section");
+
+  section.forEach((e) => {
+    if (isOpen) {
+      e.classList.add("blur");
+    } else {
+      e.classList.remove("blur");
+    }
+  });
   return (
     <>
       <motion.ul
         animate={{
           opacity: isOpen ? 1 : 0,
-          y: isOpen ? 0 : 1000,
+          x: isOpen ? 0 : 1000,
         }}
         className="menu-opened"
       >
@@ -40,7 +49,7 @@ const Nav = ({ isOpen, toggleMenu, scrollToTop }) => {
               key={index}
               initial={{ x: 1000 }}
               animate={{ x: isOpen ? 0 : 1000 }}
-              transition={{ duration: 1, delay: isOpen ? index * 0.1 : 0 }}
+              transition={{ duration: 0.5, delay: isOpen ? index * 0.1 : 0 }}
             >
               <p>{text.p}</p>
             </motion.div>

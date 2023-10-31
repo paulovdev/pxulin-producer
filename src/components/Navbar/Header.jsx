@@ -59,7 +59,7 @@ const Header = () => {
               duration={0.5}
               toggled={isOpen}
               toggle={toggleMenu}
-              color="#000"
+              color="#fff"
             />
           </motion.div>
 
@@ -97,7 +97,7 @@ const Header = () => {
 export default Header;
 
 const navigation = [
-  { title: "Inicio", href: "/" },
-  { title: "Contato", href: "/contact" },
-  { title: "Especializações", href: "/expertises" },
+  { title: "Home", href: "/" },
+  { title: "Contact", href: "/contact" },
+  { title: "Expertises", href: "/expertises" },
 ];

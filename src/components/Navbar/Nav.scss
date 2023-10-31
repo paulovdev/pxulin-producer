@@ -4,10 +4,11 @@
     right: 0;
     top: 0;
 
-    width: 100vw;
+    width: 30vw;
     height: 100vh;
 
-    background: $primary-color;
+    background: $third-color;
+    border-radius: 1rem 0 0 1rem;
 
     display: flex;
     align-items: center;
@@ -18,7 +19,9 @@
     overflow: hidden;
     transition: height 0.5s ease-in-out;
     z-index: 998;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    box-shadow:
+        rgba(0, 0, 0, 0.15) 0px 15px 25px,
+        rgba(0, 0, 0, 0.05) 0px 5px 10px;
 
     li {
         width: 80%;
