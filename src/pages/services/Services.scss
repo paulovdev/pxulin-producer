@@ -1,0 +1,67 @@
+@import "../../index.scss";
+
+#services {
+    padding: 10vh 0 !important;
+    border-bottom: 1px solid $border-color;
+    .servicesContent {
+        display: flex;
+        align-items: center;
+        gap: 5rem;
+        .service {
+            width: 400px;
+            height: 500px;
+            padding: 1rem;
+            border-radius: 1rem;
+            background-color: $secondary-color;
+            img {
+                width: 75px;
+                height: 75px;
+                padding: 1rem;
+                background-color: $primary-color;
+                border-radius: 50%;
+                margin: 1rem 0;
+            }
+            .text-services {
+                display: flex;
+                align-items: start;
+                flex-direction: column;
+                span {
+                    color: $primary-color;
+
+                    font-size: 1.5rem;
+                    font-weight: 600;
+                    letter-spacing: -0.1rem;
+                    margin-bottom: 0.5rem;
+                }
+
+                h1 {
+                    color: $primary-color;
+
+                    font-size: 2.5rem;
+                    font-weight: 600;
+                    letter-spacing: -0.1rem;
+                    margin-bottom: 2rem;
+                }
+
+                p {
+                    color: $primary-color;
+
+                    font-size: 1.3rem;
+                    font-weight: 300;
+                    line-height: 140%;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 992px) {
+        padding: 10vh 1rem !important;
+        .servicesContent {
+            flex-direction: column;
+            .service {
+                width: 100%;
+                height: 500px;
+            }
+        }
+    }
+}

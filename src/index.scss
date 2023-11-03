@@ -4,7 +4,6 @@ $primary-color: #0e0e0e;
 $secondary-color: #efefed;
 $third-color: #161616;
 $four-color: #2c2c2c;
-$special-color: #499dfc;
 $border-color: #424242;
 $width: 95vw;
 $width2: 80vw;
@@ -57,4 +56,18 @@ body {
 ::-webkit-scrollbar-thumb {
   background: $third-color;
   border-radius: 1px;
+}
+
+.noise::before {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  content: "";
+  /* you can control opacity of noise  */
+  opacity: 0.02;
+  z-index: 1000;
+  pointer-events: none;
+  background: url("/public/noise.gif");
 }

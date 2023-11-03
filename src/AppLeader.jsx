@@ -1,6 +1,7 @@
 import Home from "./pages/home/Home";
 import About from "./pages/about/About";
 import Works from "./pages/works/Works";
+import Services from "./pages/services/Services";
 import SlideText from "./components/SlideText/SlideText";
 const AppLeader = () => {
   return (
@@ -8,6 +9,7 @@ const AppLeader = () => {
       <Home />
       <About />
       <SlideText />
+      <Services />
       <Works />
     </>
   );

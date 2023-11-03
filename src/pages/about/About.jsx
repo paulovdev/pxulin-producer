@@ -11,19 +11,15 @@ const About = () => {
 
           <div className="about-content">
             <div className="title-about">
-              <h1>
-                A little bit <span>about me</span>
-              </h1>
+              <h1>A little bit about me</h1>
             </div>
 
-
-              <div className="located">
-                <span>Located in Rio de Janeiro</span>
-                <div className="globe">
-                  <img src="/globe.png" width={30} height={30} alt="" />
-                </div>
+            <div className="located">
+              <span>Located in Rio de Janeiro</span>
+              <div className="globe">
+                <img src="/globe.png" width={30} height={30} alt="" />
               </div>
-         
+            </div>
 
             <div className="sub-title-about-2">
               <p>
@@ -41,6 +37,11 @@ const About = () => {
                 its audience on a profound level.
               </p>
             </div>
+          </div>
+
+          <div className="availabe">
+            <div className="green"></div>
+            <span>Available for Freelance</span>
           </div>
         </main>
       </section>

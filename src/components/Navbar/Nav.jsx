@@ -21,7 +21,8 @@ const Nav = ({ isOpen, toggleMenu, scrollToTop }) => {
       <motion.ul
         animate={{
           opacity: isOpen ? 1 : 0,
-          x: isOpen ? 0 : 1000,
+          x: isOpen ? 0 : 500,
+         
         }}
         className="menu-opened"
       >
@@ -63,9 +64,9 @@ const Nav = ({ isOpen, toggleMenu, scrollToTop }) => {
 export default Nav;
 
 const navigation = [
-  { title: "Home", href: "/" },
-  { title: "Contact", href: "/contact" },
-  { title: "Expertises", href: "/expertises" },
+  { title: "home", href: "/" },
+  { title: "contact", href: "/contact" },
+  { title: "expertises", href: "/expertises" },
 ];
 
 const textsNav = [

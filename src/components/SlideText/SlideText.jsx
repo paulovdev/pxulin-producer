@@ -36,8 +36,14 @@ const SlideText = () => {
       <div className="sliderContainer">
         <motion.div ref={slider} className="slider" animate={controls}>
           <h1>
-            • Works • Design • Projects • UX/UI • Works • Design • Projects •
-            UX/UI
+            <span>•</span> Works <span>•</span> Design <span>•</span> Projects
+            <span>•</span> UX/UI <span>•</span> Works <span>•</span> Design
+            <span>•</span>
+            Projects <span>•</span> UX/UI
+            <span>•</span> Works <span>•</span> Design <span>•</span> Projects
+            <span>•</span> UX/UI <span>•</span> Works <span>•</span> Design
+            <span>•</span>
+            Projects <span>•</span> UX/UI
           </h1>
         </motion.div>
       </div>

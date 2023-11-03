@@ -97,7 +97,7 @@ const Header = () => {
 export default Header;
 
 const navigation = [
-  { title: "Home", href: "/" },
-  { title: "Contact", href: "/contact" },
-  { title: "Expertises", href: "/expertises" },
+  { title: "home", href: "/" },
+  { title: "contact", href: "/contact" },
+  { title: "expertises", href: "/expertises" },
 ];

@@ -1,5 +1,4 @@
 import React from "react";
-import { motion } from "framer-motion";
 
 import { Link } from "react-router-dom";
 import "./Works.scss";
@@ -15,20 +14,17 @@ const Works = () => {
         <span>(05)</span>
       </div>
       <div className="worksContent">
-        {works.map((item, index) => (
-          <Link to={item.link} key={index} className="project-link">
-            <motion.div
-              className="project"
-              onMouseEnter={() => handleProjectHover(item)}
-              onMouseLeave={() => {
-                setActive(false);
-              }}
-            >
-              <h1>{item.title}</h1>
-              <h2>{item.subTitle}</h2>
-            </motion.div>
+        {works.map((item) => (
+          <>
+            <div className="project">
+              <img src="/innovatex.webp" alt="" />
+              <div className="text-project">
+                <h1>{item.title}</h1>
+                <h2>{item.subTitle}</h2>
+              </div>
+            </div>
             <div className="border"></div>
-          </Link>
+          </>
         ))}
       </div>
     </section>
@@ -39,27 +35,21 @@ export default Works;
 
 const works = [
   {
-    title: "Project Alpha",
-    subTitle: "Explorando Novos Horizontes",
+    title: "Innovatex",
+    subTitle: "Landing Page, Web Design",
     link: "/worksc1",
     image: "/gfx-4.png",
   },
   {
     title: "InnovateX",
-    subTitle: "Revolucionando o bem-estar",
+    subTitle: "Landing Page, Web Design",
     link: "/worksc1",
     image: "/gfx-1.png",
   },
   {
     title: "TechVenture",
-    subTitle: "A Jornada de Gatha",
+    subTitle: "Landing Page, Web Design",
     link: "/worksc1",
     image: "/gfx-2.png",
-  },
-  {
-    title: "EcoSolutions",
-    subTitle: "Sustentabilidade em Ação",
-    link: "/worksc1",
-    image: "/gfx-5.png",
   },
 ];
