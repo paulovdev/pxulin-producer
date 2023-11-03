@@ -9,6 +9,7 @@
         display: flex;
         align-content: center;
         justify-content: center;
+
         h1 {
             text-align: center;
             font-size: 6.625rem;
@@ -16,28 +17,25 @@
             font-weight: 600;
             letter-spacing: -0.313rem;
             color: $secondary-color;
-            max-width: 70%;
+            max-width: 80%;
         }
     }
 
     .bottom-content {
         position: relative;
-        top: 100px;
+        top: 150px;
         display: flex;
         align-items: center;
         justify-content: center;
+        flex-direction: column;
         p {
+            text-align: center;
             font-size: 1.4rem;
             font-weight: 400;
             line-height: 160%;
             letter-spacing: -0.13rem;
-            max-width: 30%;
-        }
-
-        a {
-            position: relative;
-            display: flex;
-            justify-content: end;
+            margin-bottom: 3rem;
+            max-width: 50%;
         }
     }
 
@@ -54,7 +52,6 @@
         .bottom-content {
             position: relative;
             top: 50px;
-            flex-direction: column;
             p {
                 letter-spacing: -0.08rem;
                 max-width: 100%;
@@ -68,11 +65,6 @@
                 justify-content: end;
             }
         }
-    }
-}
-@keyframes rotate-round-text {
-    from {
-        transform: rotate(360deg);
     }
 }
 

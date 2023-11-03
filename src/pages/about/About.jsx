@@ -41,7 +41,7 @@ const About = () => {
 
           <div className="availabe">
             <div className="green"></div>
-            <span>Available for Freelance</span>
+            <span>Available for new projects</span>
           </div>
         </main>
       </section>

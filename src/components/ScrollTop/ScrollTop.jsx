@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import { Link } from 'react-scroll'
 
 import { AiOutlineArrowUp } from 'react-icons/ai'

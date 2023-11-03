@@ -9,7 +9,7 @@ const Works = () => {
       <div className="servicesContent">
         {works.map((item) => (
           <>
-            <div className="service">
+            <div key={item.order} className="service">
               <img src={item.image} alt="" />
               <div className="text-services">
                 <span>{item.order}</span>

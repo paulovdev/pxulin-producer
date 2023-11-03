@@ -22,7 +22,6 @@ const Nav = ({ isOpen, toggleMenu, scrollToTop }) => {
         animate={{
           opacity: isOpen ? 1 : 0,
           x: isOpen ? 0 : 500,
-         
         }}
         className="menu-opened"
       >
