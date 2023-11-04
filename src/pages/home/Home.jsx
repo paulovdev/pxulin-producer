@@ -18,8 +18,8 @@ const Home = () => {
 
           <div className="bottom-content">
             <p>
-              I assist companies in creating human ✧ focused online interactions
-              via ✺︎ design
+              I'm ✧ Paulo, a dedicated Front-End Developer, Game Developer, and
+              Creative Musical Producer.
             </p>
 
             <Link to="about" smooth={true} className="scroll-down">

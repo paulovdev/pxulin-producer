@@ -6,15 +6,6 @@ import { motion } from "framer-motion";
 import "./Nav.scss";
 
 const Nav = ({ isOpen, toggleMenu, scrollToTop }) => {
-  const section = document.querySelectorAll("section");
-
-  section.forEach((e) => {
-    if (isOpen) {
-      e.classList.add("blur");
-    } else {
-      e.classList.remove("blur");
-    }
-  });
   return (
     <>
       <motion.ul

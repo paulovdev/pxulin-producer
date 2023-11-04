@@ -23,7 +23,7 @@ const About = () => {
 
             <div className="sub-title-about-2">
               <p>
-                Welcome to Knut Studio, a leading branding and design agency
+                ✺︎ Welcome to Knut Studio, a leading branding and design agency
                 that ignites brands with captivating creativity and strategic
                 vision. Our mission is to craft extraordinary brand experiences
                 that leave a lasting impression.

@@ -18,14 +18,23 @@ nav {
         align-items: center;
         flex-direction: column;
         gap: 7px;
+        cursor: pointer;
+        z-index: 99999;
         .bar-1,
         .bar-2 {
             position: relative;
             width: 50px;
             height: 3px;
             background-color: $secondary-color;
+            transition: transform 0.3s ease;
         }
-        cursor: pointer;
-        z-index: 99999;
+        &.clicked {
+            .bar-1 {
+                transform: rotate(45deg) translate(0, 6px);
+            }
+            .bar-2 {
+                transform: rotate(-45deg) translate(0, -6px);
+            }
+        }
     }
 }

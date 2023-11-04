@@ -20,7 +20,11 @@ const Header = () => {
     <>
       <header>
         <nav className="nav">
-          <div id="bars" onClick={toggleMenu}>
+          <div
+            id="bars"
+            className={isOpen ? "clicked" : ""}
+            onClick={toggleMenu}
+          >
             <div className="bar-1"></div>
             <div className="bar-2"></div>
           </div>
