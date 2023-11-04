@@ -11,7 +11,10 @@ const Nav = ({ isOpen, toggleMenu, scrollToTop }) => {
       <motion.ul
         animate={{
           opacity: isOpen ? 1 : 0,
-          y: isOpen ? 0 : -1000,
+          y: isOpen ? 0 : -1300,
+        }}
+        transition={{
+          ease: "easeInOut",
         }}
         className="menu-opened"
       >
@@ -36,11 +39,13 @@ const Nav = ({ isOpen, toggleMenu, scrollToTop }) => {
           {textsNav.map((text, index) => (
             <motion.div
               key={index}
-              initial={{ x: 1000 }}
-              animate={{ x: isOpen ? 0 : 1000 }}
+              initial={{ y: 1000 }}
+              animate={{ y: isOpen ? 0 : 500 }}
               transition={{ duration: 0.5, delay: isOpen ? index * 0.1 : 0 }}
             >
-              <p>{text.p} </p>
+              <p>
+                {text.title} <span>{text.subTitle}</span>{" "}
+              </p>
             </motion.div>
           ))}
         </div>
@@ -58,8 +63,8 @@ const navigation = [
 ];
 
 const textsNav = [
-  { p: "Instagram" },
-  { p: "Facebook " },
-  { p: "Linkedin" },
-  { p: "Behance" },
+  { title: "MADE BY: ", subTitle: "PAULO VITOR" },
+  { title: "TYPOGRAPHY: ", subTitle: "GOOGLE FONTS" },
+  { title: "IMAGES: ", subTitle: "FREEPIK, ENVATO" },
+  { subTitle: "PRIVACY POLICY TERMS & CONDITIONS" },
 ];

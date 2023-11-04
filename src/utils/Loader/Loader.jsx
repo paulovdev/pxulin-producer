@@ -10,6 +10,7 @@ const Loader = () => {
         transition={{
           delay: 2,
           type: "spring",
+          ease: "easeOut",
         }}
         className="loader"
       >

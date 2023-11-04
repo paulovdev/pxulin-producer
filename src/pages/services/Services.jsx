@@ -48,4 +48,11 @@ const works = [
       "Translating visions into dynamic digital solutions. From responsive websites to interactive applications, driving innovation..",
     image: "/dev.svg",
   },
+  {
+    order: "04",
+    title: "Complete",
+    subTitle:
+      "Translating visions into dynamic digital solutions. From responsive websites to interactive applications, driving innovation..",
+    image: "/dev.svg",
+  },
 ];

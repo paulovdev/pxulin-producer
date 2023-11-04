@@ -30,10 +30,10 @@ nav {
         }
         &.clicked {
             .bar-1 {
-                transform: rotate(45deg) translate(0, 6px);
+                transform: rotate(45deg) translate(0, 7px);
             }
             .bar-2 {
-                transform: rotate(-45deg) translate(0, -6px);
+                transform: rotate(-45deg) translate(0, -7px);
             }
         }
     }
