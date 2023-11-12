@@ -10,38 +10,33 @@ const About = () => {
           <div className="border-home"></div>
 
           <div className="about-content">
-            <div className="title-about">
-              <h1>A little bit about me</h1>
-            </div>
-
             <div className="located">
               <span>Located in Rio de Janeiro</span>
               <div className="globe">
                 <img src="/globe.png" width={30} height={30} alt="" />
               </div>
             </div>
-
+            <div className="availabe">
+              <div className="green"></div>
+              <span>Available for new projects</span>
+            </div>
             <div className="sub-title-about-2">
               <p>
-                ✺︎ Welcome to Knut Studio, a leading branding and design agency
-                that ignites brands with captivating creativity and strategic
-                vision. Our mission is to craft extraordinary brand experiences
-                that leave a lasting impression.
+                ✺︎ I'm Paulo, a dedicated Front-End Developer, Game Developer,
+                and Creative Musical Producer. Lorem, ipsum dolor sit amet
+                consectetur adipisicing elit. Sequi illo rerum veritatis alias
+                dolorem. Nisi recusandae debitis rem totam laborum quibusdam
+                esse repellendus, sequi aliquid quaerat ad tenetur similique
+                eligendi.
               </p>
+
               <p>
-                Our talented team of designers, strategists, and digital experts
-                collaborate seamlessly to deliver holistic solutions tailored to
-                your unique needs. From creating compelling logos and visually
-                stunning websites to curating engaging social media campaigns,
-                we leverage the power of storytelling to connect your brand with
-                its audience on a profound level.
+                ✧ Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Officiis, sunt magni, accusantium fugiat aperiam cupiditate
+                tenetur necessitatibus qui beatae dolor non vero aut velit
+                incidunt mollitia, ea est? Magnam, nostrum?
               </p>
             </div>
-          </div>
-
-          <div className="availabe">
-            <div className="green"></div>
-            <span>Available for new projects</span>
           </div>
         </main>
       </section>

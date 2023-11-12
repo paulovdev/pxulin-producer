@@ -40,16 +40,16 @@ const Contact = () => {
       <section id="contact">
         <main className="grid-layout">
           <div className="text-content">
-            <motion.h1>Entre em contato.</motion.h1>
+            <motion.h1>Get in Touch.</motion.h1>
             <p>
-              Tem uma pergunta ou proposta ou apenas quer dizer olá? Vá em
-              frente.
+              Have a question or proposal or just want to say hello? Go in
+              front.
             </p>
           </div>
 
           <form onSubmit={handleSubmit}>
             <div className="input-wrapper">
-              <label htmlFor="name">Qual o seu nome?</label>
+              <label htmlFor="name">What's your name?</label>
               <input
                 id="name"
                 type="text"
@@ -60,7 +60,7 @@ const Contact = () => {
               />
             </div>
             <div className="input-wrapper">
-              <label htmlFor="email">Qual o seu email?</label>
+              <label htmlFor="email">What's your e-mail?</label>
               <input
                 id="email"
                 type="email"
@@ -71,7 +71,7 @@ const Contact = () => {
               />
             </div>
             <div className="textarea-wrapper">
-              <label htmlFor="message">Me mande uma mensagem!</label>
+              <label htmlFor="message">Send me a message!</label>
               <textarea
                 id="message"
                 rows="10"
@@ -82,7 +82,7 @@ const Contact = () => {
               />
             </div>
 
-            <button type="submit">Enviar</button>
+            <button type="submit">Send to me</button>
           </form>
         </main>
       </section>

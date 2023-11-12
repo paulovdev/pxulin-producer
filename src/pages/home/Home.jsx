@@ -13,15 +13,10 @@ const Home = () => {
       <section id="home">
         <main className="grid-layout">
           <div className="header-content">
-            <h1>A web developer & ux/ui designer</h1>
+            <h1>We integrate strategy, creativity and experience to build brands.</h1>
           </div>
 
           <div className="bottom-content">
-            <p>
-              I'm ✧ Paulo, a dedicated Front-End Developer, Game Developer, and
-              Creative Musical Producer.
-            </p>
-
             <Link to="about" smooth={true} className="scroll-down">
               <img
                 className="round-text"

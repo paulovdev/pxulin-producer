@@ -35,16 +35,19 @@ const SlideText = () => {
     <section id="slideText">
       <div className="sliderContainer">
         <motion.div ref={slider} className="slider" animate={controls}>
-          <h1>
-            <span>•</span> Works <span>•</span> Design <span>•</span> Projects
-            <span>•</span> UX/UI <span>•</span> Works <span>•</span> Design
-            <span>•</span>
-            Projects <span>•</span> UX/UI
-            <span>•</span> Works <span>•</span> Design <span>•</span> Projects
-            <span>•</span> UX/UI <span>•</span> Works <span>•</span> Design
-            <span>•</span>
-            Projects <span>•</span> UX/UI
-          </h1>
+          <img src="/logos/vs.png" width={50} height={50} alt="" />
+          <img src="/logos/react.png" width={70} height={60} alt="" />
+          <img src="/logos/win.png" width={70} height={60} alt="" />
+          <img src="/logos/google.png" width={150} height={50} alt="" />
+          <img src="/logos/framer.png" width={50} height={50} alt="" />
+          <img src="/logos/netlify.png" width={180} height={50} alt="" />
+          {/*  */}
+          <img src="/logos/vs.png" width={50} height={50} alt="" />
+          <img src="/logos/react.png" width={70} height={60} alt="" />
+          <img src="/logos/win.png" width={70} height={60} alt="" />
+          <img src="/logos/google.png" width={150} height={50} alt="" />
+          <img src="/logos/framer.png" width={50} height={50} alt="" />
+          <img src="/logos/netlify.png" width={180} height={50} alt="" />
         </motion.div>
       </div>
     </section>
@@ -52,3 +55,11 @@ const SlideText = () => {
 };
 
 export default SlideText;
+
+/* const logos = [
+  { img: "/logos/vs.png" },
+  { img: "/logos/react.png" },
+  { img: "/logos/win.png" },
+  { img: "/logos/google.png" },
+  { img: "/logos/framer.png" }
+]; */

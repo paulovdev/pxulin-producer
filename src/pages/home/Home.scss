@@ -6,36 +6,29 @@
 
     .header-content {
         width: $width;
-        display: flex;
-        align-content: center;
-        justify-content: center;
-
         h1 {
-            text-align: center;
-            font-size: 6.625rem;
+            font-size: 6rem;
             line-height: normal;
             font-weight: 600;
-            letter-spacing: -0.313rem;
+            letter-spacing: -0.213rem;
             color: $secondary-color;
-            max-width: 80%;
+            max-width: 70%;
         }
     }
 
     .bottom-content {
         position: relative;
-        top: 150px;
+        top: 200px;
         display: flex;
         align-items: center;
-        justify-content: center;
-        flex-direction: column;
+        justify-content: space-between;
         p {
-            text-align: center;
-            font-size: 1.4rem;
-            font-weight: 500;
-            line-height: 130%;
-            letter-spacing: -0.02rem;
-            margin-bottom: 3rem;
-            max-width: 50%;
+            max-width: 30%;
+            opacity: 0.7;
+            color: $secondary-color;
+            font-size: 1.2rem;
+            line-height: 1.5;
+            letter-spacing: 0.005rem;
         }
     }
 
@@ -43,6 +36,7 @@
         .header-content {
             width: 100%;
             h1 {
+                text-align: center;
                 font-size: 4rem;
                 letter-spacing: -0.213rem;
                 max-width: 100%;
@@ -51,7 +45,9 @@
 
         .bottom-content {
             position: relative;
-            top: 50px;
+            top: 100px;
+            flex-direction: column;
+            gap: 3rem;
             p {
                 letter-spacing: -0.08rem;
                 max-width: 100%;
@@ -77,7 +73,7 @@
     height: 150px;
     border-radius: 50%;
 
-    background-color: #6e6e6e;
+    background-color: #8a8a8a;
     filter: blur(150px);
     z-index: 0;
     @media (max-width: 992px) {

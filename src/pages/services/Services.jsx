@@ -31,28 +31,21 @@ const works = [
     order: "01",
     title: "Branding",
     subTitle:
-      "Unveil your brand's essence through a meticulous blend of imagery, messaging, and strategy. Crafting identities that resonate and endure.",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus veritatis architecto autem possimus totam libero non",
     image: "/roll.svg",
   },
   {
     order: "02",
     title: "Design",
     subTitle:
-      "Designing experiences that captivate users from the first click. Intuitive interfaces that lead to seamless interactions.",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus veritatis architecto autem possimus totam libero non",
     image: "/design.svg",
   },
   {
     order: "03",
     title: "Development",
     subTitle:
-      "Translating visions into dynamic digital solutions. From responsive websites to interactive applications, driving innovation..",
-    image: "/dev.svg",
-  },
-  {
-    order: "04",
-    title: "Complete",
-    subTitle:
-      "Translating visions into dynamic digital solutions. From responsive websites to interactive applications, driving innovation..",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus veritatis architecto autem possimus totam libero non",
     image: "/dev.svg",
   },
 ];

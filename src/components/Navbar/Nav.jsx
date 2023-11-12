@@ -44,7 +44,7 @@ const Nav = ({ isOpen, toggleMenu, scrollToTop }) => {
               transition={{ duration: 0.5, delay: isOpen ? index * 0.1 : 0 }}
             >
               <p>
-                {text.title} <span>{text.subTitle}</span>{" "}
+                {text.title} <span>{text.subTitle}</span>
               </p>
             </motion.div>
           ))}
